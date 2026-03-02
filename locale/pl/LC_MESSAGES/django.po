@@ -5173,9 +5173,8 @@ msgstr "Wyszukuj prywatnie za pomocą jednego kliknięcia."
 #. editorial content for the discovery pane.
 #. editorial content for the primary hero shelves.
 #: src/olympia/discovery/strings.jinja2:359 src/olympia/discovery/strings.jinja2:876
-#, fuzzy
 msgid "Put an end to tab hijacking. Don't let clicked links take control of your current tab and load content you didn't ask for."
-msgstr "Nie pozwól, aby kliknięte odnośniki przejęły kontrolę nad bieżącą kartą i wczytywały niepożądaną zawartość."
+msgstr "Połóż kres uprowadzaniu twoich kart. Nie pozwól, aby kliknięte linki przejmowały kontrolę nad bieżącą kartą i wczytywały niepożądaną treść."
 
 #. editorial content for the discovery pane.
 #: src/olympia/discovery/strings.jinja2:362
