@@ -4017,7 +4017,7 @@ msgstr ""
 
 #: src/olympia/devhub/templates/devhub/includes/listing_visibility.html:59
 msgid "I confirm I have addressed the issues, and request a review"
-msgstr ""
+msgstr "Ripohoj se i kam trajtuar problemet dhe kërkoj një shqyrtim"
 
 #: src/olympia/devhub/templates/devhub/includes/macros.html:5
 msgid "Some Markdown supported."
@@ -6016,7 +6016,7 @@ msgstr "Shihni tërë zgjerimet"
 #. editorial content for the secondary hero shelves.
 #: src/olympia/discovery/strings.jinja2:1104
 msgid "YouTube extensions"
-msgstr ""
+msgstr "Zgjerime YouTube"
 
 #. editorial content for the secondary hero shelves.
 #. editorial content for the homepage shelves.
@@ -6027,7 +6027,7 @@ msgstr "Përgjegjës skedash"
 #. editorial content for the secondary hero shelves.
 #: src/olympia/discovery/strings.jinja2:1108
 msgid "Anti-tracking extensions"
-msgstr ""
+msgstr "Zgjerime anti-gjurmim"
 
 #. editorial content for the secondary hero shelves.
 #: src/olympia/discovery/strings.jinja2:1110 src/olympia/discovery/strings.jinja2:1112 src/olympia/discovery/strings.jinja2:1114
@@ -6057,7 +6057,7 @@ msgstr "Shihni më tepër tema popullore"
 #. editorial content for the homepage shelves.
 #: src/olympia/discovery/strings.jinja2:1127
 msgid "Privacy & security"
-msgstr ""
+msgstr "Privatësi & siguri"
 
 #. editorial content for the homepage shelves.
 #: src/olympia/discovery/strings.jinja2:1129
