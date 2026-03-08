@@ -628,7 +628,7 @@ msgstr ""
 "<h1>Sajnáljuk, de nem találjuk amit keres.</h1> <p> A keresett oldal vagy fájl nem található a weboldalunkon. Lehetséges, hogy elavult hivatkozást használt vagy hibásan gépelte be a megadott címet. "
 "</p> <ul> <li>Amennyiben begépelte a címet, akkor ellenőrizze annak helyességét.</li> <li> Amennyiben másik oldalról jutott el ide, akkor kérjük %(open_bug_link)snyújtson be egy "
 "jegyet%(close_bug_link)s. Írja meg, hogy honnan jött, és hogy mit keresett; mindent meg fogunk tenni a hiba kijavítása érdekében.</li> </ul> <p>Vagy egyszerűen csak ugorjon át valamelyik népszerű "
-"weboldalunkra..</p> <ul> <li>Érdeklik a <a href=\"%(rec)s\">kiemelt kiterjesztések</a>?</li> <li> <a href=\"%(search)s\">Kiterjesztést szeretne keresni</a>? Ebben az esetben menjen a <a "
+"weboldalunkra..</p> <ul> <li>Érdeklik a <a href=\"%(rec)s\">kiemelt kiegészítők</a>?</li> <li> <a href=\"%(search)s\">Kiegészítőt szeretne keresni</a>? Ebben az esetben menjen a <a "
 "href=\"%(search)s\">keresőoldalra</a> vagy használja a keresőmezőt. </li> <li> Amennyiben az elejéről kívánja kezdeni, akkor ugorjon a <a href=\"%(home)s\">kiegészítők kezdőlapjára</a>. </li> </ul>"
 
 #: src/olympia/amo/templates/amo/500.html:3
@@ -1521,8 +1521,7 @@ msgstr "Játékok és szórakozás"
 
 #: src/olympia/constants/categories.py:117
 msgid "Download Firefox extensions to boost your entertainment experience. This category includes extensions that can enhance gaming, control video playback, and more."
-msgstr ""
-"Töltsön le Firefox kiegészítőket, melyek javítják a szórakozásélményét. Ez a kategória olyan kiterjesztéseket tartalmaz, melyek jobbá teszik a játékokat, a videolejátszás vezérlését, és így tovább."
+msgstr "Töltsön le Firefox kiegészítőket, melyek javítják a szórakozásélményét. Ez a kategória olyan kiegészítőket tartalmaz, melyek jobbá teszik a játékokat, a videólejátszás-vezérlését, és másokat."
 
 #: src/olympia/constants/categories.py:124
 msgid "Language Support"
@@ -2140,7 +2139,7 @@ msgstr "Értékelés"
 
 #: src/olympia/devhub/views.py:195
 msgid "All My Add-ons"
-msgstr "Összes saját kiterjesztés"
+msgstr "Összes saját kiegészítő"
 
 #: src/olympia/devhub/views.py:223
 msgid "All Activity"
@@ -4294,7 +4293,7 @@ msgstr "Tudja meg hogy készítsen el egy kiegészítőt"
 
 #: src/olympia/devhub/templates/devhub/new-landing/components/submit_or_manage_extension.html:4
 msgid "Ready to submit or manage your extension?"
-msgstr "Készen áll a kiterjesztés benyújtására vagy kezelésére?"
+msgstr "Készen áll a kiegészítő beküldésére vagy kezelésére?"
 
 #: src/olympia/devhub/templates/devhub/new-landing/components/submit_or_manage_extension.html:7
 msgid "Sign in to the Developer Hub to submit or manage extensions and themes."
