@@ -1303,7 +1303,7 @@ msgstr "Avvist oppføring godkjend"
 #: src/olympia/constants/activity.py:1294
 #, python-brace-format
 msgid "{addon} listing content rejected."
-msgstr "Innhaldet i oppføringa for {addon} vart avvist."
+msgstr "{addon}-oppføringsinnhald avvist."
 
 #: src/olympia/constants/activity.py:1295
 msgid "Listing rejected"
