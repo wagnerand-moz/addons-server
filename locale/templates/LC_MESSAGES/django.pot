@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: addons-server 1.0\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2026-03-05 21:16+0000\n"
+"POT-Creation-Date: 2026-03-12 16:27+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -7658,30 +7658,30 @@ msgstr ""
 msgid "Delete Locale"
 msgstr ""
 
-#: src/olympia/users/models.py:91
+#: src/olympia/users/models.py:90
 msgid "No user with that email."
 msgstr ""
 
-#: src/olympia/users/models.py:681
+#: src/olympia/users/models.py:682
 #, python-brace-format
 msgid "Firefox user {id}"
 msgstr ""
 
-#: src/olympia/users/models.py:933
+#: src/olympia/users/models.py:934
 msgid ""
 "Multiple submissions violating our policies have been sent from your "
 "location. The IP address has been blocked."
 msgstr ""
 
-#: src/olympia/users/models.py:1066
+#: src/olympia/users/models.py:1067
 msgid "The email address used for your account is not allowed for submissions."
 msgstr ""
 
-#: src/olympia/users/models.py:1199
+#: src/olympia/users/models.py:1200
 msgid "The software or device you are using is not allowed for submissions."
 msgstr ""
 
-#: src/olympia/users/models.py:1325
+#: src/olympia/users/models.py:1326
 msgid ""
 "Before starting, please read and accept our Firefox Add-on Distribution "
 "Agreement as well as our Review Policies and Rules. The Firefox Add-on "
@@ -7689,7 +7689,7 @@ msgid ""
 " handle your information."
 msgstr ""
 
-#: src/olympia/users/models.py:1339
+#: src/olympia/users/models.py:1340
 #, python-brace-format
 msgid ""
 "Please read and accept our Firefox Add-on Distribution Agreement as well as "
