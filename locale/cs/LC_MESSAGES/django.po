@@ -382,7 +382,7 @@ msgstr "Veřejné verze není možné odeslat, když je doplněk zakázaný."
 
 #: src/olympia/addons/serializers.py:592 src/olympia/signing/views.py:218
 msgid "Listed versions cannot be submitted while add-on listing is rejected."
-msgstr "Veřejné verze nelze odeslat, pokud je doplněk zamítnut."
+msgstr "Veřejné verze není možné odeslat, pokud není schválené zařazení doplňku do katalogu doplňků."
 
 #: src/olympia/addons/serializers.py:633
 #, python-format
@@ -1310,7 +1310,7 @@ msgstr "Stránka zamítnuta"
 #: src/olympia/constants/activity.py:1317
 #, python-brace-format
 msgid "{addon} listing content review requested."
-msgstr "{addon} - vyžádána kontrola obsahu stránky."
+msgstr "Požádání o posouzení zařazení doplňku {addon} do seznamu doplňků."
 
 #: src/olympia/constants/activity.py:1318
 msgid "Listing review requested"
