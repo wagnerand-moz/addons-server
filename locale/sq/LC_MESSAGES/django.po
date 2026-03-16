@@ -1263,7 +1263,7 @@ msgstr "Hedhja poshtë pezull u ndryshua"
 #: src/olympia/constants/activity.py:1207
 #, python-brace-format
 msgid "{addon} {version} created, to rollback from {0}."
-msgstr ""
+msgstr "U krijua {addon} {version}, për t’u prapakthyer që nga {0}."
 
 #: src/olympia/constants/activity.py:1208
 msgid "Version rollback"
