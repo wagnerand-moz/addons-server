@@ -5945,7 +5945,7 @@ msgstr "Przejmij kontrolę nad Twitterem/X i spersonalizuj swoje doświadczenie.
 #. editorial content for the primary hero shelves.
 #: src/olympia/discovery/strings.jinja2:1056
 msgid "Translate text without leaving the page you're on (PDF compatible)."
-msgstr ""
+msgstr "Tłumacz tekst nie opuszczając obecnej strony (kompatybilne z PDF)."
 
 #. editorial content for the primary hero shelves.
 #: src/olympia/discovery/strings.jinja2:1059
