@@ -61,6 +61,12 @@ class DatabaseWrapper(mysql_base.DatabaseWrapper):
     ops_class = DatabaseOperations
 
     data_types = {
-        **mysql_base.DatabaseWrapper.data_types,
+        # in django52 the class property is _data_types instead.
+        # TODO: this overwrite's django52's special handling for mariadb! Make it work.
+        **getattr(
+            mysql_base.DatabaseWrapper,
+            '_data_types',
+            mysql_base.DatabaseWrapper.data_types,
+        ),
         'PositiveAutoField': 'integer UNSIGNED AUTO_INCREMENT',
     }

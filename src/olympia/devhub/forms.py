@@ -1642,7 +1642,7 @@ class LimitedModelChoiceField(forms.ModelChoiceField):
             del self._choices
         super()._set_queryset(queryset)
 
-    queryset = property(forms.ModelChoiceField._get_queryset, _set_queryset)
+    queryset = property(forms.ModelChoiceField.queryset.fget, _set_queryset)
 
     def _get_choices(self):
         # If self._choices is set, we called this before.
@@ -1654,7 +1654,7 @@ class LimitedModelChoiceField(forms.ModelChoiceField):
         self._choices = list(itertools.islice(self.iterator(self), count))
         return self._choices
 
-    choices = property(_get_choices, forms.ModelChoiceField._set_choices)
+    choices = property(_get_choices, forms.ModelChoiceField.choices.fset)
 
 
 class RollbackVersionForm(forms.Form):
@@ -1705,15 +1705,17 @@ class RollbackVersionForm(forms.Form):
         unlisted = self.fields['unlisted_version']
         channel = self.fields['channel']
 
+        listed_empty_label = listed.empty_label
+        listed.empty_label = None
         listed.queryset = self.addon.rollbackable_versions_qs(
             amo.CHANNEL_LISTED
         ).no_transforms()
-        self.has_listed = bool(len(listed.choices) - 1)  # Skip empty_label
+        self.has_listed = bool(len(listed.choices))  # No empty_label atm
 
-        if self.has_listed:
-            # drop empty label
-            listed.choices.pop(0)
-            self.empty_label = None
+        if not self.has_listed:
+            # add empty label back
+            listed.empty_label = listed_empty_label
+            listed.choices = [('', listed_empty_label)]
 
         unlisted.queryset = self.addon.rollbackable_versions_qs(
             amo.CHANNEL_UNLISTED
