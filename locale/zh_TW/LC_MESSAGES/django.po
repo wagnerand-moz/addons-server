@@ -4867,7 +4867,7 @@ msgstr "追蹤歷史價格、尋找類似商品、了解賣家評分等更多功
 #. editorial content for the primary hero shelves.
 #: src/olympia/discovery/strings.jinja2:239 src/olympia/discovery/strings.jinja2:768
 msgid "Make it your YouTube. Play videos in a pop-out window, only see ads within subscribed channels, take video screenshots, and so much more."
-msgstr "讓 YouTube 有您的風格。在彈出式視窗中播放影片，只看得到已訂閱頻道的廣告、和截取影片的螢幕截圖以及更多。"
+msgstr "讓 YouTube 有您的風格。在彈出型視窗中播放影片，只看得到已訂閱頻道的廣告、和截取影片的螢幕截圖以及更多。"
 
 #. editorial content for the discovery pane.
 #: src/olympia/discovery/strings.jinja2:242
