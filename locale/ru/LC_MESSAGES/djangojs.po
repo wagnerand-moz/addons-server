@@ -6,47 +6,55 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: addons-server 1.0\n"
-"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2026-03-17 12:02+0000\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "Generated-By: Pontoon\n"
 
+#: static/js/common/upload-addon.js:54 static/js/common/upload-image.js:136
 msgid "There was a problem contacting the server."
 msgstr "Проблема при подключении к серверу."
 
+#: static/js/common/upload-addon.js:78
 msgid "Select a file..."
 msgstr "Выберите файл..."
 
+#: static/js/common/upload-addon.js:82
 msgid "Your add-on should end with .zip, .xpi or .crx"
 msgstr "Расширение файла выбранного дополнения должно заканчиваться на .zip, .xpi или .crx"
 
 #. L10n: {0} is the percent of the file that has been uploaded.
-#, python-format, python-brace-format
+#: static/js/common/upload-addon.js:118
+#, python-brace-format, python-format
 msgid "{0}% complete"
 msgstr "{0}% выполнено"
 
+#: static/js/common/upload-addon.js:122
 #, python-brace-format
 msgid "{0} of {1}"
 msgstr "{0} из {1}"
 
+#: static/js/common/upload-addon.js:166
 msgid "Cancel"
 msgstr "Отмена"
 
+#: static/js/common/upload-addon.js:189
 #, python-brace-format
 msgid "Uploading {0}"
 msgstr "Обновление {0}"
 
+#: static/js/common/upload-addon.js:229
 #, python-brace-format
 msgid "Error with {0}"
 msgstr "Ошибка с кодом {0}"
 
+#: static/js/common/upload-addon.js:237
 msgid "Please make sure to report any linting related issues on GitHub"
 msgstr "Пожалуйста, сообщайте обо всех проблемах с линтингом на GitHub"
 
+#: static/js/common/upload-addon.js:248
 #, python-brace-format
 msgid "Your add-on failed validation with {0} error."
 msgid_plural "Your add-on failed validation with {0} errors."
@@ -54,6 +62,7 @@ msgstr[0] "Ваше дополнение не прошло валидацию, �
 msgstr[1] "Ваше дополнение не прошло валидацию, найдено {0} ошибки."
 msgstr[2] "Ваше дополнение не прошло валидацию, найдено {0} ошибок."
 
+#: static/js/common/upload-addon.js:266
 #, python-brace-format
 msgid "&hellip;and {0} more"
 msgid_plural "&hellip;and {0} more"
@@ -61,37 +70,47 @@ msgstr[0] "&hellip;и ещё {0}"
 msgstr[1] "&hellip;и ещё {0}"
 msgstr[2] "&hellip;и ещё {0}"
 
+#: static/js/common/upload-addon.js:287 static/js/common/upload-addon.js:705
 msgid "See full validation report"
 msgstr "Прочесть весь отчёт о проверке"
 
+#: static/js/common/upload-addon.js:300
 #, python-brace-format
 msgid "Validating {0}"
 msgstr "Проверка {0}"
 
+#: static/js/common/upload-addon.js:350
 #, python-brace-format
 msgid "Your add-on exceeds the maximum size of {0}."
 msgstr "Размер вашего дополнения превышает максимально допустимый размер {0}."
 
+#: static/js/common/upload-addon.js:358
 #, python-brace-format
 msgid "Received an empty response from the server; status: {0}"
 msgstr "Получен пустой ответ от сервера; статус: {0}"
 
+#: static/js/common/upload-addon.js:403
 msgid "Your extension has to be compatible with at least one application."
 msgstr "Ваше расширение должно быть совместимо хотя бы с одним приложением."
 
+#: static/js/common/upload-addon.js:473
 msgid "Unexpected server error while validating."
 msgstr "При проверке произошла неожиданная ошибка сервера."
 
+#: static/js/common/upload-addon.js:519
 msgid "Explicitly marked as compatible with Firefox for Android in the manifest"
 msgstr "Явно отмечено как совместимое с Firefox для Android в манифесте"
 
+#: static/js/common/upload-addon.js:561
 #, python-brace-format
 msgid "Finished validating {0}"
 msgstr "Закончена проверка {0}"
 
+#: static/js/common/upload-addon.js:568
 msgid "Your add-on validation timed out, it will be manually reviewed."
 msgstr "Время ожидания проверки вашего дополнения истекло, оно будет проверено вручную."
 
+#: static/js/common/upload-addon.js:573
 #, python-brace-format
 msgid "Your add-on was validated with no errors and {0} warning."
 msgid_plural "Your add-on was validated with no errors and {0} warnings."
@@ -99,6 +118,7 @@ msgstr[0] "Ваше дополнение прошло проверку без о
 msgstr[1] "Ваше дополнение прошло проверку без ошибок и с {0} предупреждениями."
 msgstr[2] "Ваше дополнение прошло проверку без ошибок и с {0} предупреждениями."
 
+#: static/js/common/upload-addon.js:582
 #, python-brace-format
 msgid "Your add-on was validated with no errors and {0} message."
 msgid_plural "Your add-on was validated with no errors and {0} messages."
@@ -106,21 +126,27 @@ msgstr[0] "Ваше дополнение прошло проверку без о
 msgstr[1] "Ваше дополнение прошло проверку без ошибок и c {0} сообщениями."
 msgstr[2] "Ваше дополнение прошло проверку без ошибок и c {0} сообщениями."
 
+#: static/js/common/upload-addon.js:590
 msgid "Your add-on was validated with no errors or warnings."
 msgstr "Ваше дополнение прошло проверку без ошибок или предупреждений."
 
+#: static/js/common/upload-addon.js:651
 msgid "Include detailed version notes (this can be done in the next step)."
 msgstr "Включить подробные примечания к версии (можно сделать на следующем шаге)."
 
+#: static/js/common/upload-addon.js:654
 msgid "If your add-on requires an account to a website in order to be fully tested, include a test username and password in the Notes to Reviewer (this can be done in the next step)."
 msgstr "Если для полного тестирования дополнения необходима учётная запись на веб-сайте, укажите тестовый логин и пароль в примечаниях для проверяющего (можно сделать на следующем шаге)."
 
+#: static/js/common/upload-addon.js:660
 msgid "Add-on submission checklist"
 msgstr "Контрольный перечень при представлении дополнения"
 
+#: static/js/common/upload-addon.js:664
 msgid "Please verify the following points before finalizing your submission. This will minimize delays or misunderstanding during the review process:"
 msgstr "Пожалуйста, проверьте выполнение следующих пунктов перед завершением вашего представления. Это позволит свести к минимуму задержки или недоразумения в процессе его проверки:"
 
+#: static/js/common/upload-addon.js:671
 msgid ""
 "Minified, concatenated or otherwise machine-generated scripts (excluding known libraries) need to have their sources submitted separately for review. Make sure that you use the source code upload "
 "field to avoid having your submission rejected."
@@ -128,29 +154,37 @@ msgstr ""
 "Исходные коды минифицированных, объединённых или иным образом сгенерированных машиной скриптов (за исключением известных библиотек) необходимо представлять для проверки отдельно. Убедитесь, что вы "
 "используете поле загрузки исходного кода, чтобы избежать отклонения вашей заявки."
 
+#: static/js/common/upload-addon.js:684
 msgid "The validation process found these issues that can lead to rejections:"
 msgstr "Процесс валидации нашёл следующие проблемы, которые могут привести к отклонению:"
 
+#: static/js/common/upload-base.js:69
 msgid "The filetype you uploaded isn't recognized."
 msgstr "Тип загруженного вами файла не распознан."
 
+#: static/js/common/upload-base.js:79 static/js/zamboni/global.js:569
 #, python-brace-format
 msgid "Your file exceeds the maximum size of {0}."
 msgstr "Размер вашего файла превышает максимально допустимый размер {0}."
 
+#: static/js/common/upload-base.js:105
 msgid "You cancelled the upload."
 msgstr "Вы отменили загрузку."
 
+#: static/js/common/upload-image.js:102
 msgid "Images must be either PNG or JPG."
 msgstr "Изображения должны быть в PNG или JPG."
 
+#: static/js/common/upload-image.js:106
 msgid "Videos must be in WebM."
 msgstr "Видео должно быть в формате WebM."
 
+#: static/js/stats/chart.js:283
 #, python-brace-format
 msgid "Week of {0}"
 msgstr "{0} неделя"
 
+#: static/js/stats/chart.js:292
 #, python-brace-format
 msgid "{0} download"
 msgid_plural "{0} downloads"
@@ -158,6 +192,7 @@ msgstr[0] "{0} скачивание"
 msgstr[1] "{0} скачивания"
 msgstr[2] "{0} скачиваний"
 
+#: static/js/stats/chart.js:298
 #, python-brace-format
 msgid "{0} user"
 msgid_plural "{0} users"
@@ -165,194 +200,239 @@ msgstr[0] "{0} пользователь"
 msgstr[1] "{0} пользователя"
 msgstr[2] "{0} пользователей"
 
+#: static/js/stats/chart.js:362 static/js/stats/csv_keys.js:3 static/js/stats/csv_keys.js:9
 msgid "Downloads"
 msgstr "Загрузки"
 
+#: static/js/stats/chart.js:374 static/js/stats/csv_keys.js:6 static/js/stats/csv_keys.js:10
 msgid "Daily Users"
 msgstr "Ежедневные пользователи"
 
+#: static/js/stats/chart.js:409
 msgid "More Info..."
 msgstr "Подробнее..."
 
 #. L10n: {0} is an ISO-formatted date.
+#: static/js/stats/chart.js:415
 #, python-brace-format
 msgid "Details for {0}"
 msgstr "Подробности за {0}"
 
+#: static/js/stats/csv_keys.js:13
 msgid "Firefox"
 msgstr "Firefox"
 
+#: static/js/stats/csv_keys.js:14
 msgid "Mozilla"
 msgstr "Mozilla"
 
+#: static/js/stats/csv_keys.js:15
 msgid "Thunderbird"
 msgstr "Thunderbird"
 
+#: static/js/stats/csv_keys.js:16
 msgid "Sunbird"
 msgstr "Sunbird"
 
+#: static/js/stats/csv_keys.js:17
 msgid "SeaMonkey"
 msgstr "SeaMonkey"
 
+#: static/js/stats/csv_keys.js:18
 msgid "Fennec"
 msgstr "Fennec"
 
+#: static/js/stats/csv_keys.js:19
 msgid "Android"
 msgstr "Android"
 
 #. L10n: {0} is an integer.
+#: static/js/stats/csv_keys.js:24
 #, python-brace-format
 msgid "Downloads and Daily Users, last {0} days"
 msgstr "Скачивания и ежедневные пользователи за последние {0} дн."
 
 #. L10n: both {0} and {1} are dates in YYYY-MM-DD format.
+#: static/js/stats/csv_keys.js:26
 #, python-brace-format
 msgid "Downloads and Daily Users from {0} to {1}"
 msgstr "Скачивания и ежедневные пользователи с {0} по {1}"
 
 #. L10n: {0} is an integer.
+#: static/js/stats/csv_keys.js:30
 #, python-brace-format
 msgid "Downloads, last {0} days"
 msgstr "Скачивания за последние {0} дн."
 
 #. L10n: both {0} and {1} are dates in YYYY-MM-DD format.
+#: static/js/stats/csv_keys.js:32
 #, python-brace-format
 msgid "Downloads from {0} to {1}"
 msgstr "Скачивания с {0} по {1}"
 
 #. L10n: {0} is an integer.
+#: static/js/stats/csv_keys.js:36
 #, python-brace-format
 msgid "Daily Users, last {0} days"
 msgstr "Ежедневные пользователи за последние {0} дн."
 
 #. L10n: both {0} and {1} are dates in YYYY-MM-DD format.
+#: static/js/stats/csv_keys.js:38
 #, python-brace-format
 msgid "Daily Users from {0} to {1}"
 msgstr "Ежедневные пользователи с {0} по {1}"
 
 #. L10n: {0} is an integer.
+#: static/js/stats/csv_keys.js:42
 #, python-brace-format
 msgid "Applications, last {0} days"
 msgstr "Приложения за последние {0} дн."
 
 #. L10n: both {0} and {1} are dates in YYYY-MM-DD format.
+#: static/js/stats/csv_keys.js:44
 #, python-brace-format
 msgid "Applications from {0} to {1}"
 msgstr "Приложения с {0} по {1}"
 
 #. L10n: {0} is an integer.
+#: static/js/stats/csv_keys.js:48
 #, python-brace-format
 msgid "Countries, last {0} days"
 msgstr "Страны за последние {0} дн."
 
 #. L10n: both {0} and {1} are dates in YYYY-MM-DD format.
+#: static/js/stats/csv_keys.js:50
 #, python-brace-format
 msgid "Countries from {0} to {1}"
 msgstr "Страны с {0} по {1}"
 
 #. L10n: {0} is an integer.
+#: static/js/stats/csv_keys.js:54
 #, python-brace-format
 msgid "Platforms, last {0} days"
 msgstr "Платформы за последние {0} дн."
 
 #. L10n: both {0} and {1} are dates in YYYY-MM-DD format.
+#: static/js/stats/csv_keys.js:56
 #, python-brace-format
 msgid "Platforms from {0} to {1}"
 msgstr "Платформы с {0} по {1}"
 
 #. L10n: {0} is an integer.
+#: static/js/stats/csv_keys.js:60
 #, python-brace-format
 msgid "Languages, last {0} days"
 msgstr "Языки за последние {0} дн."
 
 #. L10n: both {0} and {1} are dates in YYYY-MM-DD format.
+#: static/js/stats/csv_keys.js:62
 #, python-brace-format
 msgid "Languages from {0} to {1}"
 msgstr "Языки с {0} по {1}"
 
 #. L10n: {0} is an integer.
+#: static/js/stats/csv_keys.js:66
 #, python-brace-format
 msgid "Add-on Versions, last {0} days"
 msgstr "Версии дополнения за последние {0} дн."
 
 #. L10n: both {0} and {1} are dates in YYYY-MM-DD format.
+#: static/js/stats/csv_keys.js:68
 #, python-brace-format
 msgid "Add-on Versions from {0} to {1}"
 msgstr "Версии дополнения с {0} по {1}"
 
 #. L10n: {0} is an integer.
+#: static/js/stats/csv_keys.js:72
 #, python-brace-format
 msgid "Download Sources, last {0} days"
 msgstr "Источники скачиваний за последние {0} дн."
 
 #. L10n: both {0} and {1} are dates in YYYY-MM-DD format.
+#: static/js/stats/csv_keys.js:74
 #, python-brace-format
 msgid "Download Sources from {0} to {1}"
 msgstr "Источники скачиваний с {0} по {1}"
 
 #. L10n: {0} is an integer.
+#: static/js/stats/csv_keys.js:78
 #, python-brace-format
 msgid "Download Mediums, last {0} days"
 msgstr "Скачиваний медиа за последние {0} дн."
 
 #. L10n: both {0} and {1} are dates in YYYY-MM-DD format.
+#: static/js/stats/csv_keys.js:80
 #, python-brace-format
 msgid "Download Mediums from {0} to {1}"
 msgstr "Скачиваний медиа с {0} по {1}"
 
 #. L10n: {0} is an integer.
+#: static/js/stats/csv_keys.js:84
 #, python-brace-format
 msgid "Download Contents, last {0} days"
 msgstr "Скачиваний содержимого за последние {0} дн."
 
 #. L10n: both {0} and {1} are dates in YYYY-MM-DD format.
+#: static/js/stats/csv_keys.js:86
 #, python-brace-format
 msgid "Download Contents from {0} to {1}"
 msgstr "Скачиваний содержимого за {0} по {1}"
 
 #. L10n: {0} is an integer.
+#: static/js/stats/csv_keys.js:90
 #, python-brace-format
 msgid "Download Campaigns, last {0} days"
 msgstr "Скачиваний кампаний за последние {0} дн."
 
 #. L10n: both {0} and {1} are dates in YYYY-MM-DD format.
+#: static/js/stats/csv_keys.js:92
 #, python-brace-format
 msgid "Download Campaigns from {0} to {1}"
 msgstr "Скачиваний кампаний с {0} по {1}"
 
 #. L10n: {0} and {1} are integers.
+#: static/js/stats/csv_keys.js:98
 #, python-brace-format
 msgid "<b>{0}</b> in last {1} days"
 msgstr "<b>{0}</b> за последние {1} дн."
 
 #. L10n: {0} is an integer and {1} and {2} are dates in YYYY-MM-DD format.
+#: static/js/stats/csv_keys.js:100 static/js/stats/csv_keys.js:106
 #, python-brace-format
 msgid "<b>{0}</b> from {1} to {2}"
 msgstr "<b>{0}</b> с {1} по {2}"
 
 #. L10n: {0} and {1} are integers.
+#: static/js/stats/csv_keys.js:104
 #, python-brace-format
 msgid "<b>{0}</b> average in last {1} days"
 msgstr "В среднем <b>{0}</b> за последние {1} дн."
 
+#: static/js/stats/overview.js:18
 msgid "No data available."
 msgstr "Данные недоступны."
 
+#: static/js/stats/table.js:84
 msgid "Date"
 msgstr "Дата"
 
+#: static/js/stats/topchart.js:108
 msgid "Other"
 msgstr "Другое"
 
+#: static/js/zamboni/devhub.js:300
 msgid "Changes Saved"
 msgstr "Изменения сохранены"
 
+#: static/js/zamboni/devhub.js:316
 msgid "Enter a new author's email address"
 msgstr "Введите новый адрес эл. почты автора"
 
+#: static/js/zamboni/devhub.js:440
 msgid "There was an error uploading your file."
 msgstr "При загрузке вашего файла произошла ошибка."
 
+#: static/js/zamboni/devhub.js:596
 #, python-brace-format
 msgid "{files} file"
 msgid_plural "{files} files"
@@ -360,9 +440,11 @@ msgstr[0] "{files} файл"
 msgstr[1] "{files} файла"
 msgstr[2] "{files} файлов"
 
+#: static/js/zamboni/devhub.js:1196
 msgid "Image changes being processed"
 msgstr "Обработка изменений изображения"
 
+#: static/js/zamboni/global.js:463
 #, python-brace-format
 msgid "<b>{0}</b> character"
 msgid_plural "<b>{0}</b> characters"
@@ -370,6 +452,7 @@ msgstr[0] "<b>{0}</b> символ"
 msgstr[1] "<b>{0}</b> символа"
 msgstr[2] "<b>{0}</b> символов"
 
+#: static/js/zamboni/global.js:472
 #, python-brace-format
 msgid "<b>{0}</b> character left"
 msgid_plural "<b>{0}</b> characters left"
@@ -377,101 +460,132 @@ msgstr[0] "Остался <b>{0}</b> символ"
 msgstr[1] "Осталось <b>{0}</b> символа"
 msgstr[2] "Осталось <b>{0}</b> символов"
 
+#: static/js/zamboni/init.js:12
 msgid "This feature is temporarily disabled while we perform website maintenance. Please check back a little later."
 msgstr "Пока мы производим техническое обслуживание веб-сайта, эта возможность временно отключена. Пожалуйста, зайдите попозже."
 
+#: static/js/zamboni/l10n.js:164
 msgid "Remove this localization"
 msgstr "Удалить эту локализацию"
 
+#: static/js/zamboni/reviewers.js:259
 #, python-brace-format
 msgid "{name} was viewing this page first."
 msgstr "{name}: первый просмотревший эту страницу."
 
+#: static/js/zamboni/reviewers.js:267
 msgid "Review page polling failed."
 msgstr "Опрос страницы обзора не удался."
 
+#: static/js/zamboni/reviewers.js:584
 #, python-brace-format
 msgid "{name} was viewing this add-on first."
 msgstr "{name}: первый просмотревший это дополнение."
 
+#: static/js/zamboni/reviewers.js:597 static/js/zamboni/reviewers.js:623
 msgid "Loading&hellip;"
 msgstr "Загрузка&hellip;"
 
+#: static/js/zamboni/reviewers.js:602
 msgid "Version Notes"
 msgstr "Примечания к версии"
 
+#: static/js/zamboni/reviewers.js:609
 msgid "Notes for Reviewers"
 msgstr "Примечания для проверяющих"
 
+#: static/js/zamboni/reviewers.js:616
 msgid "No version notes found"
 msgstr "Примечаний к версии не найдено"
 
+#: static/js/zamboni/reviewers.js:628
 msgid "Review Text"
 msgstr "Текст проверки"
 
+#: static/js/zamboni/reviewers.js:635
 msgid "Review notes found"
 msgstr "Найдены замечания при проверке"
 
+#: static/js/zamboni/static_theme.js:217
 #, python-brace-format
 msgid "Maximum upload size is {0} - choose a smaller background image."
 msgstr "Максимальный размер загружаемого файла {0} — выберите фоновое изображение поменьше."
 
+#: static/js/zamboni/themes_review.js:199
 msgid "Requested Info"
 msgstr "Требуемая информация"
 
+#: static/js/zamboni/themes_review.js:200
 msgid "Flagged"
 msgstr "Отмечено"
 
+#: static/js/zamboni/themes_review.js:201
 msgid "Duplicate"
 msgstr "Дубликат"
 
+#: static/js/zamboni/themes_review.js:202
 msgid "Rejected"
 msgstr "Отклонено"
 
+#: static/js/zamboni/themes_review.js:203
 msgid "Approved"
 msgstr "Одобрено"
 
+#: static/js/zamboni/themes_review.js:492
 msgid "No results found"
 msgstr "Результаты не найдены"
 
+#: static/js/zamboni/themes_review_templates.js:43
 msgid "Theme"
 msgstr "Тема"
 
+#: static/js/zamboni/themes_review_templates.js:45
 msgid "Reviewer"
 msgstr "Редактор"
 
+#: static/js/zamboni/themes_review_templates.js:47
 msgid "Status"
 msgstr "Статус"
 
+#: static/js/zamboni/validator.js:89
 msgid "All tests passed successfully."
 msgstr "Все тесты пройдены успешно."
 
+#: static/js/zamboni/validator.js:92 static/js/zamboni/validator.js:388
 msgid "These tests were not run."
 msgstr "Эти тесты не были запущены."
 
+#: static/js/zamboni/validator.js:155 static/js/zamboni/validator.js:177
 msgid "Tests"
 msgstr "Тесты"
 
+#: static/js/zamboni/validator.js:259 static/js/zamboni/validator.js:492 static/js/zamboni/validator.js:516
 msgid "Error"
 msgstr "Ошибка"
 
+#: static/js/zamboni/validator.js:259
 msgid "Warning"
 msgstr "Предупреждение"
 
+#: static/js/zamboni/validator.js:332
 #, python-brace-format
 msgid "{0} line {1} column {2}"
 msgstr "{0} строка {1} столбец {2}"
 
+#: static/js/zamboni/validator.js:339
 #, python-brace-format
 msgid "{0} line {1}"
 msgstr "{0} строка {1}"
 
+#: static/js/zamboni/validator.js:376
 msgid "Add-on failed validation."
 msgstr "Дополнение не прошло валидацию."
 
+#: static/js/zamboni/validator.js:378
 msgid "Add-on passed validation."
 msgstr "Дополнение прошло валидацию."
 
+#: static/js/zamboni/validator.js:391
 #, python-brace-format
 msgid "{0} error"
 msgid_plural "{0} errors"
@@ -479,6 +593,7 @@ msgstr[0] "{0} ошибка"
 msgstr[1] "{0} ошибки"
 msgstr[2] "{0} ошибок"
 
+#: static/js/zamboni/validator.js:394
 #, python-brace-format
 msgid "{0} warning"
 msgid_plural "{0} warnings"
@@ -486,6 +601,7 @@ msgstr[0] "{0} предупреждение"
 msgstr[1] "{0} предупреждения"
 msgstr[2] "{0} предупреждений"
 
+#: static/js/zamboni/validator.js:397
 #, python-brace-format
 msgid "{0} notice"
 msgid_plural "{0} notices"
@@ -493,8 +609,10 @@ msgstr[0] "{0} замечание"
 msgstr[1] "{0} замечания"
 msgstr[2] "{0} замечаний"
 
+#: static/js/zamboni/validator.js:494
 msgid "Validation task could not complete or completed with errors"
 msgstr "Валидация не смогла завершиться или завершилась с ошибками"
 
+#: static/js/zamboni/validator.js:517
 msgid "Internal server error"
 msgstr "Внутренняя ошибка сервера"
