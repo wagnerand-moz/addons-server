@@ -1391,6 +1391,61 @@ class TestProfileViewWithJWT(APIKeyAuthTestMixin, TestCase):
         assert response.data['email'] == self.user.email
 
 
+class TestAccountLookup(APIKeyAuthTestMixin, TestCase):
+    def setUp(self):
+        self.target_user = user_factory(email='developer@example.com')
+        self.create_api_user()
+        self.grant_permission(self.user, 'Users:Lookup')
+        self.url = reverse_ns('account-lookup')
+        super().setUp()
+
+    def _jwt_get(self, user, *args, **kwargs):
+        user.update(read_dev_agreement=datetime.today())
+        api_key = self.create_api_key(user, f'{user.pk}:test')
+        token = self.create_auth_token(api_key.user, api_key.key, api_key.secret)
+        return self.client.get(*args, HTTP_AUTHORIZATION=f'JWT {token}', **kwargs)
+
+    def test_lookup_by_email(self):
+        response = self.get(self.url, data={'email': self.target_user.email})
+        assert response.status_code == 200
+        assert len(response.data) == 1
+        assert response.data[0]['email'] == self.target_user.email
+        assert response.data[0]['id'] == self.target_user.pk
+
+    def test_lookup_multiple_users_same_email(self):
+        # Multiple accounts can share the same email (no unique constraint).
+        duplicate = user_factory(email=self.target_user.email)
+        response = self.get(self.url, data={'email': self.target_user.email})
+        assert response.status_code == 200
+        assert len(response.data) == 2
+        returned_ids = {item['id'] for item in response.data}
+        assert returned_ids == {self.target_user.pk, duplicate.pk}
+
+    def test_lookup_missing_email_param(self):
+        response = self.get(self.url)
+        assert response.status_code == 400
+
+    def test_lookup_unknown_email(self):
+        response = self.get(self.url, data={'email': 'nobody@example.com'})
+        assert response.status_code == 404
+
+    def test_lookup_deleted_user(self):
+        self.target_user.update(deleted=True)
+        response = self.get(self.url, data={'email': self.target_user.email})
+        assert response.status_code == 404
+
+    def test_lookup_requires_authentication(self):
+        response = self.client.get(self.url, {'email': self.target_user.email})
+        assert response.status_code == 401
+
+    def test_lookup_requires_users_lookup_permission(self):
+        unprivileged = user_factory()
+        response = self._jwt_get(
+            unprivileged, self.url, {'email': self.target_user.email}
+        )
+        assert response.status_code == 403
+
+
 class TestAccountViewSetUpdate(TestCase):
     client_class = APITestClientSessionID
     update_data = {

@@ -536,6 +536,34 @@ class AccountViewSet(
         log.info('User (%s) deleted photo' % user)
         return self.retrieve(request)
 
+    @action(
+        detail=False,
+        methods=['get'],
+        authentication_classes=[JWTKeyAuthentication],
+        permission_classes=[GroupPermission(amo.permissions.USERS_LOOKUP)],
+        url_path='lookup',
+    )
+    def lookup(self, request):
+        """Look up accounts by email address.
+
+        Requires authentication and Users:Lookup permission.
+        Returns a list since multiple accounts can share the same email.
+        """
+        email = request.query_params.get('email')
+        if not email:
+            raise exceptions.ValidationError(
+                {'email': 'This query parameter is required.'}
+            )
+        users = UserProfile.objects.exclude(deleted=True).filter(
+            email=email, fxa_id__isnull=False
+        )
+        if not users.exists():
+            raise exceptions.NotFound()
+        serializer = SelfUserProfileSerializer(
+            users, many=True, context={'request': request}
+        )
+        return Response(serializer.data)
+
 
 class ProfileView(APIView):
     authentication_classes = [
