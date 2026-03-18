@@ -2852,16 +2852,16 @@ msgid ""
 "A longer explanation of features, functionality, and other relevant information. This field is only displayed on the add-on's product page. Minimum length: %(min_length)s characters; Recommended "
 "length: 250 characters. If you need a longer description, make sure the first 250 characters contain the most important description points."
 msgstr ""
-"Delší popis vlastností, funkcí a dalších důležitých informací. Toto pole je zobrazeno pouze na stránce doplňku. Minimální délka: %(min_length)s znaků; Doporučená délka: 250 znaků. Pokud potřebujete "
-"delší popis, ujistěte se, že prvních 250 znaků obsahuje nejdůležitější body popisu."
+"Podrobnější popis vlastností, funkcí a dalších relevantních informací. Toto pole se zobrazuje pouze na stránce produktu doplňku. Minimální délka: %(min_length)s znaků; doporučená délka: 250 znaků. "
+"Pokud potřebujete delší popis, ujistěte se, že prvních 250 znaků obsahuje nejdůležitější body popisu."
 
 #: src/olympia/devhub/templates/devhub/addons/edit/describe.html:140
 msgid ""
 "A longer explanation of features, functionality, and other relevant information. This field is only displayed on the add-on's product page. Recommended length: 250 characters. If you need a longer "
 "description, make sure the first 250 characters contain the most important description points."
 msgstr ""
-"Delší popis vlastností, funkcí a dalších důležitých informací. Toto pole je zobrazeno pouze na stránce doplňku. Doporučená délka: 250 znaků. Pokud potřebujete delší popis, ujistěte se, že prvních "
-"250 znaků obsahuje nejdůležitější body popisu."
+"Podrobnější popis vlastností, funkcí a dalších relevantních informací. Toto pole se zobrazuje pouze na stránce produktu doplňku. Doporučená délka: 250 znaků. Pokud potřebujete delší popis, ujistěte "
+"se, že prvních 250 znaků obsahuje nejdůležitější body popisu."
 
 #: src/olympia/devhub/templates/devhub/addons/edit/describe.html:169
 msgid "Experimental?"
@@ -3984,8 +3984,8 @@ msgid ""
 "{label_open}Listing Content Rejected:{label_close} Won't be included in search results, and its product page will be unavailable. New listed version submissions won't be accepted in this state, but "
 "existing versions awaiting review will be reviewed, and approved versions remain usable by existing users."
 msgstr ""
-"{label_open}Listing Content zamítnut:{label_close} Nebude zobrazován ve výsledcích vyhledávání a související stránka produktu bude nedostupná. Nově přidané verze nebudou v tomto stavu přijímány, ale"
-" existující verze čekající na kontrolu zkontrolovány budou a schválené verze zůstanou stávajícími uživateli použitelné."
+"{label_open}Zařazení doplňku do seznamu doplňků zamítnuto:{label_close} Nebude zahrnut do výsledků vyhledávání a stránka produktu nebude dostupná. V tomto stavu nebudou přijímány nové žádosti o "
+"zařazení, ale stávající verze čekající na posouzení budou posouzeny a schválené verze zůstanou dostupné pro stávající uživatele."
 
 #: src/olympia/devhub/templates/devhub/includes/listing_visibility.html:22
 #, python-brace-format
