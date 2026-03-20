@@ -1313,7 +1313,7 @@ msgstr ""
 
 #: src/olympia/constants/activity.py:1318
 msgid "Listing review requested"
-msgstr ""
+msgstr "Listeleme incelemesi talep edildi"
 
 #: src/olympia/constants/applications.py:28 src/olympia/constants/categories.py:244
 msgid "Firefox"
@@ -4007,7 +4007,7 @@ msgstr ""
 
 #: src/olympia/devhub/templates/devhub/includes/listing_visibility.html:54
 msgid "Review requested already, awaiting review"
-msgstr ""
+msgstr "İnceleme talebi zaten gönderildi, inceleme bekleniyor"
 
 #: src/olympia/devhub/templates/devhub/includes/listing_visibility.html:59
 msgid "I confirm I have addressed the issues, and request a review"
