@@ -1854,7 +1854,7 @@ msgstr "Phân mục linh tinh không thể được kết hợp với các phân
 
 #: src/olympia/devhub/forms.py:246 src/olympia/devhub/forms.py:1360
 msgid "There was an error uploading your image."
-msgstr ""
+msgstr "Đã xảy ra lỗi khi tải ảnh của bạn lên."
 
 #: src/olympia/devhub/forms.py:300
 #, python-format
@@ -6014,7 +6014,7 @@ msgstr "Quản lý thẻ"
 #. editorial content for the secondary hero shelves.
 #: src/olympia/discovery/strings.jinja2:1108
 msgid "Anti-tracking extensions"
-msgstr ""
+msgstr "Tiện ích mở rộng chống theo dõi"
 
 #. editorial content for the secondary hero shelves.
 #: src/olympia/discovery/strings.jinja2:1110 src/olympia/discovery/strings.jinja2:1112 src/olympia/discovery/strings.jinja2:1114
