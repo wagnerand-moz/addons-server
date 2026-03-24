@@ -2338,7 +2338,7 @@ msgstr "Ihre alten Daten wurden widerrufen und sind nicht mehr gültig."
 
 #: src/olympia/devhub/views.py:2151
 msgid "New API credentials have been generated and are displayed below. Make sure to copy the JWT secret, it will never be displayed again."
-msgstr ""
+msgstr "Neue API-Daten wurden erzeugt und werden nachstehend angezeigt. Stellen Sie sicher, dass Sie den JWT-Schlüssel kopieren, da er nie wieder angezeigt wird."
 
 #: src/olympia/devhub/views.py:2175
 msgid "New API key created"
@@ -3675,10 +3675,12 @@ msgid ""
 "To execute authenticated calls against the <a %(a_attrs)s href=\"%(docs_url)s\">API</a> as an external consumer, you need to include a <a %(a_attrs)s href=\"%(jwt_url)s\">JSON Web Token (JWT)</a> in"
 " the <code>Authorization</code> header for every request."
 msgstr ""
+"Um als externer Verbraucher authentifizierte Aufrufe für die <a %(a_attrs)s href=\"%(docs_url)s\">API</a> auszuführen, müssen Sie eine <a %(a_attrs)s href=\"%(jwt_url)s\">JSON Web Token (JWT)</a> in"
+" der <code>Authorization</code>-Kopfzeile für jede Anfrage einfügen."
 
 #: src/olympia/devhub/templates/devhub/api/key.html:25
 msgid "Keep your API keys secret and never share them with anyone, including Mozilla staff or contributors."
-msgstr ""
+msgstr "Halten Sie Ihre API-Schlüssel geheim und geben Sie diese an niemanden weiter, auch nicht an Mozilla-Mitarbeiter oder -Mitwirkende."
 
 #: src/olympia/devhub/templates/devhub/api/key.html:33
 msgid "JWT issuer"
