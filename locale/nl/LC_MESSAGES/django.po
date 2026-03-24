@@ -3370,8 +3370,6 @@ msgid ""
 "Read our %(policy_requirements_open)spolicy requirements%(policy_requirements_close)s regarding build processes and source code submission. If your submission requires source code, you must provide "
 "step-by-step build instructions, either inside the source code package or here, that will create an exact copy of the code."
 msgstr ""
-"Lees onze %(policy_requirements_open)sbeleidsvereisten%(policy_requirements_close)s met betrekking tot buildprocessen en het indienen van broncode. Als uw inzending broncode vereist, moet u stap-"
-"voor-stap buildinstructies opgeven, ofwel in het broncodepakket of hier, die een exacte kopie van de code maken."
 
 #: src/olympia/devhub/templates/devhub/addons/submit/describe.html:224 src/olympia/devhub/templates/devhub/addons/submit/describe_minimal.html:37
 msgid "These notes will only be visible to you and our reviewers."
