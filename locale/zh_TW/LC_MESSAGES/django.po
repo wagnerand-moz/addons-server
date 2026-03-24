@@ -2298,7 +2298,7 @@ msgstr "已註銷您的舊存取權限，不再有效。"
 
 #: src/olympia/devhub/views.py:2151
 msgid "New API credentials have been generated and are displayed below. Make sure to copy the JWT secret, it will never be displayed again."
-msgstr ""
+msgstr "已產生新的 API 資訊，並顯示在下方。無法再次取得或顯示 JWT 密鑰，請務必複製保存。"
 
 #: src/olympia/devhub/views.py:2175
 msgid "New API key created"

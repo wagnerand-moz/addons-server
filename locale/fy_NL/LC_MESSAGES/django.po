@@ -2325,7 +2325,7 @@ msgstr "Jo âlde oanmeldgegevens binne ynlutsen en binne net mear jildich."
 
 #: src/olympia/devhub/views.py:2151
 msgid "New API credentials have been generated and are displayed below. Make sure to copy the JWT secret, it will never be displayed again."
-msgstr ""
+msgstr "Der binne nije API-referinsjes oanmakke dy’t hjirûnder toand wurde. Soargje derfoar dat jo it JWT-geheim kopiearje, it sil nea mear toand wurde."
 
 #: src/olympia/devhub/views.py:2175
 msgid "New API key created"
@@ -3654,6 +3654,8 @@ msgid ""
 "To execute authenticated calls against the <a %(a_attrs)s href=\"%(docs_url)s\">API</a> as an external consumer, you need to include a <a %(a_attrs)s href=\"%(jwt_url)s\">JSON Web Token (JWT)</a> in"
 " the <code>Authorization</code> header for every request."
 msgstr ""
+"Om autentisearre oanroppen tsjin de <a %(a_attrs)s href=\"%(docs_url)s\">API</a> as in eksterne brûker út te fieren, moatte jo in <a %(a_attrs)s href=\"%(jwt_url)s\">JSON Web Token (JWT)</a> yn de "
+"<code>Authorization</code>-header foar elke oanfraach opnimme."
 
 #: src/olympia/devhub/templates/devhub/api/key.html:25
 msgid "Keep your API keys secret and never share them with anyone, including Mozilla staff or contributors."
