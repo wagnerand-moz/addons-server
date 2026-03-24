@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: addons-server 1.0\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2026-03-24 12:04+0000\n"
+"POT-Creation-Date: 2026-03-24 15:03+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -571,7 +571,7 @@ msgstr ""
 
 #: src/olympia/amo/context_processors.py:79
 #: src/olympia/devhub/templates/devhub/new-landing/components/dev_footer.html:20
-#: src/olympia/devhub/views.py:2160
+#: src/olympia/devhub/views.py:2163
 msgid "Manage API Keys"
 msgstr ""
 
@@ -2202,60 +2202,44 @@ msgstr ""
 msgid "Revoke"
 msgstr ""
 
-#: src/olympia/devhub/forms.py:1526
-msgid "JWT issuer"
-msgstr ""
-
-#: src/olympia/devhub/forms.py:1533
-#, python-brace-format
-msgid ""
-"To make API requests, send a <a href=\"{jwt_url}\">JSON Web Token (JWT)</a> "
-"as the authorization header. You'll need to generate a JWT for every request "
-"as explained in the <a href=\"{docs_url}\">API documentation</a>."
-msgstr ""
-
-#: src/olympia/devhub/forms.py:1543
-msgid "JWT secret"
-msgstr ""
-
-#: src/olympia/devhub/forms.py:1564
+#: src/olympia/devhub/forms.py:1539
 #, python-brace-format
 msgid ""
 "Please click the confirm button below to generate API credentials for user "
 "<strong>{name}</strong>."
 msgstr ""
 
-#: src/olympia/devhub/forms.py:1570
+#: src/olympia/devhub/forms.py:1545
 msgid ""
 "A confirmation link will be sent to your email address. After confirmation "
 "you will find your API keys on this page."
 msgstr ""
 
-#: src/olympia/devhub/forms.py:1587
+#: src/olympia/devhub/forms.py:1562
 msgid "You don't have any API credentials."
 msgstr ""
 
-#: src/olympia/devhub/forms.py:1598
+#: src/olympia/devhub/forms.py:1573
 msgid "Something went wrong, please contact developer support."
 msgstr ""
 
-#: src/olympia/devhub/forms.py:1681
+#: src/olympia/devhub/forms.py:1656
 msgid "No appropriate version available"
 msgstr ""
 
-#: src/olympia/devhub/forms.py:1688
+#: src/olympia/devhub/forms.py:1663
 msgid "Choose version"
 msgstr ""
 
-#: src/olympia/devhub/forms.py:1697
+#: src/olympia/devhub/forms.py:1672
 msgid "Release notes"
 msgstr ""
 
-#: src/olympia/devhub/forms.py:1698
+#: src/olympia/devhub/forms.py:1673
 msgid "Automatic rollback based on version [m.m]."
 msgstr ""
 
-#: src/olympia/devhub/forms.py:1773
+#: src/olympia/devhub/forms.py:1748
 msgid "You must select a channel and version to rollback to."
 msgstr ""
 
@@ -2304,6 +2288,7 @@ msgstr ""
 msgid "Name"
 msgstr ""
 
+#: src/olympia/devhub/templates/devhub/api/key.html:31
 #: src/olympia/devhub/views.py:118 src/olympia/devhub/views.py:126
 msgid "Created"
 msgstr ""
@@ -2539,33 +2524,33 @@ msgstr ""
 msgid "You must provide further details to proceed."
 msgstr ""
 
-#: src/olympia/devhub/views.py:2135
+#: src/olympia/devhub/views.py:2140
 msgid "Your old credentials were revoked and are no longer valid."
 msgstr ""
 
-#: src/olympia/devhub/views.py:2154
+#: src/olympia/devhub/views.py:2151
 msgid ""
-"Keep your API keys secret and never share them with anyone, including Mozilla"
-" contributors."
+"New API credentials have been generated and are displayed below. Make sure to"
+" copy the JWT secret, it will never be displayed again."
 msgstr ""
 
-#: src/olympia/devhub/views.py:2171
+#: src/olympia/devhub/views.py:2175
 msgid "New API key created"
 msgstr ""
 
-#: src/olympia/devhub/views.py:2182
+#: src/olympia/devhub/views.py:2186
 msgid "API key revoked"
 msgstr ""
 
-#: src/olympia/devhub/views.py:2242
+#: src/olympia/devhub/views.py:2246
 msgid "Verify email"
 msgstr ""
 
-#: src/olympia/devhub/views.py:2244
+#: src/olympia/devhub/views.py:2248
 msgid "Send another email"
 msgstr ""
 
-#: src/olympia/devhub/views.py:2277
+#: src/olympia/devhub/views.py:2281
 msgid "Your email has been verified"
 msgstr ""
 
@@ -4057,8 +4042,27 @@ msgstr ""
 msgid "Back"
 msgstr ""
 
-#: src/olympia/devhub/templates/devhub/api/key.html:21
-msgid "API Credentials"
+#: src/olympia/devhub/templates/devhub/api/key.html:19
+#, python-format
+msgid ""
+"To execute authenticated calls against the <a %(a_attrs)s "
+"href=\"%(docs_url)s\">API</a> as an external consumer, you need to include a "
+"<a %(a_attrs)s href=\"%(jwt_url)s\">JSON Web Token (JWT)</a> in the "
+"<code>Authorization</code> header for every request."
+msgstr ""
+
+#: src/olympia/devhub/templates/devhub/api/key.html:25
+msgid ""
+"Keep your API keys secret and never share them with anyone, including Mozilla"
+" staff or contributors."
+msgstr ""
+
+#: src/olympia/devhub/templates/devhub/api/key.html:33
+msgid "JWT issuer"
+msgstr ""
+
+#: src/olympia/devhub/templates/devhub/api/key.html:35
+msgid "JWT secret"
 msgstr ""
 
 #: src/olympia/devhub/templates/devhub/emails/api_key_confirmation.ltxt:10

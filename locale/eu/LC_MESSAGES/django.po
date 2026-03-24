@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version:  messages.pootle\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2026-03-24 12:04+0000\n"
+"POT-Creation-Date: 2026-03-24 15:03+0000\n"
 "PO-Revision-Date: 2013-11-07 07:24+0000\n"
 "Last-Translator: Julen <julenx@gmail.com>\n"
 "Language-Team: librezale@librezale.org\n"
@@ -1562,18 +1562,6 @@ msgstr ""
 msgid "Revoke"
 msgstr ""
 
-msgid "JWT issuer"
-msgstr ""
-
-#, python-brace-format
-msgid ""
-"To make API requests, send a <a href=\"{jwt_url}\">JSON Web Token (JWT)</a> as the authorization header. You'll need to generate a JWT for every request as explained in the <a "
-"href=\"{docs_url}\">API documentation</a>."
-msgstr ""
-
-msgid "JWT secret"
-msgstr ""
-
 #, python-brace-format
 msgid "Please click the confirm button below to generate API credentials for user <strong>{name}</strong>."
 msgstr ""
@@ -1796,7 +1784,7 @@ msgstr ""
 msgid "Your old credentials were revoked and are no longer valid."
 msgstr ""
 
-msgid "Keep your API keys secret and never share them with anyone, including Mozilla contributors."
+msgid "New API credentials have been generated and are displayed below. Make sure to copy the JWT secret, it will never be displayed again."
 msgstr ""
 
 msgid "New API key created"
@@ -2822,7 +2810,19 @@ msgstr ""
 msgid "Back"
 msgstr ""
 
-msgid "API Credentials"
+#, python-format
+msgid ""
+"To execute authenticated calls against the <a %(a_attrs)s href=\"%(docs_url)s\">API</a> as an external consumer, you need to include a <a %(a_attrs)s href=\"%(jwt_url)s\">JSON Web Token (JWT)</a> "
+"in the <code>Authorization</code> header for every request."
+msgstr ""
+
+msgid "Keep your API keys secret and never share them with anyone, including Mozilla staff or contributors."
+msgstr ""
+
+msgid "JWT issuer"
+msgstr ""
+
+msgid "JWT secret"
 msgstr ""
 
 #, python-format

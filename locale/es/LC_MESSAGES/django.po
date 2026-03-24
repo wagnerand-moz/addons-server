@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: messages\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2026-03-24 12:04+0000\n"
+"POT-Creation-Date: 2026-03-24 15:03+0000\n"
 "PO-Revision-Date: 2024-01-15 13:27+0000\n"
 "Last-Translator: Bund10z <abu.avila@gmail.com>\n"
 "Language-Team: Español (España) <nave@elistas.net>\n"
@@ -1567,18 +1567,6 @@ msgstr "Revocar y generar credenciales"
 msgid "Revoke"
 msgstr "Revocar"
 
-msgid "JWT issuer"
-msgstr "Emisor JWT"
-
-#, python-brace-format
-msgid ""
-"To make API requests, send a <a href=\"{jwt_url}\">JSON Web Token (JWT)</a> as the authorization header. You'll need to generate a JWT for every request as explained in the <a "
-"href=\"{docs_url}\">API documentation</a>."
-msgstr ""
-
-msgid "JWT secret"
-msgstr "Secreto JWT"
-
 #, python-brace-format
 msgid "Please click the confirm button below to generate API credentials for user <strong>{name}</strong>."
 msgstr ""
@@ -1799,7 +1787,7 @@ msgstr "Debes proporcionar más detalles para continuar."
 msgid "Your old credentials were revoked and are no longer valid."
 msgstr "Se han revocado tus antiguas credenciales y ya no son válidas."
 
-msgid "Keep your API keys secret and never share them with anyone, including Mozilla contributors."
+msgid "New API credentials have been generated and are displayed below. Make sure to copy the JWT secret, it will never be displayed again."
 msgstr ""
 
 msgid "New API key created"
@@ -2832,8 +2820,20 @@ msgstr "Finalizar tema"
 msgid "Back"
 msgstr "Atrás"
 
-msgid "API Credentials"
-msgstr "Credenciales de API"
+#, python-format
+msgid ""
+"To execute authenticated calls against the <a %(a_attrs)s href=\"%(docs_url)s\">API</a> as an external consumer, you need to include a <a %(a_attrs)s href=\"%(jwt_url)s\">JSON Web Token (JWT)</a> "
+"in the <code>Authorization</code> header for every request."
+msgstr ""
+
+msgid "Keep your API keys secret and never share them with anyone, including Mozilla staff or contributors."
+msgstr ""
+
+msgid "JWT issuer"
+msgstr "Emisor JWT"
+
+msgid "JWT secret"
+msgstr "Secreto JWT"
 
 #, python-format
 msgid ""
