@@ -3360,7 +3360,7 @@ msgstr "Há alguma coisa que nossos revisores devem levar em conta ao analisar e
 
 #: src/olympia/devhub/templates/devhub/addons/submit/describe.html:213 src/olympia/devhub/templates/devhub/addons/submit/describe_minimal.html:26
 msgid "Important"
-msgstr ""
+msgstr "Importante"
 
 #: src/olympia/devhub/templates/devhub/addons/submit/describe.html:214 src/olympia/devhub/templates/devhub/addons/submit/describe_minimal.html:27
 #, python-format
@@ -3368,6 +3368,8 @@ msgid ""
 "Read our %(policy_requirements_open)spolicy requirements%(policy_requirements_close)s regarding build processes and source code submission. If your submission requires source code, you must provide "
 "step-by-step build instructions, either inside the source code package or here, that will create an exact copy of the code."
 msgstr ""
+"Leia nossos %(policy_requirements_open)spolítica de requisitos%(policy_requirements_close)s sobre processos de compilação e envio de código-fonte. Se a sua submissão necessita de código fonte, você "
+"deve fornecer instruções de compilação passo a passo, dentro do pacote de código fonte ou aqui, que criarão uma cópia exata do código."
 
 #: src/olympia/devhub/templates/devhub/addons/submit/describe.html:224 src/olympia/devhub/templates/devhub/addons/submit/describe_minimal.html:37
 msgid "These notes will only be visible to you and our reviewers."
