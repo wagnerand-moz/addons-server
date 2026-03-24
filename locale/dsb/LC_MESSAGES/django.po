@@ -3378,7 +3378,7 @@ msgstr "Dajo něco, na což naše pśeglědowarjeř by měli źiwaś, gaž pśeg
 
 #: src/olympia/devhub/templates/devhub/addons/submit/describe.html:213 src/olympia/devhub/templates/devhub/addons/submit/describe_minimal.html:26
 msgid "Important"
-msgstr ""
+msgstr "Wažny"
 
 #: src/olympia/devhub/templates/devhub/addons/submit/describe.html:214 src/olympia/devhub/templates/devhub/addons/submit/describe_minimal.html:27
 #, python-format
@@ -3386,6 +3386,8 @@ msgid ""
 "Read our %(policy_requirements_open)spolicy requirements%(policy_requirements_close)s regarding build processes and source code submission. If your submission requires source code, you must provide "
 "step-by-step build instructions, either inside the source code package or here, that will create an exact copy of the code."
 msgstr ""
+"Cytajśo naše %(policy_requirements_open)spominanja pšawidłow%(policy_requirements_close)s nastupajucy wuwijańske procese a zapódaśe žrědłowego koda. Jolic se wašo zapódaśe žrědłowy kod pomina, "
+"musyśo instrukcije kšac pó kšacu pódaś, pak w pakeśe žrědłowego koda pak how, to eksaktnu kopiju koda napórajo."
 
 #: src/olympia/devhub/templates/devhub/addons/submit/describe.html:224 src/olympia/devhub/templates/devhub/addons/submit/describe_minimal.html:37
 msgid "These notes will only be visible to you and our reviewers."
