@@ -2319,7 +2319,7 @@ msgstr "Dina gamla inloggningsuppgifter har återkallats och är inte längre gi
 
 #: src/olympia/devhub/views.py:2151
 msgid "New API credentials have been generated and are displayed below. Make sure to copy the JWT secret, it will never be displayed again."
-msgstr ""
+msgstr "Nya API-inloggningsuppgifter har genererats och visas nedan. Se till att kopiera JWT-hemligheten, den kommer aldrig att visas igen."
 
 #: src/olympia/devhub/views.py:2175
 msgid "New API key created"
@@ -3353,7 +3353,7 @@ msgstr "Är det något våra granskare bör ha i åtanke när du granskar detta 
 
 #: src/olympia/devhub/templates/devhub/addons/submit/describe.html:213 src/olympia/devhub/templates/devhub/addons/submit/describe_minimal.html:26
 msgid "Important"
-msgstr ""
+msgstr "Viktigt"
 
 #: src/olympia/devhub/templates/devhub/addons/submit/describe.html:214 src/olympia/devhub/templates/devhub/addons/submit/describe_minimal.html:27
 #, python-format
@@ -3361,6 +3361,8 @@ msgid ""
 "Read our %(policy_requirements_open)spolicy requirements%(policy_requirements_close)s regarding build processes and source code submission. If your submission requires source code, you must provide "
 "step-by-step build instructions, either inside the source code package or here, that will create an exact copy of the code."
 msgstr ""
+"Läs våra %(policy_requirements_open)spolicykrav%(policy_requirements_close)s gällande byggprocesser och inlämning av källkod. Om din inlämning kräver källkod måste du tillhandahålla stegvisa "
+"bygginstruktioner, antingen i källkodspaketet eller här, som skapar en exakt kopia av koden."
 
 #: src/olympia/devhub/templates/devhub/addons/submit/describe.html:224 src/olympia/devhub/templates/devhub/addons/submit/describe_minimal.html:37
 msgid "These notes will only be visible to you and our reviewers."
@@ -3659,10 +3661,12 @@ msgid ""
 "To execute authenticated calls against the <a %(a_attrs)s href=\"%(docs_url)s\">API</a> as an external consumer, you need to include a <a %(a_attrs)s href=\"%(jwt_url)s\">JSON Web Token (JWT)</a> in"
 " the <code>Authorization</code> header for every request."
 msgstr ""
+"För att köra autentiserade anrop mot <a %(a_attrs)s href=\"%(docs_url)s\">API:et</a> som en extern konsument måste du inkludera en <a %(a_attrs)s href=\"%(jwt_url)s\">JSON Web Token (JWT)</a> i "
+"<code>Authorization</code>-headern för varje begäran."
 
 #: src/olympia/devhub/templates/devhub/api/key.html:25
 msgid "Keep your API keys secret and never share them with anyone, including Mozilla staff or contributors."
-msgstr ""
+msgstr "Håll dina API-nycklar hemliga och dela dem aldrig med någon, inklusive Mozilla-personal eller bidragsgivare."
 
 #: src/olympia/devhub/templates/devhub/api/key.html:33
 msgid "JWT issuer"
