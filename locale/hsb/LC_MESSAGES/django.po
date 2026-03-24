@@ -2327,7 +2327,7 @@ msgstr "Waše stare přizjewjenske daty su so wotwołali a hižo płaćiwe njejs
 
 #: src/olympia/devhub/views.py:2151
 msgid "New API credentials have been generated and are displayed below. Make sure to copy the JWT secret, it will never be displayed again."
-msgstr ""
+msgstr "Nowe přizjewjenske daty API su so generowali a pokazuja so deleka. Kopěrujće na kóždy pad potajnstwo JWT, njepokaza so hišće raz."
 
 #: src/olympia/devhub/views.py:2175
 msgid "New API key created"
@@ -3667,10 +3667,12 @@ msgid ""
 "To execute authenticated calls against the <a %(a_attrs)s href=\"%(docs_url)s\">API</a> as an external consumer, you need to include a <a %(a_attrs)s href=\"%(jwt_url)s\">JSON Web Token (JWT)</a> in"
 " the <code>Authorization</code> header for every request."
 msgstr ""
+"Awtentifikowane wołanja přećiwo <a %(a_attrs)s href=\"%(docs_url)s\">API</a> jako eksterny přetrjebar wuwjedł, dyrbiće <a %(a_attrs)s href=\"%(jwt_url)s\">JSON Web Token (JWT)</a> we hłowje "
+"<code>awtorizacije</code> za kóžde naprašowanje zapřijeć."
 
 #: src/olympia/devhub/templates/devhub/api/key.html:25
 msgid "Keep your API keys secret and never share them with anyone, including Mozilla staff or contributors."
-msgstr ""
+msgstr "Dźeržće swoje API-kluče tajne a njedajće je nikomu dale inkluziwnje personal abo sobuskutkowarjam Mozilla."
 
 #: src/olympia/devhub/templates/devhub/api/key.html:33
 msgid "JWT issuer"
