@@ -778,6 +778,8 @@ CELERY_TASK_ROUTES = {
     'olympia.abuse.tasks.report_decision_to_cinder_and_notify': {'queue': 'amo'},
     'olympia.abuse.tasks.sync_cinder_policies': {'queue': 'amo'},
     'olympia.abuse.tasks.auto_resolve_job': {'queue': 'adhoc'},
+    'olympia.abuse.tasks.submit_addon_for_content_review': {'queue': 'adhoc'},
+    'olympia.abuse.tasks.submit_addon_change_for_content_review': {'queue': 'adhoc'},
     'olympia.accounts.tasks.clear_sessions_event': {'queue': 'amo'},
     'olympia.accounts.tasks.delete_user_event': {'queue': 'amo'},
     'olympia.accounts.tasks.primary_email_change_event': {'queue': 'amo'},
@@ -1493,7 +1495,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.AutoField'
 
 SITEMAP_DEBUG_AVAILABLE = False
 
-CINDER_SERVER_URL = env('CINDER_SERVER_URL', default=None)
+CINDER_SERVER_URL = env('CINDER_SERVER_URL', default='').removesuffix('v1/')
 CINDER_API_TOKEN = env('CINDER_API_TOKEN', default=None)
 CINDER_WEBHOOK_TOKEN = env('CINDER_WEBHOOK_TOKEN', default=None)
 CINDER_QUEUE_PREFIX = 'amo-dev-'

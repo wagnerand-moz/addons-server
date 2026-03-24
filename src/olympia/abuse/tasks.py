@@ -1,4 +1,5 @@
 import functools
+import json
 from datetime import datetime
 
 from django.conf import settings
@@ -9,6 +10,9 @@ import requests
 from django_statsd.clients import statsd
 
 import olympia.core.logger
+from olympia import amo
+from olympia.activity.models import ActivityLog
+from olympia.addons.models import Addon
 from olympia.amo.celery import task
 from olympia.amo.decorators import use_primary_db
 from olympia.amo.utils import to_language
@@ -16,7 +20,11 @@ from olympia.constants.abuse import DECISION_ACTIONS
 from olympia.reviewers.models import NeedsHumanReview, UsageTier
 from olympia.users.models import UserProfile
 
-from .cinder import CinderAddonHandledByLegal
+from .cinder import (
+    CinderAddonContentReview,
+    CinderAddonHandledByLegal,
+    CinderContentChange,
+)
 from .models import (
     AbuseReport,
     CinderJob,
@@ -218,7 +226,7 @@ def sync_cinder_policies():
             )
             qs.update(present_in_cinder=False)
 
-    url = f'{settings.CINDER_SERVER_URL}policies'
+    url = f'{settings.CINDER_SERVER_URL}v1/policies'
     headers = {
         'accept': 'application/json',
         'content-type': 'application/json',
@@ -271,3 +279,35 @@ def auto_resolve_job(*, job_pk):
         )
         job.handle_already_moderated(job.abusereport_set.first(), entity_helper)
         job.clear_needs_human_review_flags()
+
+
+@task
+@use_primary_db
+def submit_addon_for_content_review(*, addon_pk):
+    addon = Addon.unfiltered.get(pk=addon_pk)
+    entity_helper = CinderAddonContentReview(addon)
+    entity_helper.send_event()
+
+    # Additional context is submitted as separate api calls.
+    try:
+        entity_helper.report_additional_context()
+    except requests.RequestException as exc:
+        # we don't these additional requests to be retried, so reraise
+        raise ConnectionError from exc
+
+
+@task
+@use_primary_db
+def submit_addon_change_for_content_review(*, activity_log_pk):
+    activity = ActivityLog.objects.get(pk=activity_log_pk)
+    if activity.action != amo.LOG.EDIT_ADDON_PROPERTY.id:
+        log.error(
+            'Activity with id %s is not an EDIT_ADDON_PROPERTY, cannot submit for '
+            'content review.',
+            activity_log_pk,
+        )
+        return
+    addon, field, changes_blob = activity.arguments
+    changes = json.loads(changes_blob or '{}')
+    entity_helper = CinderContentChange(addon, field, changes)
+    entity_helper.send_event()

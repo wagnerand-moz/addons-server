@@ -1,4 +1,5 @@
 import mimetypes
+from datetime import datetime
 
 from django.conf import settings
 from django.core.files.storage import default_storage as storage
@@ -120,7 +121,7 @@ class CinderEntity:
         if self.type is None:
             # type needs to be defined by subclasses
             raise NotImplementedError
-        url = f'{settings.CINDER_SERVER_URL}create_report'
+        url = f'{settings.CINDER_SERVER_URL}v1/create_report'
         data = self.build_report_payload(
             report=report, reporter=reporter, message=message
         )
@@ -141,7 +142,7 @@ class CinderEntity:
         for data in context_generator:
             # Note: Cinder URLS are inconsistent. Per their documentation, that
             # one needs a trailing slash.
-            url = f'{settings.CINDER_SERVER_URL}graph/'
+            url = f'{settings.CINDER_SERVER_URL}v1/graph/'
             response = requests.post(
                 url, json=data, headers=self.get_cinder_http_headers()
             )
@@ -155,7 +156,7 @@ class CinderEntity:
         if self.type is None:
             # type needs to be defined by subclasses
             raise NotImplementedError
-        url = f'{settings.CINDER_SERVER_URL}appeal'
+        url = f'{settings.CINDER_SERVER_URL}v1/appeal'
         data = {
             'queue_slug': self.queue_appeal,
             'appealer_entity_type': appealer.type,
@@ -185,7 +186,7 @@ class CinderEntity:
         if self.type is None:
             # type needs to be defined by subclasses
             raise NotImplementedError
-        url = f'{settings.CINDER_SERVER_URL}create_decision'
+        url = f'{settings.CINDER_SERVER_URL}v1/create_decision'
         data = {
             'entity_type': self.type,
             'entity': self.get_attributes(),
@@ -193,15 +194,15 @@ class CinderEntity:
         return self._send_create_decision(url, data, action, reasoning, policy_uuids)
 
     def create_job_decision(self, *, action, reasoning, policy_uuids, job_id):
-        url = f'{settings.CINDER_SERVER_URL}jobs/{job_id}/decision'
+        url = f'{settings.CINDER_SERVER_URL}v1/jobs/{job_id}/decision'
         return self._send_create_decision(url, {}, action, reasoning, policy_uuids)
 
     def create_override_decision(self, *, action, reasoning, policy_uuids, decision_id):
-        url = f'{settings.CINDER_SERVER_URL}decisions/{decision_id}/override/'
+        url = f'{settings.CINDER_SERVER_URL}v1/decisions/{decision_id}/override/'
         return self._send_create_decision(url, {}, action, reasoning, policy_uuids)
 
     def close_job(self, *, job_id):
-        url = f'{settings.CINDER_SERVER_URL}jobs/{job_id}/cancel'
+        url = f'{settings.CINDER_SERVER_URL}v1/jobs/{job_id}/cancel'
         response = requests.post(url, headers=self.get_cinder_http_headers())
         if response.status_code == 200:
             return response.json().get('external_id')
@@ -639,8 +640,63 @@ class CinderAddonHandledByReviewers(CinderAddon):
         )
 
 
-class CinderAddonContentReview(CinderAddon):
+class WorkflowEventSendMixin:
+    """Mixin for entities that trigger an async workflow.
+    Instead of returning a job_id, those return an event_id that can be used to track
+    the workflow execution, but that doesn't correspond to a CinderJob."""
+
+    workflow_name = None  # Needs to be defined by subclasses
+
+    def change_to_v2_syntax(self, subgraph):
+        """api/v2 syntax is a bit different, we need to change the format of the
+        subgraph a bit before sending it."""
+        if 'entities' in subgraph:
+            subgraph['entities'] = [
+                {
+                    'entity_schema': entity['entity_type'],
+                    'attributes': entity['attributes'],
+                }
+                for entity in subgraph['entities']
+            ]
+        if 'relationships' in subgraph:
+            subgraph['relationships'] = [
+                {
+                    'source_entity_schema': entity.pop('source_type'),
+                    'target_entity_schema': entity.pop('target_type'),
+                    'relationship_schema': entity.pop('relationship_type'),
+                    **entity,
+                }
+                for entity in subgraph['relationships']
+            ]
+        return subgraph
+
+    def build_event_payload(self):
+        assert self.workflow_name is not None  # needs to be defined by subclasses
+        generator = self.get_context_generator()
+        context = next(generator, self.get_empty_context())
+        entity_attributes = {**self.get_attributes(), **self.get_extended_attributes()}
+        return {
+            'event_name': self.workflow_name,
+            'entity': {
+                'entity_schema': self.type,
+                'attributes': entity_attributes,
+            },
+            'subgraph': self.change_to_v2_syntax(context),
+        }
+
+    def send_event(self):
+        url = f'{settings.CINDER_SERVER_URL}v2/workflows/event'
+        data = self.build_event_payload()
+        response = requests.post(url, json=data, headers=self.get_cinder_http_headers())
+        if response.status_code == 200 and response.json().get('status') == 'ok':
+            return response.json().get('event_id')
+        else:
+            raise HTTPError(response.content)
+
+
+class CinderAddonContentReview(WorkflowEventSendMixin, CinderAddon):
     queue_suffix = 'listing-content'
+    workflow_name = 'amo_addon.contentreview'
 
     def appeal(self, *, decision_cinder_id, **kwargs):
         # We don't flag for NHR for content review follow-ups
@@ -699,6 +755,54 @@ class CinderReport(CinderEntity):
         raise NotImplementedError
 
     def appeal(self, *args, **kwargs):
-        # It doesn't make sense to report this, it's just meant to be included
+        # It doesn't make sense to appeal this, it's just meant to be included
         # as a relationship.
+        raise NotImplementedError
+
+
+class CinderContentChange(WorkflowEventSendMixin, CinderEntity):
+    type = 'amo_content_change'
+    queue_suffix = CinderAddonContentReview.queue_suffix
+    workflow_name = CinderAddonContentReview.workflow_name
+
+    def __init__(self, addon, field, changes):
+        self.entity = addon
+        self.field = field
+        self.changes = changes
+        self.datetime = datetime.now()
+
+    @property
+    def id(self):
+        return self.get_str(
+            f'{self.entity.id}-{self.field}-{int(self.datetime.timestamp())}'
+        )
+
+    def get_attributes(self):
+        return {
+            'id': self.id,
+            'datetime': self.get_str(self.datetime),
+            'reason': f'Addon {self.field} change',
+            'values_added': self.changes.get('added', []),
+            'values_removed': self.changes.get('removed', []),
+        }
+
+    def get_context_generator(self):
+        cinder_addon = CinderAddon(self.entity)
+        yield {
+            'entities': [cinder_addon.get_entity_data()],
+            'relationships': [
+                self.get_relationship_data(
+                    cinder_addon, 'amo_content_metadata_change_of'
+                ),
+            ],
+        }
+
+    def report(self, *args, **kwargs):
+        # It doesn't make sense to report this, it's a holder for metadata, not a real
+        # entity.
+        raise NotImplementedError
+
+    def appeal(self, *args, **kwargs):
+        # It doesn't make sense to appeal this, it's a holder for metadata, not a real
+        # entity.
         raise NotImplementedError

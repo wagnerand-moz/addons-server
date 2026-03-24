@@ -24,13 +24,15 @@ from olympia.reviewers.models import NeedsHumanReview, ReviewActionReason, Usage
 from olympia.versions.models import Version
 from olympia.zadmin.models import set_config
 
-from ..cinder import CinderAddon
+from ..cinder import CinderAddon, CinderAddonContentReview
 from ..models import AbuseReport, CinderJob, CinderPolicy, ContentDecision
 from ..tasks import (
     appeal_to_cinder,
     flag_high_abuse_reports_addons_according_to_review_tier,
     report_decision_to_cinder_and_notify,
     report_to_cinder,
+    submit_addon_change_for_content_review,
+    submit_addon_for_content_review,
     sync_cinder_policies,
 )
 
@@ -262,7 +264,7 @@ def test_block_high_abuse_reports_addons_according_to_review_tier():
     )
     responses.add_callback(
         responses.POST,
-        f'{settings.CINDER_SERVER_URL}create_decision',
+        f'{settings.CINDER_SERVER_URL}v1/create_decision',
         callback=lambda r: (201, {}, json.dumps({'uuid': uuid.uuid4().hex})),
     )
 
@@ -307,7 +309,7 @@ def test_addon_report_to_cinder(statsd_incr_mock):
     assert not CinderJob.objects.exists()
     responses.add(
         responses.POST,
-        f'{settings.CINDER_SERVER_URL}create_report',
+        f'{settings.CINDER_SERVER_URL}v1/create_report',
         json={'job_id': '1234-xyz'},
         status=201,
     )
@@ -394,7 +396,7 @@ def test_addon_report_to_cinder_exception(log_exception_mock, statsd_incr_mock):
     assert not CinderJob.objects.exists()
     responses.add(
         responses.POST,
-        f'{settings.CINDER_SERVER_URL}create_report',
+        f'{settings.CINDER_SERVER_URL}v1/create_report',
         json={'job_id': '1234-xyz'},
         status=500,
     )
@@ -433,7 +435,7 @@ def test_multiple_retries_with_exceptions_on_first_and_seventh_retry(
     )
     responses.add(
         responses.POST,
-        f'{settings.CINDER_SERVER_URL}create_report',
+        f'{settings.CINDER_SERVER_URL}v1/create_report',
         json={'job_id': '1234-xyz'},
         status=500,
     )
@@ -474,7 +476,7 @@ def test_addon_report_to_cinder_different_locale():
     assert not CinderJob.objects.exists()
     responses.add(
         responses.POST,
-        f'{settings.CINDER_SERVER_URL}create_report',
+        f'{settings.CINDER_SERVER_URL}v1/create_report',
         json={'job_id': '1234-xyz'},
         status=201,
     )
@@ -559,13 +561,13 @@ def test_addon_report_with_additional_context_no_retry(statsd_incr_mock):
     )
     responses.add(
         responses.POST,
-        f'{settings.CINDER_SERVER_URL}create_report',
+        f'{settings.CINDER_SERVER_URL}v1/create_report',
         json={'job_id': '1234-xyz'},
         status=201,
     )
     additional = responses.add(
         responses.POST,
-        f'{settings.CINDER_SERVER_URL}graph/',
+        f'{settings.CINDER_SERVER_URL}v1/graph/',
         status=400,
     )
     statsd_incr_mock.reset_mock()
@@ -603,7 +605,7 @@ def test_addon_appeal_to_cinder_reporter(statsd_incr_mock):
     )
     responses.add(
         responses.POST,
-        f'{settings.CINDER_SERVER_URL}appeal',
+        f'{settings.CINDER_SERVER_URL}v1/appeal',
         json={'external_id': '2432615184-xyz'},
         status=201,
     )
@@ -668,7 +670,7 @@ def test_addon_appeal_to_cinder_reporter_exception(
     )
     responses.add(
         responses.POST,
-        f'{settings.CINDER_SERVER_URL}appeal',
+        f'{settings.CINDER_SERVER_URL}v1/appeal',
         json={'external_id': '2432615184-xyz'},
         status=500,
     )
@@ -718,7 +720,7 @@ def test_addon_appeal_to_cinder_authenticated_reporter():
     )
     responses.add(
         responses.POST,
-        f'{settings.CINDER_SERVER_URL}appeal',
+        f'{settings.CINDER_SERVER_URL}v1/appeal',
         json={'external_id': '2432615184-xyz'},
         status=201,
     )
@@ -768,7 +770,7 @@ def test_addon_appeal_to_cinder_authenticated_author():
     )
     responses.add(
         responses.POST,
-        f'{settings.CINDER_SERVER_URL}appeal',
+        f'{settings.CINDER_SERVER_URL}v1/appeal',
         json={'external_id': '2432615184-xyz'},
         status=201,
     )
@@ -814,7 +816,7 @@ def test_report_decision_to_cinder_and_notify_with_job():
     )
     responses.add(
         responses.POST,
-        f'{settings.CINDER_SERVER_URL}jobs/{cinder_job.job_id}/decision',
+        f'{settings.CINDER_SERVER_URL}v1/jobs/{cinder_job.job_id}/decision',
         json={'uuid': uuid.uuid4().hex},
         status=201,
     )
@@ -865,7 +867,7 @@ def test_report_decision_to_cinder_and_notify_with_job():
 def test_report_decision_to_cinder_and_notify():
     responses.add(
         responses.POST,
-        f'{settings.CINDER_SERVER_URL}create_decision',
+        f'{settings.CINDER_SERVER_URL}v1/create_decision',
         json={'uuid': uuid.uuid4().hex},
         status=201,
     )
@@ -914,7 +916,7 @@ def test_report_decision_to_cinder_and_notify():
 def test_report_decision_to_cinder_and_notify_dont_notify_owners():
     responses.add(
         responses.POST,
-        f'{settings.CINDER_SERVER_URL}create_decision',
+        f'{settings.CINDER_SERVER_URL}v1/create_decision',
         json={'uuid': uuid.uuid4().hex},
         status=201,
     )
@@ -969,7 +971,7 @@ def test_report_decision_to_cinder_and_notify_exception(
 ):
     responses.add(
         responses.POST,
-        f'{settings.CINDER_SERVER_URL}create_decision',
+        f'{settings.CINDER_SERVER_URL}v1/create_decision',
         json={'uuid': uuid.uuid4().hex},
         status=500,
     )
@@ -1001,7 +1003,7 @@ def test_report_decision_to_cinder_and_notify_exception(
 
 class TestSyncCinderPolicies(TestCase):
     def setUp(self):
-        self.url = f'{settings.CINDER_SERVER_URL}policies'
+        self.url = f'{settings.CINDER_SERVER_URL}v1/policies'
         self.policy = {
             'uuid': 'test-uuid',
             'name': 'test-name',
@@ -1304,3 +1306,61 @@ class TestSyncCinderPolicies(TestCase):
             'amo-approve',
             'amo-ban-user',
         ]
+
+
+@pytest.mark.django_db
+@mock.patch.object(CinderAddonContentReview, 'RELATIONSHIPS_BATCH_SIZE', 1)
+def test_submit_addon_for_content_review():
+    addon = addon_factory()
+    addon.authors.add(author1 := user_factory())
+    addon.authors.add(author2 := user_factory())
+    responses.add(
+        responses.POST,
+        f'{settings.CINDER_SERVER_URL}v2/workflows/event',
+        json={'status': 'ok', 'event_id': '1234-xyz'},
+        status=200,
+    )
+    responses.add(
+        responses.POST,
+        f'{settings.CINDER_SERVER_URL}v1/graph/',
+        status=202,
+    )
+
+    submit_addon_for_content_review.delay(addon_pk=addon.id)
+
+    assert len(responses.calls) == 2
+    event_call = json.loads(responses.calls[0].request.body)
+    assert event_call['event_name'] == CinderAddonContentReview.workflow_name
+    assert event_call['subgraph']['entities'][0]['attributes']['id'] == str(author1.id)
+
+    additional_call = json.loads(responses.calls[1].request.body)
+    assert additional_call['entities'][0]['attributes']['id'] == str(author2.id)
+
+
+@pytest.mark.django_db
+def test_submit_addon_change_for_content_review():
+    addon = addon_factory()
+    activity = ActivityLog.objects.create(
+        amo.LOG.EDIT_ADDON_PROPERTY,
+        addon,
+        'name',
+        '{"added": ["a new name"], "removed": ["an old name"]}',
+        user=user_factory(),
+    )
+    responses.add(
+        responses.POST,
+        f'{settings.CINDER_SERVER_URL}v2/workflows/event',
+        json={'status': 'ok', 'event_id': '1234-xyz'},
+        status=200,
+    )
+
+    submit_addon_change_for_content_review.delay(activity_log_pk=activity.id)
+
+    assert len(responses.calls) == 1
+    event_call = json.loads(responses.calls[0].request.body)
+    assert event_call['event_name'] == CinderAddonContentReview.workflow_name
+    assert event_call['entity']['entity_schema'] == 'amo_content_change'
+    assert event_call['entity']['attributes']['reason'] == 'Addon name change'
+    assert event_call['entity']['attributes']['values_added'] == ['a new name']
+    assert event_call['entity']['attributes']['values_removed'] == ['an old name']
+    assert event_call['subgraph']['entities'][0]['attributes']['id'] == str(addon.id)
