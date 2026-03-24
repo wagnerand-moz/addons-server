@@ -2322,7 +2322,7 @@ msgstr "De gamle innloggingsopplysningene dine er tilbakekalt og er ikke lenger 
 
 #: src/olympia/devhub/views.py:2151
 msgid "New API credentials have been generated and are displayed below. Make sure to copy the JWT secret, it will never be displayed again."
-msgstr ""
+msgstr "Nye API-innloggingsdetaljer er generert og vises nedenfor. Sørg for å kopiere JWT-hemmeligheten, den vil aldri bli vist igjen."
 
 #: src/olympia/devhub/views.py:2175
 msgid "New API key created"
@@ -3342,7 +3342,7 @@ msgstr "Er det noe våre gjennomgangspersoner bør ha i tankene når de gjennomg
 
 #: src/olympia/devhub/templates/devhub/addons/submit/describe.html:213 src/olympia/devhub/templates/devhub/addons/submit/describe_minimal.html:26
 msgid "Important"
-msgstr ""
+msgstr "Viktig"
 
 #: src/olympia/devhub/templates/devhub/addons/submit/describe.html:214 src/olympia/devhub/templates/devhub/addons/submit/describe_minimal.html:27
 #, python-format
@@ -3350,6 +3350,8 @@ msgid ""
 "Read our %(policy_requirements_open)spolicy requirements%(policy_requirements_close)s regarding build processes and source code submission. If your submission requires source code, you must provide "
 "step-by-step build instructions, either inside the source code package or here, that will create an exact copy of the code."
 msgstr ""
+"Les våre %(policy_requirements_open)spolicykrav%(policy_requirements_close)s for byggeprosesser og innsending av kildekode. Hvis innsendingen din krever kildekode, må du oppgi trinnvise "
+"byggeinstruksjoner, enten i kildekodepakken eller her, som vil lage en nøyaktig kopi av koden."
 
 #: src/olympia/devhub/templates/devhub/addons/submit/describe.html:224 src/olympia/devhub/templates/devhub/addons/submit/describe_minimal.html:37
 msgid "These notes will only be visible to you and our reviewers."
