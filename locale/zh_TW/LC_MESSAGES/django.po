@@ -3302,14 +3302,14 @@ msgstr "還有沒有什麼審核者進行審核時需注意的事項？"
 
 #: src/olympia/devhub/templates/devhub/addons/submit/describe.html:213 src/olympia/devhub/templates/devhub/addons/submit/describe_minimal.html:26
 msgid "Important"
-msgstr ""
+msgstr "重要"
 
 #: src/olympia/devhub/templates/devhub/addons/submit/describe.html:214 src/olympia/devhub/templates/devhub/addons/submit/describe_minimal.html:27
 #, python-format
 msgid ""
 "Read our %(policy_requirements_open)spolicy requirements%(policy_requirements_close)s regarding build processes and source code submission. If your submission requires source code, you must provide "
 "step-by-step build instructions, either inside the source code package or here, that will create an exact copy of the code."
-msgstr ""
+msgstr "請閱讀我們有關編譯過程與原始碼送審的%(policy_requirements_open)s政策規範%(policy_requirements_close)s。若您送審的內容需要包含原始碼，必須於原始碼套件或此處提供能產生完全相同的程式的逐步編譯教學。"
 
 #: src/olympia/devhub/templates/devhub/addons/submit/describe.html:224 src/olympia/devhub/templates/devhub/addons/submit/describe_minimal.html:37
 msgid "These notes will only be visible to you and our reviewers."
