@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: addons-server 1.0\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2026-03-19 18:26+0000\n"
+"POT-Creation-Date: 2026-03-24 12:04+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -571,7 +571,7 @@ msgstr ""
 
 #: src/olympia/amo/context_processors.py:79
 #: src/olympia/devhub/templates/devhub/new-landing/components/dev_footer.html:20
-#: src/olympia/devhub/views.py:2161
+#: src/olympia/devhub/views.py:2160
 msgid "Manage API Keys"
 msgstr ""
 
@@ -2531,41 +2531,41 @@ msgstr ""
 msgid "Add-on uploads are temporarily unavailable"
 msgstr ""
 
-#: src/olympia/devhub/views.py:2021
+#: src/olympia/devhub/views.py:2020
 msgid "Review requested."
 msgstr ""
 
-#: src/olympia/devhub/views.py:2023
+#: src/olympia/devhub/views.py:2022
 msgid "You must provide further details to proceed."
 msgstr ""
 
-#: src/olympia/devhub/views.py:2136
+#: src/olympia/devhub/views.py:2135
 msgid "Your old credentials were revoked and are no longer valid."
 msgstr ""
 
-#: src/olympia/devhub/views.py:2155
+#: src/olympia/devhub/views.py:2154
 msgid ""
 "Keep your API keys secret and never share them with anyone, including Mozilla"
 " contributors."
 msgstr ""
 
-#: src/olympia/devhub/views.py:2172
+#: src/olympia/devhub/views.py:2171
 msgid "New API key created"
 msgstr ""
 
-#: src/olympia/devhub/views.py:2183
+#: src/olympia/devhub/views.py:2182
 msgid "API key revoked"
 msgstr ""
 
-#: src/olympia/devhub/views.py:2243
+#: src/olympia/devhub/views.py:2242
 msgid "Verify email"
 msgstr ""
 
-#: src/olympia/devhub/views.py:2245
+#: src/olympia/devhub/views.py:2244
 msgid "Send another email"
 msgstr ""
 
-#: src/olympia/devhub/views.py:2278
+#: src/olympia/devhub/views.py:2277
 msgid "Your email has been verified"
 msgstr ""
 
@@ -3594,8 +3594,8 @@ msgid "Submit a New Version"
 msgstr ""
 
 #: src/olympia/devhub/templates/devhub/addons/submit/base.html:33
-#: src/olympia/devhub/templates/devhub/addons/submit/describe.html:237
-#: src/olympia/devhub/templates/devhub/addons/submit/describe_minimal.html:49
+#: src/olympia/devhub/templates/devhub/addons/submit/describe.html:236
+#: src/olympia/devhub/templates/devhub/addons/submit/describe_minimal.html:48
 #: src/olympia/devhub/templates/devhub/addons/submit/source.html:92
 msgid "Cancel and Disable Version"
 msgstr ""
@@ -3710,28 +3710,29 @@ msgid ""
 "on?"
 msgstr ""
 
+#: src/olympia/devhub/templates/devhub/addons/submit/describe.html:213
+#: src/olympia/devhub/templates/devhub/addons/submit/describe_minimal.html:26
+msgid "Important"
+msgstr ""
+
 #: src/olympia/devhub/templates/devhub/addons/submit/describe.html:214
 #: src/olympia/devhub/templates/devhub/addons/submit/describe_minimal.html:27
-msgid "Remember"
-msgstr ""
-
-#: src/olympia/devhub/templates/devhub/addons/submit/describe.html:215
-#: src/olympia/devhub/templates/devhub/addons/submit/describe_minimal.html:28
 #, python-format
 msgid ""
-"If you submitted source code, but did not include instructions, you must "
-"provide them here. Enter step-by-step build instructions to create an exact "
-"copy of the add-on code, per %(policy_requirements_open)spolicy "
-"requirements%(policy_requirements_close)s."
+"Read our %(policy_requirements_open)spolicy "
+"requirements%(policy_requirements_close)s regarding build processes and "
+"source code submission. If your submission requires source code, you must "
+"provide step-by-step build instructions, either inside the source code "
+"package or here, that will create an exact copy of the code."
 msgstr ""
 
-#: src/olympia/devhub/templates/devhub/addons/submit/describe.html:225
-#: src/olympia/devhub/templates/devhub/addons/submit/describe_minimal.html:38
+#: src/olympia/devhub/templates/devhub/addons/submit/describe.html:224
+#: src/olympia/devhub/templates/devhub/addons/submit/describe_minimal.html:37
 msgid "These notes will only be visible to you and our reviewers."
 msgstr ""
 
-#: src/olympia/devhub/templates/devhub/addons/submit/describe.html:230
-#: src/olympia/devhub/templates/devhub/addons/submit/describe_minimal.html:42
+#: src/olympia/devhub/templates/devhub/addons/submit/describe.html:229
+#: src/olympia/devhub/templates/devhub/addons/submit/describe_minimal.html:41
 msgid "Submit Version"
 msgstr ""
 
