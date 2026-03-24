@@ -2320,7 +2320,7 @@ msgstr "Dei gamle innloggingsopplysningane dine er tilbakekalla og gjeld ikkje l
 
 #: src/olympia/devhub/views.py:2151
 msgid "New API credentials have been generated and are displayed below. Make sure to copy the JWT secret, it will never be displayed again."
-msgstr ""
+msgstr "Nye API-Innloggingsdetaljer er genererte og blir vist nedanfor. Sørg for å kopiere JWT-løyndommen, han vil aldri visast igjen."
 
 #: src/olympia/devhub/views.py:2175
 msgid "New API key created"
@@ -3650,7 +3650,7 @@ msgstr ""
 
 #: src/olympia/devhub/templates/devhub/api/key.html:25
 msgid "Keep your API keys secret and never share them with anyone, including Mozilla staff or contributors."
-msgstr ""
+msgstr "Hald API-nøklane dine hemmelege og del dei aldri med nokon, inkludert Mozilla-staben eller bidragsytarar."
 
 #: src/olympia/devhub/templates/devhub/api/key.html:33
 msgid "JWT issuer"
