@@ -428,7 +428,7 @@ msgstr "Druhe"
 
 #: static/js/zamboni/devhub.js:199
 msgid "Copied"
-msgstr ""
+msgstr "Kopěrowany"
 
 #: static/js/zamboni/devhub.js:325
 msgid "Changes Saved"
