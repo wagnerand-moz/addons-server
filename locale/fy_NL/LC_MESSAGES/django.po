@@ -3346,7 +3346,7 @@ msgstr "Is der earne wat ús beoardielers yn tinzen hâlde moatte by de beoardie
 
 #: src/olympia/devhub/templates/devhub/addons/submit/describe.html:213 src/olympia/devhub/templates/devhub/addons/submit/describe_minimal.html:26
 msgid "Important"
-msgstr ""
+msgstr "Wichtich"
 
 #: src/olympia/devhub/templates/devhub/addons/submit/describe.html:214 src/olympia/devhub/templates/devhub/addons/submit/describe_minimal.html:27
 #, python-format
@@ -3354,6 +3354,8 @@ msgid ""
 "Read our %(policy_requirements_open)spolicy requirements%(policy_requirements_close)s regarding build processes and source code submission. If your submission requires source code, you must provide "
 "step-by-step build instructions, either inside the source code package or here, that will create an exact copy of the code."
 msgstr ""
+"Lês ús %(policy_requirements_open)sbeliedsfereasken%(policy_requirements_close)s mei betrekking ta buildprosessen en it yntsjinjen fan boarnekoade. As jo ynstjoering boarnekoade fereasket, moatte jo"
+" stap-foar-stap buildynstruksjes opjaan, yn it boarnekoadepakket of hjir, dy’t in eksakte kopy fan de koade meitsje."
 
 #: src/olympia/devhub/templates/devhub/addons/submit/describe.html:224 src/olympia/devhub/templates/devhub/addons/submit/describe_minimal.html:37
 msgid "These notes will only be visible to you and our reviewers."
