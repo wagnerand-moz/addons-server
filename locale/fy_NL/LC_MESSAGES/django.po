@@ -3659,7 +3659,7 @@ msgstr ""
 
 #: src/olympia/devhub/templates/devhub/api/key.html:25
 msgid "Keep your API keys secret and never share them with anyone, including Mozilla staff or contributors."
-msgstr ""
+msgstr "Hâld jo API-kaaien geheim en diel se nea mei oaren, ek net mei Mozilla-wurknimmers of -meiwurkers."
 
 #: src/olympia/devhub/templates/devhub/api/key.html:33
 msgid "JWT issuer"
