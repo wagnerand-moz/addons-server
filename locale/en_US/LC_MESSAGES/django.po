@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version:  addons\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2026-03-24 15:03+0000\n"
+"POT-Creation-Date: 2026-03-25 09:51+0000\n"
 "PO-Revision-Date: 2009-02-26 15:08-0800\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -3239,6 +3239,18 @@ msgstr "Developer News"
 msgid "View the blog &#9658;"
 msgstr "View the blog &#9658;"
 
+msgid "Our review found that your listing content violates the following Mozilla policy or policies:"
+msgstr "Our review found that your listing content violates the following Mozilla policy or policies:"
+
+msgid "To address these issues, please update your listing and request another review of the content."
+msgstr "To address these issues, please update your listing and request another review of the content."
+
+msgid "Review requested already, awaiting review"
+msgstr "Review requested already, awaiting review"
+
+msgid "I confirm I have addressed the issues, and request a review"
+msgstr "I confirm I have addressed the issues, and request a review"
+
 #, fuzzy
 msgid "Version Signature Pending"
 msgstr "Version Notes"
@@ -3259,14 +3271,6 @@ msgstr "Sort by:"
 msgid "Listing visibility"
 msgstr "Addon visibility"
 
-#, python-brace-format
-msgid ""
-"{label_open}Listing Content Rejected:{label_close} Won't be included in search results, and its product page will be unavailable. New listed version submissions won't be accepted in this state, but "
-"existing versions awaiting review will be reviewed, and approved versions remain usable by existing users."
-msgstr ""
-"{label_open}Listing Content Rejected:{label_close} Won't be included in search results, and its product page will be unavailable. New listed version submissions won't be accepted in this state, but "
-"existing versions awaiting review will be reviewed, and approved versions remain usable by existing users."
-
 #, fuzzy, python-brace-format
 msgid "{label_open}Visible:{label_close} Visible to everyone on {site_url} and included in search results and product pages."
 msgstr "Visible to everyone on {0} and included in search results and listing pages"
@@ -3275,18 +3279,6 @@ msgstr "Visible to everyone on {0} and included in search results and listing pa
 msgid ""
 "{label_open}Invisible:{label_close} Won't be included in search results, and its product page will indicate you disabled it. New version submissions for product won't be accepted in this state."
 msgstr "Won't be included in search results, and its listing page will indicate you disabled it. New version submissions for listing won't be accepted in this state."
-
-msgid "Our review found that your listing content violates the following Mozilla policy or policies:"
-msgstr "Our review found that your listing content violates the following Mozilla policy or policies:"
-
-msgid "To address these issues, please update your listing and request another review of the content."
-msgstr "To address these issues, please update your listing and request another review of the content."
-
-msgid "Review requested already, awaiting review"
-msgstr "Review requested already, awaiting review"
-
-msgid "I confirm I have addressed the issues, and request a review"
-msgstr "I confirm I have addressed the issues, and request a review"
 
 msgid "Some Markdown supported."
 msgstr "Some Markdown supported."
