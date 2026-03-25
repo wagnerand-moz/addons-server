@@ -2324,7 +2324,7 @@ msgstr "Vaše stará pověření byla zenplatněna."
 
 #: src/olympia/devhub/views.py:2131
 msgid "New API credentials have been generated and are displayed below. Make sure to copy the JWT secret, it will never be displayed again."
-msgstr ""
+msgstr "Byly vygenerovány nové přihlašovací údaje k API, které jsou uvedeny níže. Nezapomeňte si zkopírovat tajný klíč JWT, protože se již nikdy nezobrazí."
 
 #: src/olympia/devhub/views.py:2155
 msgid "New API key created"
