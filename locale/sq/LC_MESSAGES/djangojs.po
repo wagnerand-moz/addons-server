@@ -417,7 +417,7 @@ msgstr "Tjetër"
 
 #: static/js/zamboni/devhub.js:199
 msgid "Copied"
-msgstr ""
+msgstr "U kopjua"
 
 #: static/js/zamboni/devhub.js:325
 msgid "Changes Saved"

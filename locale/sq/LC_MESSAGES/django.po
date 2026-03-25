@@ -1286,7 +1286,7 @@ msgstr "U përpunua vetia {addon} {0}"
 #: src/olympia/constants/activity.py:1256
 #, python-brace-format
 msgid "Collection {0} property {1} updated."
-msgstr ""
+msgstr "U përditësua vetia {1} e koleksionit {0}."
 
 #: src/olympia/constants/activity.py:1263
 #, python-brace-format
