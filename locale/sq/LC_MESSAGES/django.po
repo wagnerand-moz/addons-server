@@ -1291,7 +1291,7 @@ msgstr "U përditësua vetia {1} e koleksionit {0}."
 #: src/olympia/constants/activity.py:1263
 #, python-brace-format
 msgid "Account {user} property {0} updated."
-msgstr ""
+msgstr "U përditësua vetia {0} e llogarisë {user}."
 
 #: src/olympia/constants/activity.py:1280
 #, python-brace-format
@@ -3345,7 +3345,7 @@ msgstr "Ka ndonjë gjë që duhet ta kenë parasysh shqyrtuesit tanë kur të sh
 
 #: src/olympia/devhub/templates/devhub/addons/submit/describe.html:213 src/olympia/devhub/templates/devhub/addons/submit/describe_minimal.html:26
 msgid "Important"
-msgstr ""
+msgstr "E rëndësishme"
 
 #: src/olympia/devhub/templates/devhub/addons/submit/describe.html:214 src/olympia/devhub/templates/devhub/addons/submit/describe_minimal.html:27
 #, python-format
@@ -3353,6 +3353,8 @@ msgid ""
 "Read our %(policy_requirements_open)spolicy requirements%(policy_requirements_close)s regarding build processes and source code submission. If your submission requires source code, you must provide "
 "step-by-step build instructions, either inside the source code package or here, that will create an exact copy of the code."
 msgstr ""
+"Lexoni %(policy_requirements_open)sdomosdoshmëri rregullash tona%(policy_requirements_close)s lidhur me procese montimi dhe parashtrime kodi burim. Nëse parashtrimi juaj lyp kod burim, duhet të "
+"jepni udhëzime montimi hap pas hap, ose brenda paketë së kodit burim, ose këtu, që do të krijonte një kopje të saktë të kodit."
 
 #: src/olympia/devhub/templates/devhub/addons/submit/describe.html:224 src/olympia/devhub/templates/devhub/addons/submit/describe_minimal.html:37
 msgid "These notes will only be visible to you and our reviewers."
@@ -3653,6 +3655,8 @@ msgid ""
 "To execute authenticated calls against the <a %(a_attrs)s href=\"%(docs_url)s\">API</a> as an external consumer, you need to include a <a %(a_attrs)s href=\"%(jwt_url)s\">JSON Web Token (JWT)</a> in"
 " the <code>Authorization</code> header for every request."
 msgstr ""
+"Që të ekzekutoni thirrje të mirëfilltësuara kundrejt <a %(a_attrs)s href=\"%(docs_url)s\">API</a>-t si një klient i jashtëm, duhet të përfshini një <a %(a_attrs)s href=\"%(jwt_url)s\">JSON Web Token"
+" (JWT)</a> te kryet e <code>Autorizimit</code> për secilën kërkesë."
 
 #: src/olympia/devhub/templates/devhub/api/key.html:25
 msgid "Keep your API keys secret and never share them with anyone, including Mozilla staff or contributors."
