@@ -3653,10 +3653,12 @@ msgid ""
 "To execute authenticated calls against the <a %(a_attrs)s href=\"%(docs_url)s\">API</a> as an external consumer, you need to include a <a %(a_attrs)s href=\"%(jwt_url)s\">JSON Web Token (JWT)</a> in"
 " the <code>Authorization</code> header for every request."
 msgstr ""
+"Chcete-li jako externí uživatel provádět ověřené volání <a %(a_attrs)s href=\"%(docs_url)s\">API</a>, musíte do hlavičky <code>Authorization</code> každého požadavku zahrnout <a %(a_attrs)s "
+"href=\"%(jwt_url)s\">JSON Web Token (JWT)</a>."
 
 #: src/olympia/devhub/templates/devhub/api/key.html:25
 msgid "Keep your API keys secret and never share them with anyone, including Mozilla staff or contributors."
-msgstr ""
+msgstr "Své klíče API uchovávejte v tajnosti a nikdy je nikomu nesdělujte, a to ani zaměstnancům společnosti Mozilla ani jejím přispěvatelům."
 
 #: src/olympia/devhub/templates/devhub/api/key.html:33
 msgid "JWT issuer"
@@ -6487,11 +6489,11 @@ msgstr "Ohodnoceno %(rating)s z 5 hvězdiček"
 
 #: src/olympia/scanners/templates/admin/scanners/scannerresult/pagination.html:11
 msgid "Show all"
-msgstr ""
+msgstr "Zobrazit vše"
 
 #: src/olympia/scanners/templates/admin/scanners/scannerresult/pagination.html:12
 msgid "Save"
-msgstr ""
+msgstr "Uložit"
 
 #: src/olympia/search/filters.py:49 src/olympia/search/filters.py:62 src/olympia/search/filters.py:95 src/olympia/search/filters.py:170 src/olympia/search/filters.py:210
 #: src/olympia/search/filters.py:356 src/olympia/search/filters.py:467
