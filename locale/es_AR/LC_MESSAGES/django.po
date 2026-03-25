@@ -1861,7 +1861,7 @@ msgstr "La categoría miscelánea no puede combinarse con categorías adicionale
 
 #: src/olympia/devhub/forms.py:246 src/olympia/devhub/forms.py:1360
 msgid "There was an error uploading your image."
-msgstr ""
+msgstr "Hubo un error al subir la imagen."
 
 #: src/olympia/devhub/forms.py:300
 #, python-format
@@ -3366,7 +3366,7 @@ msgstr "¿Hay algo que tengan que tener en cuenta los revisores al verificar est
 
 #: src/olympia/devhub/templates/devhub/addons/submit/describe.html:213 src/olympia/devhub/templates/devhub/addons/submit/describe_minimal.html:26
 msgid "Important"
-msgstr ""
+msgstr "Importante"
 
 #: src/olympia/devhub/templates/devhub/addons/submit/describe.html:214 src/olympia/devhub/templates/devhub/addons/submit/describe_minimal.html:27
 #, python-format
@@ -3674,10 +3674,12 @@ msgid ""
 "To execute authenticated calls against the <a %(a_attrs)s href=\"%(docs_url)s\">API</a> as an external consumer, you need to include a <a %(a_attrs)s href=\"%(jwt_url)s\">JSON Web Token (JWT)</a> in"
 " the <code>Authorization</code> header for every request."
 msgstr ""
+"Para ejecutar llamadas autenticadas contra la <a %(a_attrs)s href=\"%(docs_url)s\">API</a> como un consumidor externo, se debe incluir un <a %(a_attrs)s href=\"%(jwt_url)s\">JSON Web Token (JWT)</a>"
+" en el encabezado <code>Authorization</code> para cada pedido."
 
 #: src/olympia/devhub/templates/devhub/api/key.html:25
 msgid "Keep your API keys secret and never share them with anyone, including Mozilla staff or contributors."
-msgstr ""
+msgstr "Mantené en secreto tus claves de API y nunca las compartás con nadie, ni siquiera con los empleados o colaboradores de Mozilla."
 
 #: src/olympia/devhub/templates/devhub/api/key.html:33
 msgid "JWT issuer"
@@ -4039,7 +4041,7 @@ msgstr ""
 
 #: src/olympia/devhub/templates/devhub/includes/listing_visibility.html:59
 msgid "I confirm I have addressed the issues, and request a review"
-msgstr ""
+msgstr "Confirmo que he solucionado los problemas y solicito una revisión"
 
 #: src/olympia/devhub/templates/devhub/includes/macros.html:5
 msgid "Some Markdown supported."
