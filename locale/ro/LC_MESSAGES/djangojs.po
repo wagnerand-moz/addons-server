@@ -422,7 +422,7 @@ msgstr "Altele"
 
 #: static/js/zamboni/devhub.js:199
 msgid "Copied"
-msgstr ""
+msgstr "Copiat"
 
 #: static/js/zamboni/devhub.js:325
 msgid "Changes Saved"
