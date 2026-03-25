@@ -48,9 +48,6 @@ class TestVersion(TestCase):
         self.url = self.addon.get_dev_url('versions')
         self.disable_url = self.addon.get_dev_url('disable')
         self.enable_url = self.addon.get_dev_url('enable')
-        self.request_content_review_url = self.addon.get_dev_url(
-            'rejected_review_request'
-        )
         self.delete_url = reverse('devhub.versions.delete', args=['a3615'])
         self.delete_data = {'addon_id': self.addon.pk, 'version_id': self.version.pk}
 
@@ -476,86 +473,7 @@ class TestVersion(TestCase):
         response = self.client.get(self.url)
         assert response.status_code == 403
 
-    def test_owner_can_request_listing_content_review(self):
-        self.addon.update(status=amo.STATUS_REJECTED)
-        AddonApprovalsCounter.objects.update_or_create(
-            addon=self.addon,
-            defaults={
-                'content_review_status': (
-                    AddonApprovalsCounter.CONTENT_REVIEW_STATUSES.FAIL
-                )
-            },
-        )
-
-        response = self.client.post(self.request_content_review_url)
-        self.assert3xx(response, self.url, 302)
-        addon = self.get_addon()
-        assert (
-            addon.addonapprovalscounter.content_review_status
-            == AddonApprovalsCounter.CONTENT_REVIEW_STATUSES.REQUESTED
-        )
-        assert addon.status == amo.STATUS_REJECTED  # no change
-
-        entry = ActivityLog.objects.exclude(action=amo.LOG.LOG_IN.id).get()
-        assert entry.action == amo.LOG.REJECTED_LISTING_REVIEW_REQUEST.id
-        assert str(self.addon.name) in entry.to_string()
-
-    def test_non_owner_cannot_request_listing_content_review(self):
-        self.addon.update(status=amo.STATUS_REJECTED)
-        AddonApprovalsCounter.objects.update_or_create(
-            addon=self.addon,
-            defaults={
-                'content_review_status': (
-                    AddonApprovalsCounter.CONTENT_REVIEW_STATUSES.FAIL
-                )
-            },
-        )
-        self.client.logout()
-        self.client.force_login(UserProfile.objects.get(email='regular@mozilla.com'))
-        response = self.client.post(self.request_content_review_url)
-        assert response.status_code == 403
-        assert (
-            self.addon.addonapprovalscounter.content_review_status
-            == AddonApprovalsCounter.CONTENT_REVIEW_STATUSES.FAIL
-        )
-
-    def test_unpriviledged_user_cannot_request_listing_content_review(self):
-        self.addon.update(status=amo.STATUS_REJECTED)
-        AddonApprovalsCounter.objects.update_or_create(
-            addon=self.addon,
-            defaults={
-                'content_review_status': (
-                    AddonApprovalsCounter.CONTENT_REVIEW_STATUSES.FAIL
-                )
-            },
-        )
-        self.client.logout()
-        response = self.client.post(self.request_content_review_url)
-        assert response.status_code == 302
-        assert (
-            self.addon.addonapprovalscounter.content_review_status
-            == AddonApprovalsCounter.CONTENT_REVIEW_STATUSES.FAIL
-        )
-
-    def test_user_cannot_request_review_of_non_rejected_listing(self):
-        self.addon.update(status=amo.STATUS_APPROVED)
-        AddonApprovalsCounter.objects.update_or_create(
-            addon=self.addon,
-            defaults={
-                'content_review_status': (
-                    AddonApprovalsCounter.CONTENT_REVIEW_STATUSES.PASS
-                )
-            },
-        )
-
-        response = self.client.post(self.request_content_review_url)
-        assert response.status_code == 404
-        assert (
-            self.addon.addonapprovalscounter.content_review_status
-            == AddonApprovalsCounter.CONTENT_REVIEW_STATUSES.PASS
-        )
-
-    def _check_visible_addon_radio(self, label_text):
+    def test_published_addon_radio(self):
         """Published (listed) addon is selected: can hide or publish."""
         self.addon.update(disabled_by_user=False)
         response = self.client.get(self.url)
@@ -563,18 +481,17 @@ class TestVersion(TestCase):
         assert doc('.enable-addon').attr('checked') == 'checked'
         enable_url = self.addon.get_dev_url('enable')
         assert doc('.enable-addon').attr('data-url') == enable_url
-        assert doc('.enable-addon + *').text() == label_text
         assert not doc('.enable-addon').attr('disabled')
         assert doc('#modal-disable')
         assert not doc('.disable-addon').attr('checked')
         assert not doc('.disable-addon').attr('disabled')
 
-    def test_published_addon_radio(self):
-        self._check_visible_addon_radio('Visible:')
-
     def test_published_addon_radio_rejected(self):
         self.addon.update(status=amo.STATUS_REJECTED)
-        self._check_visible_addon_radio('Listing Content Rejected:')
+        response = self.client.get(self.url)
+        doc = pq(response.content)
+        assert not doc('.enable-addon')
+        assert not doc('.disable-addon')
 
     def test_hidden_addon_radio(self):
         """Hidden (disabled) addon is selected: can hide or publish."""
@@ -651,12 +568,13 @@ class TestVersion(TestCase):
             'Acceptable Use, specifically ' in div('div.rejection-policies li').text()
         )
         assert 'Manual words' in div('span.manual-reasoning').text()
-        assert 'I confirm I ' in div('.request-review button').text()
-        assert 'awaiting review' not in div('.request-review button').text()
-        assert div('button.rejected-review-request').attr('disabled') != 'disabled'
-        assert (
-            div('button.rejected-review-request').attr('data-url')
-            == self.request_content_review_url
+        # Confirming you've addressed the issues is not done on this page
+        assert 'I confirm I have addressed' not in div('.request-review button').text()
+        assert 'already, awaiting review' not in div('.request-review button').text()
+        assert not div('button.rejected-review-request')
+        assert div('a.button').text() == 'Edit Product Page'
+        assert div('a.button')[0].attrib['href'] == (
+            reverse('devhub.addons.edit', args=['a3615'])
         )
 
         aac.update(
@@ -665,9 +583,11 @@ class TestVersion(TestCase):
             )
         )
         response = self.client.get(self.url)
-        div = pq(response.content)('#content-review-rejection')
-        assert 'I confirm I ' not in div('.request-review button').text()
-        assert 'awaiting review' in div('.request-review button').text()
+        doc = pq(response.content)
+        div = doc('#content-review-rejection')
+        assert 'I confirm I have addressed' not in div('.request-review button').text()
+        assert 'Edit Product Page' not in div('.request-review a.button').text()
+        assert 'already, awaiting review' in div('.request-review button').text()
         assert not div('button.rejected-review-request')
 
     def test_cancel_get(self):
