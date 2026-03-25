@@ -1869,7 +1869,7 @@ msgstr "Categoria de diverse nu poate fi combinată cu categorii suplimentare."
 
 #: src/olympia/devhub/forms.py:246 src/olympia/devhub/forms.py:1360
 msgid "There was an error uploading your image."
-msgstr ""
+msgstr "A apărut o eroare la încărcarea imaginii."
 
 #: src/olympia/devhub/forms.py:300
 #, python-format
@@ -2175,7 +2175,7 @@ msgstr "Denumirea URL era incorectă. Suplimentul nu a fost șters."
 
 #: src/olympia/devhub/views.py:436
 msgid "Request for a new review of listing content acknowledged."
-msgstr ""
+msgstr "Cerere confirmată pentru o verificare nouă a conținutului listării."
 
 #: src/olympia/devhub/views.py:480
 msgid "Invitation accepted."
@@ -2338,7 +2338,7 @@ msgstr "Datele tale vechi de autentificare au fost revocate și nu mai sunt vali
 
 #: src/olympia/devhub/views.py:2131
 msgid "New API credentials have been generated and are displayed below. Make sure to copy the JWT secret, it will never be displayed again."
-msgstr ""
+msgstr "Au fost generate credențiale API noi și sunt afișate mai jos. Asigură-te că ai copiat secretul JWT pentru că nu va mai fi afișat încă o dată."
 
 #: src/olympia/devhub/views.py:2155
 msgid "New API key created"
@@ -3363,7 +3363,7 @@ msgstr "E ceva de care revizorii noștri ar trebui să țină cont la analizarea
 
 #: src/olympia/devhub/templates/devhub/addons/submit/describe.html:213 src/olympia/devhub/templates/devhub/addons/submit/describe_minimal.html:26
 msgid "Important"
-msgstr ""
+msgstr "Important"
 
 #: src/olympia/devhub/templates/devhub/addons/submit/describe.html:214 src/olympia/devhub/templates/devhub/addons/submit/describe_minimal.html:27
 #, python-format
@@ -3371,6 +3371,8 @@ msgid ""
 "Read our %(policy_requirements_open)spolicy requirements%(policy_requirements_close)s regarding build processes and source code submission. If your submission requires source code, you must provide "
 "step-by-step build instructions, either inside the source code package or here, that will create an exact copy of the code."
 msgstr ""
+"Citește-ne %(policy_requirements_open)scerințele din politica%(policy_requirements_close)s privind procesele de compilare și trimiterea codului-sursă. Dacă depunerea necesită cod-sursă, trebuie să "
+"furnizezi instrucțiuni pas-cu-pas de compilare, fie în pachetul codului-sursă, fie aici, pentru crearea unei copii exacte a codului."
 
 #: src/olympia/devhub/templates/devhub/addons/submit/describe.html:224 src/olympia/devhub/templates/devhub/addons/submit/describe_minimal.html:37
 msgid "These notes will only be visible to you and our reviewers."
@@ -3671,10 +3673,12 @@ msgid ""
 "To execute authenticated calls against the <a %(a_attrs)s href=\"%(docs_url)s\">API</a> as an external consumer, you need to include a <a %(a_attrs)s href=\"%(jwt_url)s\">JSON Web Token (JWT)</a> in"
 " the <code>Authorization</code> header for every request."
 msgstr ""
+"Pentru executarea de apelări autentificate prin <a %(a_attrs)s href=\"%(docs_url)s\">API</a> în calitate de consumator extern, trebuie să incluzi un <a %(a_attrs)s href=\"%(jwt_url)s\">jeton web "
+"JSON (JWT)</a> în antetul <code>Autorizației</code> pentru fiecare cerere."
 
 #: src/olympia/devhub/templates/devhub/api/key.html:25
 msgid "Keep your API keys secret and never share them with anyone, including Mozilla staff or contributors."
-msgstr ""
+msgstr "Păstrează secrete cheile API și nu le divulga nimănui, nici măcar angajaților sau colaboratorilor Mozilla."
 
 #: src/olympia/devhub/templates/devhub/api/key.html:33
 msgid "JWT issuer"
@@ -3975,11 +3979,11 @@ msgstr "Vezi blogul &#9658;"
 
 #: src/olympia/devhub/templates/devhub/includes/content_rejected.html:2
 msgid "Our review found that your listing content violates the following Mozilla policy or policies:"
-msgstr ""
+msgstr "Analiza noastră a constatat că conținutul listării tale încalcă următoarea sau următoarele politici Mozilla:"
 
 #: src/olympia/devhub/templates/devhub/includes/content_rejected.html:14
 msgid "To address these issues, please update your listing and request another review of the content."
-msgstr ""
+msgstr "Pentru rezolvarea acestor aspecte, te rugăm să îți actualizezi listarea și să soliciți o altă verificare a conținutului."
 
 #: src/olympia/devhub/templates/devhub/includes/content_rejected.html:17
 msgid "Review requested already, awaiting review"
