@@ -422,7 +422,7 @@ msgstr "Inne"
 
 #: static/js/zamboni/devhub.js:196
 msgid "Copied"
-msgstr ""
+msgstr "Skopiowano"
 
 #: static/js/zamboni/devhub.js:322
 msgid "Changes Saved"
