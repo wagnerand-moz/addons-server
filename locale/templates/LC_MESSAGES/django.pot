@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: addons-server 1.0\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2026-03-25 09:51+0000\n"
+"POT-Creation-Date: 2026-03-25 15:04+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -7182,6 +7182,14 @@ msgstr ""
 #: src/olympia/ratings/templates/ratings/reviews_rating.html:4
 #, python-format
 msgid "Rated %(rating)s out of 5 stars"
+msgstr ""
+
+#: src/olympia/scanners/templates/admin/scanners/scannerresult/pagination.html:11
+msgid "Show all"
+msgstr ""
+
+#: src/olympia/scanners/templates/admin/scanners/scannerresult/pagination.html:12
+msgid "Save"
 msgstr ""
 
 #: src/olympia/search/filters.py:49 src/olympia/search/filters.py:62
