@@ -1848,7 +1848,7 @@ msgstr "The miscellaneous category cannot be combined with additional categories
 
 #: src/olympia/devhub/forms.py:246 src/olympia/devhub/forms.py:1360
 msgid "There was an error uploading your image."
-msgstr ""
+msgstr "There was an error uploading your image."
 
 #: src/olympia/devhub/forms.py:300
 #, python-format
@@ -2153,7 +2153,7 @@ msgstr "URL name was incorrect. Add-on was not deleted."
 
 #: src/olympia/devhub/views.py:436
 msgid "Request for a new review of listing content acknowledged."
-msgstr ""
+msgstr "Request for a new review of listing content acknowledged."
 
 #: src/olympia/devhub/views.py:480
 msgid "Invitation accepted."
@@ -2315,7 +2315,7 @@ msgstr "Your old credentials were revoked and are no longer valid."
 
 #: src/olympia/devhub/views.py:2131
 msgid "New API credentials have been generated and are displayed below. Make sure to copy the JWT secret, it will never be displayed again."
-msgstr ""
+msgstr "New API credentials have been generated and are displayed below. Make sure to copy the JWT secret, it will never be displayed again."
 
 #: src/olympia/devhub/views.py:2155
 msgid "New API key created"
@@ -3334,7 +3334,7 @@ msgstr "Is there anything our reviewers should bear in mind when reviewing this 
 
 #: src/olympia/devhub/templates/devhub/addons/submit/describe.html:213 src/olympia/devhub/templates/devhub/addons/submit/describe_minimal.html:26
 msgid "Important"
-msgstr ""
+msgstr "Important"
 
 #: src/olympia/devhub/templates/devhub/addons/submit/describe.html:214 src/olympia/devhub/templates/devhub/addons/submit/describe_minimal.html:27
 #, python-format
@@ -3342,6 +3342,8 @@ msgid ""
 "Read our %(policy_requirements_open)spolicy requirements%(policy_requirements_close)s regarding build processes and source code submission. If your submission requires source code, you must provide "
 "step-by-step build instructions, either inside the source code package or here, that will create an exact copy of the code."
 msgstr ""
+"Read our %(policy_requirements_open)spolicy requirements%(policy_requirements_close)s regarding build processes and source code submission. If your submission requires source code, you must provide "
+"step-by-step build instructions, either inside the source code package or here, that will create an exact copy of the code."
 
 #: src/olympia/devhub/templates/devhub/addons/submit/describe.html:224 src/olympia/devhub/templates/devhub/addons/submit/describe_minimal.html:37
 msgid "These notes will only be visible to you and our reviewers."
@@ -3639,10 +3641,12 @@ msgid ""
 "To execute authenticated calls against the <a %(a_attrs)s href=\"%(docs_url)s\">API</a> as an external consumer, you need to include a <a %(a_attrs)s href=\"%(jwt_url)s\">JSON Web Token (JWT)</a> in"
 " the <code>Authorization</code> header for every request."
 msgstr ""
+"To execute authenticated calls against the <a %(a_attrs)s href=\"%(docs_url)s\">API</a> as an external consumer, you need to include a <a %(a_attrs)s href=\"%(jwt_url)s\">JSON Web Token (JWT)</a> in"
+" the <code>Authorization</code> header for every request."
 
 #: src/olympia/devhub/templates/devhub/api/key.html:25
 msgid "Keep your API keys secret and never share them with anyone, including Mozilla staff or contributors."
-msgstr ""
+msgstr "Keep your API keys secret and never share them with anyone, including Mozilla staff or contributors."
 
 #: src/olympia/devhub/templates/devhub/api/key.html:33
 msgid "JWT issuer"
@@ -3941,19 +3945,19 @@ msgstr "View the blog &#9658;"
 
 #: src/olympia/devhub/templates/devhub/includes/content_rejected.html:2
 msgid "Our review found that your listing content violates the following Mozilla policy or policies:"
-msgstr ""
+msgstr "Our review found that your listing content violates the following Mozilla policy or policies:"
 
 #: src/olympia/devhub/templates/devhub/includes/content_rejected.html:14
 msgid "To address these issues, please update your listing and request another review of the content."
-msgstr ""
+msgstr "To address these issues, please update your listing and request another review of the content."
 
 #: src/olympia/devhub/templates/devhub/includes/content_rejected.html:17
 msgid "Review requested already, awaiting review"
-msgstr ""
+msgstr "Review requested already, awaiting review"
 
 #: src/olympia/devhub/templates/devhub/includes/content_rejected.html:22
 msgid "I confirm I have addressed the issues, and request a review"
-msgstr ""
+msgstr "I confirm I have addressed the issues and request a review"
 
 #: src/olympia/devhub/templates/devhub/includes/done_unlisted.html:1
 msgid "Version Signature Pending"
@@ -5989,7 +5993,7 @@ msgstr "Tab managers"
 #. editorial content for the secondary hero shelves.
 #: src/olympia/discovery/strings.jinja2:1108
 msgid "Anti-tracking extensions"
-msgstr ""
+msgstr "Anti-tracking extensions"
 
 #. editorial content for the secondary hero shelves.
 #: src/olympia/discovery/strings.jinja2:1110 src/olympia/discovery/strings.jinja2:1112 src/olympia/discovery/strings.jinja2:1114
@@ -6468,11 +6472,11 @@ msgstr "Rated %(rating)s out of 5 stars"
 
 #: src/olympia/scanners/templates/admin/scanners/scannerresult/pagination.html:11
 msgid "Show all"
-msgstr ""
+msgstr "Show all"
 
 #: src/olympia/scanners/templates/admin/scanners/scannerresult/pagination.html:12
 msgid "Save"
-msgstr ""
+msgstr "Save"
 
 #: src/olympia/search/filters.py:49 src/olympia/search/filters.py:62 src/olympia/search/filters.py:95 src/olympia/search/filters.py:170 src/olympia/search/filters.py:210
 #: src/olympia/search/filters.py:356 src/olympia/search/filters.py:467
