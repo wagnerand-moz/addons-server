@@ -3355,6 +3355,8 @@ msgid ""
 "Read our %(policy_requirements_open)spolicy requirements%(policy_requirements_close)s regarding build processes and source code submission. If your submission requires source code, you must provide "
 "step-by-step build instructions, either inside the source code package or here, that will create an exact copy of the code."
 msgstr ""
+"Lege nostre %(policy_requirements_open)srequisitos regulamentari%(policy_requirements_close)s re processos de compilation e invio de codification fonte. Si tu invio require codification fonte, tu "
+"debe fornir instructiones de compilation detaliate, o intra le pacchetto de codification fonte o ci, que creara un copia exacte del codice."
 
 #: src/olympia/devhub/templates/devhub/addons/submit/describe.html:224 src/olympia/devhub/templates/devhub/addons/submit/describe_minimal.html:37
 msgid "These notes will only be visible to you and our reviewers."
@@ -3655,6 +3657,8 @@ msgid ""
 "To execute authenticated calls against the <a %(a_attrs)s href=\"%(docs_url)s\">API</a> as an external consumer, you need to include a <a %(a_attrs)s href=\"%(jwt_url)s\">JSON Web Token (JWT)</a> in"
 " the <code>Authorization</code> header for every request."
 msgstr ""
+"Pro exequer appellos authenticate al <a %(a_attrs)s href=\"%(docs_url)s\">API</a> como usator externe, tu debe includer un <a %(a_attrs)s href=\"%(jwt_url)s\">JSON Web Token (JWT)</a> in le titulo "
+"del <code>Authorization</code> pro cata requesta."
 
 #: src/olympia/devhub/templates/devhub/api/key.html:25
 msgid "Keep your API keys secret and never share them with anyone, including Mozilla staff or contributors."
