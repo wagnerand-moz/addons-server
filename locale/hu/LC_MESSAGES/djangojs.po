@@ -418,7 +418,7 @@ msgstr "Egyéb"
 
 #: static/js/zamboni/devhub.js:196
 msgid "Copied"
-msgstr ""
+msgstr "Másolva"
 
 #: static/js/zamboni/devhub.js:322
 msgid "Changes Saved"

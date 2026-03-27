@@ -2360,7 +2360,7 @@ msgstr "Vos anciennes informations d’authentification ont été révoquées et
 
 #: src/olympia/devhub/views.py:2131
 msgid "New API credentials have been generated and are displayed below. Make sure to copy the JWT secret, it will never be displayed again."
-msgstr ""
+msgstr "De nouveaux identifiants d’API ont été générés et sont affichés ci-dessous. Assurez-vous de copier le secret du JWT, car il ne sera plus affiché par la suite."
 
 #: src/olympia/devhub/views.py:2155
 msgid "New API key created"
@@ -3401,6 +3401,8 @@ msgid ""
 "Read our %(policy_requirements_open)spolicy requirements%(policy_requirements_close)s regarding build processes and source code submission. If your submission requires source code, you must provide "
 "step-by-step build instructions, either inside the source code package or here, that will create an exact copy of the code."
 msgstr ""
+"Lisez nos %(policy_requirements_open)sexigences%(policy_requirements_close)s concernant les processus de compilation et la soumission du code source. Si votre soumission nécessite du code source, "
+"vous devez fournir des instructions détaillées de compilation, que ce soit dans l’archive du code source ou ici, afin de permettre la reproduction fidèle du code."
 
 #: src/olympia/devhub/templates/devhub/addons/submit/describe.html:224 src/olympia/devhub/templates/devhub/addons/submit/describe_minimal.html:37
 msgid "These notes will only be visible to you and our reviewers."

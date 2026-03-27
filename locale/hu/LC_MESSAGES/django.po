@@ -2329,7 +2329,7 @@ msgstr "Régi hitelesítő adatait visszavonták, és már nem érvényesek."
 
 #: src/olympia/devhub/views.py:2131
 msgid "New API credentials have been generated and are displayed below. Make sure to copy the JWT secret, it will never be displayed again."
-msgstr ""
+msgstr "Új API hitelesítő adatok lettek létrehozva, és alul jelennek meg. Másolja le a JWT-titkot, mert az soha többé nem jelenik meg."
 
 #: src/olympia/devhub/views.py:2155
 msgid "New API key created"
@@ -3351,7 +3351,7 @@ msgstr "Van valami, amit az ellenőrzőknek tudniuk kell a kiegészítő érték
 
 #: src/olympia/devhub/templates/devhub/addons/submit/describe.html:213 src/olympia/devhub/templates/devhub/addons/submit/describe_minimal.html:26
 msgid "Important"
-msgstr ""
+msgstr "Fontos"
 
 #: src/olympia/devhub/templates/devhub/addons/submit/describe.html:214 src/olympia/devhub/templates/devhub/addons/submit/describe_minimal.html:27
 #, python-format
@@ -3359,6 +3359,8 @@ msgid ""
 "Read our %(policy_requirements_open)spolicy requirements%(policy_requirements_close)s regarding build processes and source code submission. If your submission requires source code, you must provide "
 "step-by-step build instructions, either inside the source code package or here, that will create an exact copy of the code."
 msgstr ""
+"Olvassa el az összeállítási folyamatokról és a forráskód beküldésről szóló %(policy_requirements_open)sházirend-követelményeinket%(policy_requirements_close)s. Ha a beküldéséhez forráskód szükséges,"
+" akkor olyan lépésről lépesre szóló összeállítási utasításokat kell megadnia, akár a forráskódcsomagon belül, akár itt, amellyel a kód pontos másolata jön létre."
 
 #: src/olympia/devhub/templates/devhub/addons/submit/describe.html:224 src/olympia/devhub/templates/devhub/addons/submit/describe_minimal.html:37
 msgid "These notes will only be visible to you and our reviewers."
@@ -3659,10 +3661,12 @@ msgid ""
 "To execute authenticated calls against the <a %(a_attrs)s href=\"%(docs_url)s\">API</a> as an external consumer, you need to include a <a %(a_attrs)s href=\"%(jwt_url)s\">JSON Web Token (JWT)</a> in"
 " the <code>Authorization</code> header for every request."
 msgstr ""
+"Hogy hitelesített hívásokat hajtson végre az <a %(a_attrs)s href=\"%(docs_url)s\">API-n</a> keresztül külső fogyasztóként, egy <a %(a_attrs)s href=\"%(jwt_url)s\">JSON Web Tokenre (JWT)</a> van "
+"szüksége minden egyes kérés <code>Authorization</code> fejlécében."
 
 #: src/olympia/devhub/templates/devhub/api/key.html:25
 msgid "Keep your API keys secret and never share them with anyone, including Mozilla staff or contributors."
-msgstr ""
+msgstr "Tartsa az API-kulcsait titokban, és sose ossza meg másokkal, köztük a Mozilla munkatársaival és a közreműködőkkel sem."
 
 #: src/olympia/devhub/templates/devhub/api/key.html:33
 msgid "JWT issuer"
@@ -6502,11 +6506,11 @@ msgstr "%(rating)s csillagra értékelve az 5-ből"
 
 #: src/olympia/scanners/templates/admin/scanners/scannerresult/pagination.html:11
 msgid "Show all"
-msgstr ""
+msgstr "Összes megjelenítése"
 
 #: src/olympia/scanners/templates/admin/scanners/scannerresult/pagination.html:12
 msgid "Save"
-msgstr ""
+msgstr "Mentés"
 
 #: src/olympia/search/filters.py:49 src/olympia/search/filters.py:62 src/olympia/search/filters.py:95 src/olympia/search/filters.py:170 src/olympia/search/filters.py:210
 #: src/olympia/search/filters.py:356 src/olympia/search/filters.py:467
