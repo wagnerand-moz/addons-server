@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT 1.0\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2026-03-25 16:27+0000\n"
+"POT-Creation-Date: 2026-03-27 22:06+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1156,6 +1156,7 @@ msgstr ""
 msgid "Download Firefox extensions that enhance photo, music and video experiences. Extensions in this category modify audio and video, reverse image search, and more."
 msgstr ""
 
+#. editorial content for the secondary hero shelves.
 msgid "Privacy & Security"
 msgstr ""
 
@@ -4538,16 +4539,11 @@ msgid "See all extensions"
 msgstr ""
 
 #. editorial content for the secondary hero shelves.
-msgid "YouTube extensions"
+msgid "Extension Starter Pack"
 msgstr ""
 
 #. editorial content for the secondary hero shelves.
-#. editorial content for the homepage shelves.
-msgid "Tab managers"
-msgstr ""
-
-#. editorial content for the secondary hero shelves.
-msgid "Anti-tracking extensions"
+msgid "Productivity extensions"
 msgstr ""
 
 #. editorial content for the secondary hero shelves.
@@ -4616,6 +4612,10 @@ msgstr ""
 
 #. editorial content for the homepage shelves.
 msgid "See more social streaming staff picks"
+msgstr ""
+
+#. editorial content for the homepage shelves.
+msgid "Tab managers"
 msgstr ""
 
 #. editorial content for the homepage shelves.

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version:  addons\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2026-03-25 16:27+0000\n"
+"POT-Creation-Date: 2026-03-27 22:06+0000\n"
 "PO-Revision-Date: 2009-02-26 15:08-0800\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -1252,6 +1252,7 @@ msgstr "Photos, Music & Videos"
 msgid "Download Firefox extensions that enhance photo, music and video experiences. Extensions in this category modify audio and video, reverse image search, and more."
 msgstr "Download Firefox extensions that enhance photo, music and video experiences. Extensions in this category modify audio and video, reverse image search, and more."
 
+#. editorial content for the secondary hero shelves.
 #, fuzzy
 msgid "Privacy & Security"
 msgstr "Privacy Policy"
@@ -4996,17 +4997,12 @@ msgid "See all extensions"
 msgstr "Browse all add-ons"
 
 #. editorial content for the secondary hero shelves.
-msgid "YouTube extensions"
-msgstr "YouTube extensions"
+msgid "Extension Starter Pack"
+msgstr "Extension Starter Pack"
 
 #. editorial content for the secondary hero shelves.
-#. editorial content for the homepage shelves.
-msgid "Tab managers"
-msgstr "Tab managers"
-
-#. editorial content for the secondary hero shelves.
-msgid "Anti-tracking extensions"
-msgstr "Anti-tracking extensions"
+msgid "Productivity extensions"
+msgstr "Productivity extensions"
 
 #. editorial content for the secondary hero shelves.
 msgid "See staff picks"
@@ -5088,6 +5084,10 @@ msgstr "Social Networking"
 #, fuzzy
 msgid "See more social streaming staff picks"
 msgstr "Browse all add-ons"
+
+#. editorial content for the homepage shelves.
+msgid "Tab managers"
+msgstr "Tab managers"
 
 #. editorial content for the homepage shelves.
 #, fuzzy

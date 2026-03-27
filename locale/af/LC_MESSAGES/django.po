@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: addons-server 1.0\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2026-03-25 16:27+0000\n"
+"POT-Creation-Date: 2026-03-27 22:06+0000\n"
 "Language: af\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -1178,6 +1178,7 @@ msgstr "Foto's, musiek en video's"
 msgid "Download Firefox extensions that enhance photo, music and video experiences. Extensions in this category modify audio and video, reverse image search, and more."
 msgstr ""
 
+#. editorial content for the secondary hero shelves.
 msgid "Privacy & Security"
 msgstr "Privaatheid en sekuriteit"
 
@@ -4629,16 +4630,11 @@ msgid "See all extensions"
 msgstr "Blaai deur alle byvoegings"
 
 #. editorial content for the secondary hero shelves.
-msgid "YouTube extensions"
+msgid "Extension Starter Pack"
 msgstr ""
 
 #. editorial content for the secondary hero shelves.
-#. editorial content for the homepage shelves.
-msgid "Tab managers"
-msgstr ""
-
-#. editorial content for the secondary hero shelves.
-msgid "Anti-tracking extensions"
+msgid "Productivity extensions"
 msgstr ""
 
 #. editorial content for the secondary hero shelves.
@@ -4716,6 +4712,10 @@ msgstr "Sosiale netwerke"
 #, fuzzy
 msgid "See more social streaming staff picks"
 msgstr "Blaai deur alle byvoegings"
+
+#. editorial content for the homepage shelves.
+msgid "Tab managers"
+msgstr ""
 
 #. editorial content for the homepage shelves.
 #, fuzzy

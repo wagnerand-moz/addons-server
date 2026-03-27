@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: messages\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2026-03-25 16:27+0000\n"
+"POT-Creation-Date: 2026-03-27 22:06+0000\n"
 "PO-Revision-Date: 2024-01-15 13:27+0000\n"
 "Last-Translator: Bund10z <abu.avila@gmail.com>\n"
 "Language-Team: Español (España) <nave@elistas.net>\n"
@@ -1193,6 +1193,7 @@ msgstr ""
 "Descarga extensiones de Firefox que potencian tus experiencias con fotos, música y vídeos. Las extensiones de esta categoría modifican audio y vídeo, realizan búsquedas inversas de imágenes y mucho "
 "más."
 
+#. editorial content for the secondary hero shelves.
 msgid "Privacy & Security"
 msgstr "Privacidad y seguridad"
 
@@ -4740,16 +4741,11 @@ msgid "See all extensions"
 msgstr "Ver todas las extensiones"
 
 #. editorial content for the secondary hero shelves.
-msgid "YouTube extensions"
+msgid "Extension Starter Pack"
 msgstr ""
 
 #. editorial content for the secondary hero shelves.
-#. editorial content for the homepage shelves.
-msgid "Tab managers"
-msgstr ""
-
-#. editorial content for the secondary hero shelves.
-msgid "Anti-tracking extensions"
+msgid "Productivity extensions"
 msgstr ""
 
 #. editorial content for the secondary hero shelves.
@@ -4826,6 +4822,10 @@ msgstr "Redes sociales"
 #, fuzzy
 msgid "See more social streaming staff picks"
 msgstr "Ver más extensiones populares"
+
+#. editorial content for the homepage shelves.
+msgid "Tab managers"
+msgstr ""
 
 #. editorial content for the homepage shelves.
 #, fuzzy
