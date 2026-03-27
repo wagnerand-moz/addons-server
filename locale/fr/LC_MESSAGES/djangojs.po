@@ -418,7 +418,7 @@ msgstr "Autre"
 
 #: static/js/zamboni/devhub.js:196
 msgid "Copied"
-msgstr ""
+msgstr "Copié"
 
 #: static/js/zamboni/devhub.js:322
 msgid "Changes Saved"

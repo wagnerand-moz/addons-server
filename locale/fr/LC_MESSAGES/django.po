@@ -3393,7 +3393,7 @@ msgstr "Y a-t-il quoi que ce soit d’autre que nos testeurs devraient savoir po
 
 #: src/olympia/devhub/templates/devhub/addons/submit/describe.html:213 src/olympia/devhub/templates/devhub/addons/submit/describe_minimal.html:26
 msgid "Important"
-msgstr ""
+msgstr "Important"
 
 #: src/olympia/devhub/templates/devhub/addons/submit/describe.html:214 src/olympia/devhub/templates/devhub/addons/submit/describe_minimal.html:27
 #, python-format
@@ -3705,10 +3705,12 @@ msgid ""
 "To execute authenticated calls against the <a %(a_attrs)s href=\"%(docs_url)s\">API</a> as an external consumer, you need to include a <a %(a_attrs)s href=\"%(jwt_url)s\">JSON Web Token (JWT)</a> in"
 " the <code>Authorization</code> header for every request."
 msgstr ""
+"Pour exécuter des appels authentifiés sur l’<a %(a_attrs)s href=\"%(docs_url)s\">API</a> en tant qu’utilisateur externe, vous devez inclure un <a %(a_attrs)s href=\"%(jwt_url)s\">JSON Web Token "
+"(JWT)</a> dans l’en-tête <code>Authorization</code> pour chaque requête."
 
 #: src/olympia/devhub/templates/devhub/api/key.html:25
 msgid "Keep your API keys secret and never share them with anyone, including Mozilla staff or contributors."
-msgstr ""
+msgstr "Gardez vos clés d’API secrètes et ne les partagez jamais avec qui que ce soit, y compris le personnel de Mozilla ou des contributeurs."
 
 #: src/olympia/devhub/templates/devhub/api/key.html:33
 msgid "JWT issuer"
@@ -6554,11 +6556,11 @@ msgstr "Noté %(rating)s sur 5 étoiles"
 
 #: src/olympia/scanners/templates/admin/scanners/scannerresult/pagination.html:11
 msgid "Show all"
-msgstr ""
+msgstr "Tout afficher"
 
 #: src/olympia/scanners/templates/admin/scanners/scannerresult/pagination.html:12
 msgid "Save"
-msgstr ""
+msgstr "Enregistrer"
 
 #: src/olympia/search/filters.py:49 src/olympia/search/filters.py:62 src/olympia/search/filters.py:95 src/olympia/search/filters.py:170 src/olympia/search/filters.py:210
 #: src/olympia/search/filters.py:356 src/olympia/search/filters.py:467
