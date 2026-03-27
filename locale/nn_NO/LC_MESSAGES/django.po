@@ -3648,7 +3648,7 @@ msgid ""
 " the <code>Authorization</code> header for every request."
 msgstr ""
 "For å utføre autentiserte kall mot <a %(a_attrs)s href=\"%(docs_url)s\">API-et</a> som ein ekstern brukar, må du inkludere ein <a %(a_attrs)s href=\"%(jwt_url)s\">JSON Web Token (JWT)</a> i "
-"<code>Autorisasjons</code>-hovudet for kvar førespurnad."
+"<code>Authorization</code>-headeren for kvar førespurnad."
 
 #: src/olympia/devhub/templates/devhub/api/key.html:25
 msgid "Keep your API keys secret and never share them with anyone, including Mozilla staff or contributors."
