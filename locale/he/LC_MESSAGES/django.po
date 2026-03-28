@@ -1706,39 +1706,39 @@ msgstr ""
 
 #: src/olympia/constants/licenses.py:22
 msgid "Apache License 2.0"
-msgstr ""
+msgstr "Apache License 2.0"
 
 #: src/olympia/constants/licenses.py:29
 msgid "GNU General Public License v2.0 only"
-msgstr ""
+msgstr "GNU General Public License v2.0 only"
 
 #: src/olympia/constants/licenses.py:36
 msgid "GNU General Public License v3.0 only"
-msgstr ""
+msgstr "GNU General Public License v3.0 only"
 
 #: src/olympia/constants/licenses.py:43
 msgid "GNU Lesser General Public License v2.1 only"
-msgstr ""
+msgstr "GNU Lesser General Public License v2.1 only"
 
 #: src/olympia/constants/licenses.py:50
 msgid "GNU Lesser General Public License v3.0 only"
-msgstr ""
+msgstr "GNU Lesser General Public License v3.0 only"
 
 #: src/olympia/constants/licenses.py:57
 msgid "GNU Affero General Public License v3.0 only"
-msgstr ""
+msgstr "GNU Affero General Public License v3.0 only"
 
 #: src/olympia/constants/licenses.py:64
 msgid "MIT License"
-msgstr ""
+msgstr "MIT License"
 
 #: src/olympia/constants/licenses.py:71
 msgid "ISC License"
-msgstr ""
+msgstr "ISC License"
 
 #: src/olympia/constants/licenses.py:78
 msgid "BSD 2-Clause \"Simplified\" License"
-msgstr ""
+msgstr "BSD 2-Clause \"Simplified\" License"
 
 #: src/olympia/constants/licenses.py:85
 msgid "Mozilla Public License 1.1"
@@ -1774,31 +1774,31 @@ msgstr "Creative Commons Attribution-ShareAlike 3.0"
 
 #: src/olympia/constants/licenses.py:162
 msgid "Creative Commons Attribution 4.0"
-msgstr ""
+msgstr "Creative Commons Attribution 4.0"
 
 #: src/olympia/constants/licenses.py:172
 msgid "Creative Commons Attribution-NonCommercial 4.0"
-msgstr ""
+msgstr "Creative Commons Attribution-NonCommercial 4.0"
 
 #: src/olympia/constants/licenses.py:182
 msgid "Creative Commons Attribution-NonCommercial-NoDerivs 4.0"
-msgstr ""
+msgstr "Creative Commons Attribution-NonCommercial-NoDerivs 4.0"
 
 #: src/olympia/constants/licenses.py:192
 msgid "Creative Commons Attribution-NonCommercial-Share Alike 4.0"
-msgstr ""
+msgstr "Creative Commons Attribution-NonCommercial-Share Alike 4.0"
 
 #: src/olympia/constants/licenses.py:202
 msgid "Creative Commons Attribution-NoDerivs 4.0"
-msgstr ""
+msgstr "Creative Commons Attribution-NoDerivs 4.0"
 
 #: src/olympia/constants/licenses.py:212
 msgid "Creative Commons Attribution-ShareAlike 4.0"
-msgstr ""
+msgstr "Creative Commons Attribution-ShareAlike 4.0"
 
 #: src/olympia/constants/licenses.py:222
 msgid "The Unlicense"
-msgstr ""
+msgstr "The Unlicense"
 
 #: src/olympia/devhub/feeds.py:52
 #, python-format
@@ -1842,7 +1842,7 @@ msgstr "לא ניתן לשלב את קטגוריית השונות עם קטגו�
 
 #: src/olympia/devhub/forms.py:246 src/olympia/devhub/forms.py:1360
 msgid "There was an error uploading your image."
-msgstr ""
+msgstr "אירעה שגיאה בהעלאת התמונה שלך."
 
 #: src/olympia/devhub/forms.py:300
 #, python-format
@@ -2034,15 +2034,15 @@ msgstr "משהו השתבש, נא ליצור קשר עם תמיכת המפתחי
 
 #: src/olympia/devhub/forms.py:1656
 msgid "No appropriate version available"
-msgstr ""
+msgstr "אין גרסה מתאימה זמינה"
 
 #: src/olympia/devhub/forms.py:1663
 msgid "Choose version"
-msgstr ""
+msgstr "בחירת גרסה"
 
 #: src/olympia/devhub/forms.py:1672
 msgid "Release notes"
-msgstr ""
+msgstr "הערות שחרור"
 
 #: src/olympia/devhub/forms.py:1673
 msgid "Automatic rollback based on version [m.m]."
@@ -3978,7 +3978,7 @@ msgstr ""
 
 #: src/olympia/devhub/templates/devhub/includes/modal_rollback_version.html:54
 msgid "Release Notes"
-msgstr ""
+msgstr "הערות שחרור"
 
 #: src/olympia/devhub/templates/devhub/includes/modal_rollback_version.html:63
 msgid "Roll back"
@@ -5921,7 +5921,7 @@ msgstr ""
 #. editorial content for the secondary hero shelves.
 #: src/olympia/discovery/strings.jinja2:1109
 msgid "Productivity extensions"
-msgstr ""
+msgstr "הרחבות משרדיות"
 
 #. editorial content for the secondary hero shelves.
 #: src/olympia/discovery/strings.jinja2:1113 src/olympia/discovery/strings.jinja2:1115 src/olympia/discovery/strings.jinja2:1117
@@ -5951,7 +5951,7 @@ msgstr "הצגת ערכות נושא פופולריות נוספות"
 #. editorial content for the homepage shelves.
 #: src/olympia/discovery/strings.jinja2:1130
 msgid "Privacy & security"
-msgstr ""
+msgstr "פרטיות ואבטחה"
 
 #. editorial content for the homepage shelves.
 #: src/olympia/discovery/strings.jinja2:1132
@@ -6143,7 +6143,7 @@ msgstr ""
 #. editorial content for the homepage shelves.
 #: src/olympia/discovery/strings.jinja2:1225
 msgid "Twitch extensions"
-msgstr ""
+msgstr "הרחבות Twitch"
 
 #. editorial content for the homepage shelves.
 #: src/olympia/discovery/strings.jinja2:1227
@@ -6153,7 +6153,7 @@ msgstr ""
 #. editorial content for the homepage shelves.
 #: src/olympia/discovery/strings.jinja2:1235
 msgid "Gaming & media extensions"
-msgstr ""
+msgstr "הרחבות משחקים ומדיה"
 
 #. editorial content for the homepage shelves.
 #: src/olympia/discovery/strings.jinja2:1237
@@ -6405,11 +6405,11 @@ msgstr "דירוג %(rating)s מתוך 5 כוכבים"
 
 #: src/olympia/scanners/templates/admin/scanners/scannerresult/pagination.html:11
 msgid "Show all"
-msgstr ""
+msgstr "הצגת הכול"
 
 #: src/olympia/scanners/templates/admin/scanners/scannerresult/pagination.html:12
 msgid "Save"
-msgstr ""
+msgstr "שמירה"
 
 #: src/olympia/search/filters.py:49 src/olympia/search/filters.py:62 src/olympia/search/filters.py:95 src/olympia/search/filters.py:170 src/olympia/search/filters.py:210
 #: src/olympia/search/filters.py:356 src/olympia/search/filters.py:467
@@ -6964,6 +6964,16 @@ msgid ""
 "Kind regards,\n"
 "The Mozilla Add-ons Team"
 msgstr ""
+"שלום %(author_name)s,\n"
+"\n"
+"הוזמנת להפוך למחבר של התוספת %(addon_name)s ב־%(domain)s. קבלת ההזמנה תעניק לך גישה לערוך את התוספת, ותאפשר לך להציג את שמך ברשימת המחברים באתר.\n"
+"\n"
+"יש ללחוץ על הקישור שלהלן כדי להגיב אם ברצונך להתווסף כמחבר עבור %(addon_name)s.\n"
+"\n"
+"%(author_confirmation_link)s\n"
+"\n"
+"בברכה,\n"
+"צוות התוספות של Firefox"
 
 #: src/olympia/users/templates/users/emails/author_changed.ltxt:3
 #, python-format
