@@ -5915,12 +5915,12 @@ msgstr "瀏覽所有擴充套件"
 #. editorial content for the secondary hero shelves.
 #: src/olympia/discovery/strings.jinja2:1107
 msgid "Extension Starter Pack"
-msgstr ""
+msgstr "擴充套件組合包"
 
 #. editorial content for the secondary hero shelves.
 #: src/olympia/discovery/strings.jinja2:1109
 msgid "Productivity extensions"
-msgstr ""
+msgstr "生產力擴充套件"
 
 #. editorial content for the secondary hero shelves.
 #: src/olympia/discovery/strings.jinja2:1113 src/olympia/discovery/strings.jinja2:1115 src/olympia/discovery/strings.jinja2:1117
@@ -6132,7 +6132,7 @@ msgstr "看員工精選的更多無障礙套件"
 #. editorial content for the homepage shelves.
 #: src/olympia/discovery/strings.jinja2:1220
 msgid "Extension starter pack"
-msgstr "擴充套件組合包"
+msgstr "擴充套件新手包"
 
 #. editorial content for the homepage shelves.
 #: src/olympia/discovery/strings.jinja2:1222
