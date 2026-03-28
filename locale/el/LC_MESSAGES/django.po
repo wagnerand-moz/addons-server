@@ -2365,7 +2365,7 @@ msgstr "Τα παλιά σας διαπιστευτήρια ανακλήθηκα
 
 #: src/olympia/devhub/views.py:2131
 msgid "New API credentials have been generated and are displayed below. Make sure to copy the JWT secret, it will never be displayed again."
-msgstr ""
+msgstr "Έχουν δημιουργηθεί νέα διαπιστευτήρια API και εμφανίζονται παρακάτω. Βεβαιωθείτε ότι έχετε αντιγράψει το μυστικό κωδικό JWT, καθώς δεν θα εμφανιστεί ποτέ ξανά."
 
 #: src/olympia/devhub/views.py:2155
 msgid "New API key created"
@@ -3396,6 +3396,8 @@ msgid ""
 "Read our %(policy_requirements_open)spolicy requirements%(policy_requirements_close)s regarding build processes and source code submission. If your submission requires source code, you must provide "
 "step-by-step build instructions, either inside the source code package or here, that will create an exact copy of the code."
 msgstr ""
+"Διαβάστε τις %(policy_requirements_open)sαπαιτήσεις πολιτικής%(policy_requirements_close)s μας σχετικά με τις διαδικασίες ανάπτυξης και την υποβολή πηγαίου κώδικα. Αν η υποβολή σας απαιτεί πηγαίο "
+"κώδικα, πρέπει να παρέχετε αναλυτικές οδηγίες ανάπτυξης, είτε μέσα στο πακέτο του πηγαίου κώδικα είτε εδώ, ώστε να δημιουργηθεί ένα πιστό αντίγραφό του."
 
 #: src/olympia/devhub/templates/devhub/addons/submit/describe.html:224 src/olympia/devhub/templates/devhub/addons/submit/describe_minimal.html:37
 msgid "These notes will only be visible to you and our reviewers."
@@ -3700,10 +3702,12 @@ msgid ""
 "To execute authenticated calls against the <a %(a_attrs)s href=\"%(docs_url)s\">API</a> as an external consumer, you need to include a <a %(a_attrs)s href=\"%(jwt_url)s\">JSON Web Token (JWT)</a> in"
 " the <code>Authorization</code> header for every request."
 msgstr ""
+"Για να εκτελέσετε πιστοποιημένες κλήσεις έναντι του <a %(a_attrs)s href=\"%(docs_url)s\">API</a> ως εξωτερικού πελάτη, θα πρέπει να συμπεριλάβετε ένα <a %(a_attrs)s href=\"%(jwt_url)s\">JSON Web "
+"Token (JWT)</a> στην κεφαλίδα <code>Authorization</code> για κάθε αίτημα."
 
 #: src/olympia/devhub/templates/devhub/api/key.html:25
 msgid "Keep your API keys secret and never share them with anyone, including Mozilla staff or contributors."
-msgstr ""
+msgstr "Διατηρήστε μυστικά τα κλειδιά API σας και μην τα μοιραστείτε ποτέ με κανέναν, ακόμα και με τους εθελοντές ή το προσωπικό της Mozilla."
 
 #: src/olympia/devhub/templates/devhub/api/key.html:33
 msgid "JWT issuer"
