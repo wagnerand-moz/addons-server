@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: addons-server 1.0\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2026-03-27 22:06+0000\n"
+"POT-Creation-Date: 2026-03-29 15:52+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -236,34 +236,34 @@ msgid ""
 "removed the content.\n"
 msgstr ""
 
-#: src/olympia/accounts/serializers.py:160 src/olympia/bandwagon/serializers.py:101
+#: src/olympia/accounts/serializers.py:166 src/olympia/bandwagon/serializers.py:101
 msgid "No links are allowed."
 msgstr ""
 
-#: src/olympia/accounts/serializers.py:164
+#: src/olympia/accounts/serializers.py:170
 msgid "This display name cannot be used."
 msgstr ""
 
-#: src/olympia/accounts/serializers.py:176 src/olympia/addons/fields.py:366
+#: src/olympia/accounts/serializers.py:182 src/olympia/addons/fields.py:366
 #: src/olympia/devhub/views.py:1038
 msgid "Images must be either PNG or JPG."
 msgstr ""
 
-#: src/olympia/accounts/serializers.py:180 src/olympia/addons/fields.py:371
+#: src/olympia/accounts/serializers.py:186 src/olympia/addons/fields.py:371
 #: src/olympia/devhub/views.py:1044
 msgid "Images cannot be animated."
 msgstr ""
 
-#: src/olympia/accounts/serializers.py:185 src/olympia/devhub/views.py:1053
+#: src/olympia/accounts/serializers.py:191 src/olympia/devhub/views.py:1053
 #, python-format
 msgid "Please use images smaller than %dMB."
 msgstr ""
 
-#: src/olympia/accounts/views.py:204
+#: src/olympia/accounts/views.py:205
 msgid "Need help?"
 msgstr ""
 
-#: src/olympia/accounts/views.py:765
+#: src/olympia/accounts/views.py:772
 #, python-format
 msgid "Notification [%s] does not exist"
 msgstr ""
