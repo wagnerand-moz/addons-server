@@ -6749,9 +6749,8 @@ msgid "About tracking external sources..."
 msgstr "Sobre la monitorización de orígenes externos..."
 
 #: src/olympia/stats/templates/stats/reports/contents.html:3
-#, fuzzy
 msgid "Download contents by Date"
-msgstr "Fuentes de descarga por fecha"
+msgstr "Contenidos descargados por fecha"
 
 #: src/olympia/stats/templates/stats/reports/countries.html:3
 msgid "User countries by Date"
