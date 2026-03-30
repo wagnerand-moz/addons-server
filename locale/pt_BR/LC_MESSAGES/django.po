@@ -2069,19 +2069,19 @@ msgstr "Você deve selecionar um canal e uma versão para a reversão."
 
 #: src/olympia/devhub/forms.py:1761
 msgid "Select a category"
-msgstr ""
+msgstr "Selecione uma categoria"
 
 #: src/olympia/devhub/forms.py:1762
 msgid "Account"
-msgstr ""
+msgstr "Conta"
 
 #: src/olympia/devhub/forms.py:1763
 msgid "Technical Issue"
-msgstr ""
+msgstr "Problema técnico"
 
 #: src/olympia/devhub/forms.py:1764
 msgid "Policies"
-msgstr ""
+msgstr "Políticas"
 
 #: src/olympia/devhub/forms.py:1770 src/olympia/devhub/templates/devhub/addons/edit/describe.html:43 src/olympia/devhub/templates/devhub/addons/edit/describe.html:105
 #: src/olympia/devhub/templates/devhub/addons/submit/describe.html:30
@@ -2090,7 +2090,7 @@ msgstr "Resumo"
 
 #: src/olympia/devhub/forms.py:1774
 msgid "Category"
-msgstr ""
+msgstr "Categoria"
 
 #: src/olympia/devhub/forms.py:1778 src/olympia/devhub/templates/devhub/addons/edit/describe.html:128
 msgid "Description"
@@ -2376,11 +2376,11 @@ msgstr "Seu email foi confirmado"
 
 #: src/olympia/devhub/views.py:2333
 msgid "Could not submit your support request. Please try again."
-msgstr ""
+msgstr "Não foi possível enviar sua solicitação de suporte. Por favor, tente novamente."
 
 #: src/olympia/devhub/views.py:2340
 msgid "Your support request has been submitted. We will be in touch soon."
-msgstr ""
+msgstr "Sua solicitação de suporte foi enviada. Em breve entraremos em contato."
 
 #: src/olympia/devhub/widgets.py:81
 msgid "My add-on doesn't fit into any of the categories"
@@ -2460,7 +2460,7 @@ msgstr "Mais recursos"
 
 #: src/olympia/devhub/templates/devhub/nav.html:67 src/olympia/devhub/templates/devhub/support.html:3
 msgid "Contact Support"
-msgstr ""
+msgstr "Entrar em contato com o suporte"
 
 #: src/olympia/devhub/templates/devhub/search.html:6
 msgid "Search Developer Docs"
@@ -2472,7 +2472,7 @@ msgstr "Pesquisar"
 
 #: src/olympia/devhub/templates/devhub/support.html:17
 msgid "Submit"
-msgstr ""
+msgstr "Enviar"
 
 #: src/olympia/devhub/templates/devhub/suppressed_email.html:4
 #, python-format

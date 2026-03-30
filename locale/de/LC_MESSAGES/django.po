@@ -2085,19 +2085,19 @@ msgstr "Sie müssen einen Kanal und eine Version auswählen, auf die zurückgese
 
 #: src/olympia/devhub/forms.py:1761
 msgid "Select a category"
-msgstr ""
+msgstr "Wählen Sie eine Kategorie aus"
 
 #: src/olympia/devhub/forms.py:1762
 msgid "Account"
-msgstr ""
+msgstr "Konto"
 
 #: src/olympia/devhub/forms.py:1763
 msgid "Technical Issue"
-msgstr ""
+msgstr "Technisches Problem"
 
 #: src/olympia/devhub/forms.py:1764
 msgid "Policies"
-msgstr ""
+msgstr "Richtlinien"
 
 #: src/olympia/devhub/forms.py:1770 src/olympia/devhub/templates/devhub/addons/edit/describe.html:43 src/olympia/devhub/templates/devhub/addons/edit/describe.html:105
 #: src/olympia/devhub/templates/devhub/addons/submit/describe.html:30
@@ -2106,7 +2106,7 @@ msgstr "Zusammenfassung"
 
 #: src/olympia/devhub/forms.py:1774
 msgid "Category"
-msgstr ""
+msgstr "Kategorie"
 
 #: src/olympia/devhub/forms.py:1778 src/olympia/devhub/templates/devhub/addons/edit/describe.html:128
 msgid "Description"
@@ -2392,11 +2392,11 @@ msgstr "Ihre E-Mail-Adresse wurde bestätigt"
 
 #: src/olympia/devhub/views.py:2333
 msgid "Could not submit your support request. Please try again."
-msgstr ""
+msgstr "Ihre Hilfeanfrage konnte nicht gesendet werden. Bitte versuchen Sie es erneut."
 
 #: src/olympia/devhub/views.py:2340
 msgid "Your support request has been submitted. We will be in touch soon."
-msgstr ""
+msgstr "Ihre Hilfeanfrage wurde übermittelt. Wir melden uns bald bei Ihnen."
 
 #: src/olympia/devhub/widgets.py:81
 msgid "My add-on doesn't fit into any of the categories"
@@ -2476,7 +2476,7 @@ msgstr "Weitere Quellen"
 
 #: src/olympia/devhub/templates/devhub/nav.html:67 src/olympia/devhub/templates/devhub/support.html:3
 msgid "Contact Support"
-msgstr ""
+msgstr "Support kontaktieren"
 
 #: src/olympia/devhub/templates/devhub/search.html:6
 msgid "Search Developer Docs"
@@ -2488,7 +2488,7 @@ msgstr "Suchen"
 
 #: src/olympia/devhub/templates/devhub/support.html:17
 msgid "Submit"
-msgstr ""
+msgstr "Absenden"
 
 #: src/olympia/devhub/templates/devhub/suppressed_email.html:4
 #, python-format

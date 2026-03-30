@@ -2069,19 +2069,19 @@ msgstr "Izbrati morate kanal in različico, na katero se želite povrniti."
 
 #: src/olympia/devhub/forms.py:1761
 msgid "Select a category"
-msgstr ""
+msgstr "Izberite kategorijo"
 
 #: src/olympia/devhub/forms.py:1762
 msgid "Account"
-msgstr ""
+msgstr "Račun"
 
 #: src/olympia/devhub/forms.py:1763
 msgid "Technical Issue"
-msgstr ""
+msgstr "Tehnična težava"
 
 #: src/olympia/devhub/forms.py:1764
 msgid "Policies"
-msgstr ""
+msgstr "Pravilniki"
 
 #: src/olympia/devhub/forms.py:1770 src/olympia/devhub/templates/devhub/addons/edit/describe.html:43 src/olympia/devhub/templates/devhub/addons/edit/describe.html:105
 #: src/olympia/devhub/templates/devhub/addons/submit/describe.html:30
@@ -2090,7 +2090,7 @@ msgstr "Povzetek"
 
 #: src/olympia/devhub/forms.py:1774
 msgid "Category"
-msgstr ""
+msgstr "Kategorija"
 
 #: src/olympia/devhub/forms.py:1778 src/olympia/devhub/templates/devhub/addons/edit/describe.html:128
 msgid "Description"
@@ -2375,11 +2375,11 @@ msgstr "Vaš e-poštni naslov je potrjen"
 
 #: src/olympia/devhub/views.py:2333
 msgid "Could not submit your support request. Please try again."
-msgstr ""
+msgstr "Vaše zahteve za podporo ni bilo mogoče poslati. Prosimo, poskusite znova."
 
 #: src/olympia/devhub/views.py:2340
 msgid "Your support request has been submitted. We will be in touch soon."
-msgstr ""
+msgstr "Vaša zahteva za podporo je bila poslana. Kmalu se oglasimo."
 
 #: src/olympia/devhub/widgets.py:81
 msgid "My add-on doesn't fit into any of the categories"
@@ -2459,7 +2459,7 @@ msgstr "Viri - dalje"
 
 #: src/olympia/devhub/templates/devhub/nav.html:67 src/olympia/devhub/templates/devhub/support.html:3
 msgid "Contact Support"
-msgstr ""
+msgstr "Obrnite se na podporo"
 
 #: src/olympia/devhub/templates/devhub/search.html:6
 msgid "Search Developer Docs"
@@ -2471,7 +2471,7 @@ msgstr "Iskanje"
 
 #: src/olympia/devhub/templates/devhub/support.html:17
 msgid "Submit"
-msgstr ""
+msgstr "Pošlji"
 
 #: src/olympia/devhub/templates/devhub/suppressed_email.html:4
 #, python-format
