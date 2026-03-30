@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version:  messages.pootle\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2026-03-30 16:53+0000\n"
+"POT-Creation-Date: 2026-03-30 20:20+0000\n"
 "PO-Revision-Date: 2013-11-07 07:24+0000\n"
 "Last-Translator: Julen <julenx@gmail.com>\n"
 "Language-Team: librezale@librezale.org\n"
@@ -1591,6 +1591,27 @@ msgstr ""
 msgid "You must select a channel and version to rollback to."
 msgstr ""
 
+msgid "Select a category"
+msgstr ""
+
+msgid "Account"
+msgstr ""
+
+msgid "Technical Issue"
+msgstr ""
+
+msgid "Policies"
+msgstr ""
+
+msgid "Summary"
+msgstr "Laburpena"
+
+msgid "Category"
+msgstr ""
+
+msgid "Description"
+msgstr "Deskribapena"
+
 #, fuzzy
 msgid "Invalid or corrupt add-on file."
 msgstr "Artxibo baliogabea."
@@ -1803,6 +1824,12 @@ msgstr ""
 msgid "Your email has been verified"
 msgstr ""
 
+msgid "Could not submit your support request. Please try again."
+msgstr ""
+
+msgid "Your support request has been submitted. We will be in touch soon."
+msgstr ""
+
 msgid "My add-on doesn't fit into any of the categories"
 msgstr "Nire gehigarria ez dagokio kategoria hauetako inorri."
 
@@ -1863,11 +1890,17 @@ msgstr "Gehigarrien foroa"
 msgid "More Resources"
 msgstr ""
 
+msgid "Contact Support"
+msgstr ""
+
 msgid "Search Developer Docs"
 msgstr ""
 
 msgid "Search"
 msgstr "Bilatu"
+
+msgid "Submit"
+msgstr ""
 
 #, python-format
 msgid "We have discovered that your email \"%(email)s\" is unable to receive emails from us. Please update your email address to one that can receive emails from us."
@@ -2147,9 +2180,6 @@ msgid ""
 "characters and a minimum length of 2 characters for each."
 msgstr ""
 
-msgid "Summary"
-msgstr "Laburpena"
-
 msgid "Add-on URL"
 msgstr ""
 
@@ -2164,9 +2194,6 @@ msgstr ""
 
 msgid "This summary should clearly explain what your add-on does. It will be shown in listings and searches, and it will be used by reviewers to test your add-on."
 msgstr ""
-
-msgid "Description"
-msgstr "Deskribapena"
 
 #, python-format
 msgid ""

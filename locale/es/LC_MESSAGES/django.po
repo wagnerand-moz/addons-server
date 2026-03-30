@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: messages\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2026-03-30 16:53+0000\n"
+"POT-Creation-Date: 2026-03-30 20:20+0000\n"
 "PO-Revision-Date: 2024-01-15 13:27+0000\n"
 "Last-Translator: Bund10z <abu.avila@gmail.com>\n"
 "Language-Team: Español (España) <nave@elistas.net>\n"
@@ -1596,6 +1596,27 @@ msgstr ""
 msgid "You must select a channel and version to rollback to."
 msgstr ""
 
+msgid "Select a category"
+msgstr ""
+
+msgid "Account"
+msgstr ""
+
+msgid "Technical Issue"
+msgstr ""
+
+msgid "Policies"
+msgstr ""
+
+msgid "Summary"
+msgstr "Descripción"
+
+msgid "Category"
+msgstr ""
+
+msgid "Description"
+msgstr "Descripción"
+
 msgid "Invalid or corrupt add-on file."
 msgstr "Archivo de complemento no válido o corrupto."
 
@@ -1806,6 +1827,12 @@ msgstr ""
 msgid "Your email has been verified"
 msgstr ""
 
+msgid "Could not submit your support request. Please try again."
+msgstr ""
+
+msgid "Your support request has been submitted. We will be in touch soon."
+msgstr ""
+
 msgid "My add-on doesn't fit into any of the categories"
 msgstr "Mi complemento no encaja en ninguna de las categorías"
 
@@ -1864,11 +1891,17 @@ msgstr "Foro de complementos"
 msgid "More Resources"
 msgstr "Más recursos"
 
+msgid "Contact Support"
+msgstr ""
+
 msgid "Search Developer Docs"
 msgstr "Buscar documentos para desarrolladores"
 
 msgid "Search"
 msgstr "Buscar"
+
+msgid "Submit"
+msgstr ""
 
 #, python-format
 msgid "We have discovered that your email \"%(email)s\" is unable to receive emails from us. Please update your email address to one that can receive emails from us."
@@ -2151,9 +2184,6 @@ msgstr ""
 "El resumen debe explicar lo que hace el complemento de manera clara y concisa. Tanto el nombre como el resumen aparecerán en la página del producto y en los resultados de búsqueda. Tienen una "
 "longitud máxima combinada de 70 caracteres y una longitud mínima de 2 caracteres para cada uno."
 
-msgid "Summary"
-msgstr "Descripción"
-
 msgid "Add-on URL"
 msgstr "URL del complemento"
 
@@ -2168,9 +2198,6 @@ msgstr "Ver página del producto"
 
 msgid "This summary should clearly explain what your add-on does. It will be shown in listings and searches, and it will be used by reviewers to test your add-on."
 msgstr "En este resumen deberías especificar la función de tu complemento. Aparecerá en listas y búsquedas y lo utilizarán los revisores para probar tu complemento."
-
-msgid "Description"
-msgstr "Descripción"
 
 #, python-format
 msgid ""

@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2026-03-30 16:53+0000\n"
+"POT-Creation-Date: 2026-03-30 20:20+0000\n"
 "PO-Revision-Date: 2015-07-18 03:09+0000\n"
 "Last-Translator: ubuntuser13 <ubuntuser13@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1599,6 +1599,27 @@ msgstr ""
 msgid "You must select a channel and version to rollback to."
 msgstr ""
 
+msgid "Select a category"
+msgstr ""
+
+msgid "Account"
+msgstr ""
+
+msgid "Technical Issue"
+msgstr ""
+
+msgid "Policies"
+msgstr ""
+
+msgid "Summary"
+msgstr "ਸੰਖੇਪ"
+
+msgid "Category"
+msgstr ""
+
+msgid "Description"
+msgstr "ਵੇਰਵਾ"
+
 #, fuzzy
 msgid "Invalid or corrupt add-on file."
 msgstr "ਗਲਤ ਅਕਾਈਵ।"
@@ -1814,6 +1835,12 @@ msgstr ""
 msgid "Your email has been verified"
 msgstr ""
 
+msgid "Could not submit your support request. Please try again."
+msgstr ""
+
+msgid "Your support request has been submitted. We will be in touch soon."
+msgstr ""
+
 msgid "My add-on doesn't fit into any of the categories"
 msgstr "ਮੇਰਾ ਐਡ-ਆਨ ਕਿਸੇ ਵੀ ਵਰਗ ਵਿੱਚ ਰਾਸ ਨਹੀਂਂ ਆ ਰਿਹਾ"
 
@@ -1873,11 +1900,17 @@ msgstr "ਐਡ-ਆਨ ਫ਼ੋਰਮ"
 msgid "More Resources"
 msgstr "ਹੋਰ ਵਸੀਲੇ"
 
+msgid "Contact Support"
+msgstr ""
+
 msgid "Search Developer Docs"
 msgstr "ਡਿਵੈਲਪਰ ਦਸਤਾਵੇਜ਼ ਖੋਜੋ"
 
 msgid "Search"
 msgstr "ਖੋਜ"
+
+msgid "Submit"
+msgstr ""
 
 #, python-format
 msgid "We have discovered that your email \"%(email)s\" is unable to receive emails from us. Please update your email address to one that can receive emails from us."
@@ -2155,9 +2188,6 @@ msgid ""
 "characters and a minimum length of 2 characters for each."
 msgstr ""
 
-msgid "Summary"
-msgstr "ਸੰਖੇਪ"
-
 msgid "Add-on URL"
 msgstr "ਐਡ-ਆਨ URL"
 
@@ -2173,9 +2203,6 @@ msgstr "ਪ੍ਰੋਫ਼ਾਈਲ ਵੇਖੋ"
 
 msgid "This summary should clearly explain what your add-on does. It will be shown in listings and searches, and it will be used by reviewers to test your add-on."
 msgstr ""
-
-msgid "Description"
-msgstr "ਵੇਰਵਾ"
 
 #, python-format
 msgid ""

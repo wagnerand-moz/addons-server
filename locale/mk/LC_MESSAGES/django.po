@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2026-03-30 16:53+0000\n"
+"POT-Creation-Date: 2026-03-30 20:20+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1556,6 +1556,27 @@ msgstr ""
 msgid "You must select a channel and version to rollback to."
 msgstr ""
 
+msgid "Select a category"
+msgstr ""
+
+msgid "Account"
+msgstr ""
+
+msgid "Technical Issue"
+msgstr ""
+
+msgid "Policies"
+msgstr ""
+
+msgid "Summary"
+msgstr ""
+
+msgid "Category"
+msgstr ""
+
+msgid "Description"
+msgstr ""
+
 msgid "Invalid or corrupt add-on file."
 msgstr ""
 
@@ -1765,6 +1786,12 @@ msgstr ""
 msgid "Your email has been verified"
 msgstr ""
 
+msgid "Could not submit your support request. Please try again."
+msgstr ""
+
+msgid "Your support request has been submitted. We will be in touch soon."
+msgstr ""
+
 msgid "My add-on doesn't fit into any of the categories"
 msgstr ""
 
@@ -1823,10 +1850,16 @@ msgstr ""
 msgid "More Resources"
 msgstr ""
 
+msgid "Contact Support"
+msgstr ""
+
 msgid "Search Developer Docs"
 msgstr ""
 
 msgid "Search"
+msgstr ""
+
+msgid "Submit"
 msgstr ""
 
 #, python-format
@@ -2097,9 +2130,6 @@ msgid ""
 "characters and a minimum length of 2 characters for each."
 msgstr ""
 
-msgid "Summary"
-msgstr ""
-
 msgid "Add-on URL"
 msgstr ""
 
@@ -2113,9 +2143,6 @@ msgid "View Product Page"
 msgstr ""
 
 msgid "This summary should clearly explain what your add-on does. It will be shown in listings and searches, and it will be used by reviewers to test your add-on."
-msgstr ""
-
-msgid "Description"
 msgstr ""
 
 #, python-format
