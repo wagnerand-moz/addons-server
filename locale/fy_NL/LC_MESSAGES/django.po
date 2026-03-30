@@ -6009,12 +6009,12 @@ msgstr "Alle útwreidingen besjen"
 #. editorial content for the secondary hero shelves.
 #: src/olympia/discovery/strings.jinja2:1107
 msgid "Extension Starter Pack"
-msgstr ""
+msgstr "Utwreiding-startpakket"
 
 #. editorial content for the secondary hero shelves.
 #: src/olympia/discovery/strings.jinja2:1109
 msgid "Productivity extensions"
-msgstr ""
+msgstr "Produktiviteitsútwreidingen"
 
 #. editorial content for the secondary hero shelves.
 #: src/olympia/discovery/strings.jinja2:1113 src/olympia/discovery/strings.jinja2:1115 src/olympia/discovery/strings.jinja2:1117
