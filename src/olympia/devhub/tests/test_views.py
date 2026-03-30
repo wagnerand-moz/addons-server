@@ -2755,3 +2755,106 @@ class TestRequestContentReview(TestCase):
             self.addon.addonapprovalscounter.content_review_status
             == AddonApprovalsCounter.CONTENT_REVIEW_STATUSES.PASS
         )
+
+
+@override_switch('enable-devhub-support-form', active=True)
+class TestSupportView(TestCase):
+    def setUp(self):
+        super().setUp()
+        self.user = user_factory()
+        self.url = reverse('devhub.support')
+
+    @override_switch('enable-devhub-support-form', active=False)
+    def test_switch_inactive_returns_404(self):
+        self.client.force_login(self.user)
+        assert self.client.get(self.url).status_code == 404
+        assert self.client.post(self.url, {}).status_code == 404
+
+    def test_get_anonymous_redirects(self):
+        response = self.client.get(self.url)
+        assert response.status_code == 302
+        assert 'authorization' in response['Location']
+
+    def test_get_renders_form(self):
+        self.client.force_login(self.user)
+        response = self.client.get(self.url)
+        assert response.status_code == 200
+        assert 'form' in response.context
+
+    def _post(self, data=None, follow=False):
+        payload = {
+            'summary': 'Something is broken',
+            'category': 'technical',
+            'body': 'Please help me fix this issue.',
+        }
+        if data:
+            payload.update(data)
+        return self.client.post(self.url, payload, follow=follow)
+
+    def test_post_anonymous_redirects(self):
+        response = self._post()
+        assert response.status_code == 302
+
+    def test_post_invalid_missing_fields(self):
+        self.client.force_login(self.user)
+        response = self.client.post(
+            self.url, {'summary': '', 'category': '', 'body': ''}
+        )
+        assert response.status_code == 200
+        form = response.context['form']
+        assert form.errors
+
+    @mock.patch('olympia.devhub.tasks.create_support_ticket.delay')
+    @mock.patch('olympia.devhub.views.get_fxa_access_token')
+    def test_post_success(self, mock_token, mock_task):
+        mock_token.return_value = 'mytoken'
+        self.client.force_login(self.user)
+        with self.settings(FXA_SUPPORT_BRAND_ID=None):
+            response = self._post(follow=True)
+        assert response.status_code == 200
+        mock_task.assert_called_once()
+        access_token, payload = mock_task.call_args[0]
+        assert access_token == 'mytoken'
+        assert payload['topic'] == 'technical'
+        assert payload['subject'] == 'Something is broken'
+        assert 'brand_id' not in payload
+        assert len(response.context['messages']) == 1
+        msg = list(response.context['messages'])[0]
+        assert msg.level_tag == 'success'
+
+    @mock.patch('olympia.devhub.tasks.create_support_ticket.delay')
+    @mock.patch('olympia.devhub.views.get_fxa_access_token')
+    def test_post_success_with_brand_id(self, mock_token, mock_task):
+        mock_token.return_value = 'mytoken'
+        self.client.force_login(self.user)
+        with self.settings(FXA_SUPPORT_BRAND_ID=12345):
+            response = self._post(follow=True)
+        assert response.status_code == 200
+        _, payload = mock_task.call_args[0]
+        assert payload['brand_id'] == 12345
+
+    @mock.patch('olympia.devhub.tasks.create_support_ticket.delay')
+    @mock.patch('olympia.devhub.views.get_fxa_access_token')
+    def test_post_no_access_token(self, mock_token, mock_task):
+        mock_token.return_value = None
+        self.client.force_login(self.user)
+        response = self._post(follow=True)
+        assert response.status_code == 200
+        mock_task.assert_not_called()
+        assert len(response.context['messages']) == 1
+        msg = list(response.context['messages'])[0]
+        assert msg.level_tag == 'error'
+
+    @mock.patch('olympia.devhub.tasks.create_support_ticket.delay')
+    @mock.patch('olympia.devhub.views.get_fxa_access_token')
+    def test_post_token_identification_error(self, mock_token, mock_task):
+        from olympia.accounts.verify import IdentificationError
+
+        mock_token.side_effect = IdentificationError('no token')
+        self.client.force_login(self.user)
+        response = self._post(follow=True)
+        assert response.status_code == 200
+        mock_task.assert_not_called()
+        assert len(response.context['messages']) == 1
+        msg = list(response.context['messages'])[0]
+        assert msg.level_tag == 'error'

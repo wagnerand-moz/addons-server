@@ -1,0 +1,21 @@
+{% extends "devhub/base.html" %}
+
+{% set title = _('Contact Support') %}
+
+{% block title %}{{ dev_page_title(title) }}{% endblock %}
+
+{% block content %}
+<header>
+  <h2>{{ title }}</h2>
+</header>
+
+<section class="primary" role="main">
+  <form method="post">
+    {% csrf_token %}
+    {{ form.as_div() }}
+    <div class="action-group">
+      <button type="submit" class="button prominent">{{ _('Submit') }}</button>
+    </div>
+  </form>
+</section>
+{% endblock content %}

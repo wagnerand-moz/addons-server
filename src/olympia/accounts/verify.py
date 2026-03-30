@@ -114,8 +114,8 @@ def check_and_update_fxa_access_token(request):
     the access_token with the refresh token.
 
     IdentificationError from `get_fxa_token` will be raised if there is a problem
-    refreshing, and `request.session` is updated with the new access_token_expiry time
-    otherwise."""
+    refreshing, and `request.session` is updated with the new access_token and
+    access_token_expiry time otherwise."""
 
     if (
         not use_fake_fxa(get_fxa_config(request))
@@ -138,4 +138,16 @@ def check_and_update_fxa_access_token(request):
             refresh_token=request.session.get('fxa_refresh_token'),
             config=settings.FXA_CONFIG[config_name],
         )
+        request.session['fxa_access_token'] = token_data['access_token']
         request.session['fxa_access_token_expiry'] = token_data['access_token_expiry']
+
+
+def get_fxa_access_token(request):
+    """Return the FxA access token for the current user from the session.
+    TokenValidMiddleware already ensures the token is fresh for every request.
+
+    In fake FxA environments (local dev) returns a placeholder token."""
+    if use_fake_fxa(get_fxa_config(request)):
+        return 'fake-access-token'
+
+    return request.session.get('fxa_access_token')

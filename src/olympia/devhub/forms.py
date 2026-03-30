@@ -9,7 +9,10 @@ from django import forms
 from django.conf import settings
 from django.core.validators import MinLengthValidator, RegexValidator
 from django.db.models import Q
-from django.forms.models import BaseModelFormSet, modelformset_factory
+from django.forms.models import (
+    BaseModelFormSet,
+    modelformset_factory,
+)
 from django.forms.widgets import RadioSelect
 from django.urls import reverse
 from django.utils.functional import keep_lazy_text
@@ -1751,3 +1754,30 @@ class RollbackVersionForm(forms.Form):
 
     def can_rollback(self):
         return self.has_listed or self.has_unlisted
+
+
+class SupportForm(forms.Form):
+    CATEGORY_CHOICES = [
+        ('', _('Select a category')),
+        ('account', _('Account')),
+        ('technical', _('Technical Issue')),
+        ('policy', _('Policies')),
+        ('other', _('Other')),
+    ]
+
+    summary = forms.CharField(
+        max_length=255,
+        label=_('Summary'),
+    )
+    category = forms.ChoiceField(
+        choices=CATEGORY_CHOICES,
+        label=_('Category'),
+    )
+    body = forms.CharField(
+        widget=forms.Textarea(attrs={'rows': 8}),
+        label=_('Description'),
+    )
+
+    def __init__(self, *args, **kwargs):
+        kwargs.pop('user')
+        super().__init__(*args, **kwargs)

@@ -294,6 +294,7 @@ class TestCheckAndUpdateFxaAccessToken(TestCase):
         self.get_fxa_token_mock.assert_called_with(
             refresh_token='refreshing!', config=settings.FXA_CONFIG['default']
         )
+        assert request.session['fxa_access_token'] == 'someaccesstoken'
         assert (
             request.session['fxa_access_token_expiry']
             == (self.get_fxa_token_mock.return_value['access_token_expiry'])
@@ -321,3 +322,26 @@ class TestCheckAndUpdateFxaAccessToken(TestCase):
         with self.assertRaises(verify.IdentificationError):
             verify.check_and_update_fxa_access_token(request)
         self.get_fxa_token_mock.assert_not_called()
+
+
+class TestGetFxaAccessToken(TestCase):
+    def get_request(self, access_token=None, expiry=None, refresh_token='refresh!'):
+        request = mock.Mock()
+        request.session = {
+            'fxa_access_token': access_token,
+            'fxa_access_token_expiry': expiry,
+            'fxa_refresh_token': refresh_token,
+        }
+        return request
+
+    def test_fake_fxa_returns_placeholder(self):
+        request = self.get_request()
+        with override_settings(FXA_CONFIG={'default': {'client_id': ''}}):
+            token = verify.get_fxa_access_token(request)
+        assert token == 'fake-access-token'
+
+    def test_returns_token_from_session(self):
+        future = time.time() + 3600
+        request = self.get_request(access_token='cached-token', expiry=future)
+        token = verify.get_fxa_access_token(request)
+        assert token == 'cached-token'
