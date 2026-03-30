@@ -418,7 +418,7 @@ msgstr "სხვა"
 
 #: static/js/zamboni/devhub.js:196
 msgid "Copied"
-msgstr ""
+msgstr "ასლი აღებულია"
 
 #: static/js/zamboni/devhub.js:322
 msgid "Changes Saved"
