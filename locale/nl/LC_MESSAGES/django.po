@@ -2378,11 +2378,11 @@ msgstr "Uw e-mailadres is geverifieerd"
 
 #: src/olympia/devhub/views.py:2333
 msgid "Could not submit your support request. Please try again."
-msgstr "Kon uw ondersteuningsverzoek niet indienen. Probeer het opnieuw."
+msgstr "Kan uw ondersteuningsverzoek niet indienen. Probeer het opnieuw."
 
 #: src/olympia/devhub/views.py:2340
 msgid "Your support request has been submitted. We will be in touch soon."
-msgstr "Uw ondersteuningsaanvraag is ingediend. We nemen binnenkort contact op."
+msgstr "Uw ondersteuningsverzoek is ingediend. We nemen binnenkort contact op."
 
 #: src/olympia/devhub/widgets.py:81
 msgid "My add-on doesn't fit into any of the categories"
