@@ -2073,7 +2073,7 @@ msgstr "Tu debe seliger un canal e version a que regreder."
 
 #: src/olympia/devhub/forms.py:1761
 msgid "Select a category"
-msgstr ""
+msgstr "Seliger un categoria"
 
 #: src/olympia/devhub/forms.py:1762
 msgid "Account"
@@ -2382,7 +2382,7 @@ msgstr "Tu email ha essite verificate"
 
 #: src/olympia/devhub/views.py:2333
 msgid "Could not submit your support request. Please try again."
-msgstr ""
+msgstr "Impossibile inviar tu requesta de supporto. Retenta."
 
 #: src/olympia/devhub/views.py:2340
 msgid "Your support request has been submitted. We will be in touch soon."
