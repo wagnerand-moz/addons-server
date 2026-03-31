@@ -2085,19 +2085,19 @@ msgstr "Trebuie să selectezi un canal și o versiune la care să revii."
 
 #: src/olympia/devhub/forms.py:1761
 msgid "Select a category"
-msgstr ""
+msgstr "Selectează o categorie"
 
 #: src/olympia/devhub/forms.py:1762
 msgid "Account"
-msgstr ""
+msgstr "Cont"
 
 #: src/olympia/devhub/forms.py:1763
 msgid "Technical Issue"
-msgstr ""
+msgstr "Problemă tehnică"
 
 #: src/olympia/devhub/forms.py:1764
 msgid "Policies"
-msgstr ""
+msgstr "Politici"
 
 #: src/olympia/devhub/forms.py:1770 src/olympia/devhub/templates/devhub/addons/edit/describe.html:43 src/olympia/devhub/templates/devhub/addons/edit/describe.html:105
 #: src/olympia/devhub/templates/devhub/addons/submit/describe.html:30
@@ -2106,7 +2106,7 @@ msgstr "Rezumat"
 
 #: src/olympia/devhub/forms.py:1774
 msgid "Category"
-msgstr ""
+msgstr "Categorie"
 
 #: src/olympia/devhub/forms.py:1778 src/olympia/devhub/templates/devhub/addons/edit/describe.html:128
 msgid "Description"
@@ -2392,11 +2392,11 @@ msgstr "Adresa ta de e-mail a fost verificată"
 
 #: src/olympia/devhub/views.py:2333
 msgid "Could not submit your support request. Please try again."
-msgstr ""
+msgstr "Cererea de asistență nu a putut fi trimisă. Te rugăm să încerci din nou."
 
 #: src/olympia/devhub/views.py:2340
 msgid "Your support request has been submitted. We will be in touch soon."
-msgstr ""
+msgstr "Cererea de asistență a fost trimisă. Te vom contacta în curând."
 
 #: src/olympia/devhub/widgets.py:81
 msgid "My add-on doesn't fit into any of the categories"
@@ -2476,7 +2476,7 @@ msgstr "Mai multe resurse"
 
 #: src/olympia/devhub/templates/devhub/nav.html:67 src/olympia/devhub/templates/devhub/support.html:3
 msgid "Contact Support"
-msgstr ""
+msgstr "Contactează serviciul de asistență"
 
 #: src/olympia/devhub/templates/devhub/search.html:6
 msgid "Search Developer Docs"
@@ -2488,7 +2488,7 @@ msgstr "Caută"
 
 #: src/olympia/devhub/templates/devhub/support.html:17
 msgid "Submit"
-msgstr ""
+msgstr "Trimite"
 
 #: src/olympia/devhub/templates/devhub/suppressed_email.html:4
 #, python-format
@@ -4025,11 +4025,11 @@ msgstr "Pentru rezolvarea acestor aspecte, te rugăm să îți actualizezi lista
 
 #: src/olympia/devhub/templates/devhub/includes/content_rejected.html:17
 msgid "Review requested already, awaiting review"
-msgstr ""
+msgstr "Deja s-a cerut o revizuire; în așteptarea revizuirii"
 
 #: src/olympia/devhub/templates/devhub/includes/content_rejected.html:22
 msgid "I confirm I have addressed the issues, and request a review"
-msgstr ""
+msgstr "Confirm că am rezolvat problemele și am solicitat o revizuire"
 
 #: src/olympia/devhub/templates/devhub/includes/done_unlisted.html:1
 msgid "Version Signature Pending"
@@ -6070,7 +6070,7 @@ msgstr "Vezi toate extensiile"
 #. editorial content for the secondary hero shelves.
 #: src/olympia/discovery/strings.jinja2:1107
 msgid "Extension Starter Pack"
-msgstr ""
+msgstr "Pachet starter de extensii"
 
 #. editorial content for the secondary hero shelves.
 #: src/olympia/discovery/strings.jinja2:1109
