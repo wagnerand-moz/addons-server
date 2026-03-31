@@ -2386,7 +2386,7 @@ msgstr "Impossibile inviar tu requesta de supporto. Retenta."
 
 #: src/olympia/devhub/views.py:2340
 msgid "Your support request has been submitted. We will be in touch soon."
-msgstr ""
+msgstr "Tu requesta de supporto ha essite inviate. Nos contactara tosto."
 
 #: src/olympia/devhub/widgets.py:81
 msgid "My add-on doesn't fit into any of the categories"
