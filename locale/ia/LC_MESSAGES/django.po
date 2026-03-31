@@ -2077,15 +2077,15 @@ msgstr ""
 
 #: src/olympia/devhub/forms.py:1762
 msgid "Account"
-msgstr ""
+msgstr "Conto"
 
 #: src/olympia/devhub/forms.py:1763
 msgid "Technical Issue"
-msgstr ""
+msgstr "Problema technic"
 
 #: src/olympia/devhub/forms.py:1764
 msgid "Policies"
-msgstr ""
+msgstr "Politicas"
 
 #: src/olympia/devhub/forms.py:1770 src/olympia/devhub/templates/devhub/addons/edit/describe.html:43 src/olympia/devhub/templates/devhub/addons/edit/describe.html:105
 #: src/olympia/devhub/templates/devhub/addons/submit/describe.html:30
@@ -2094,7 +2094,7 @@ msgstr "Summario"
 
 #: src/olympia/devhub/forms.py:1774
 msgid "Category"
-msgstr ""
+msgstr "Categoria"
 
 #: src/olympia/devhub/forms.py:1778 src/olympia/devhub/templates/devhub/addons/edit/describe.html:128
 msgid "Description"
@@ -2466,7 +2466,7 @@ msgstr "Altere ressources"
 
 #: src/olympia/devhub/templates/devhub/nav.html:67 src/olympia/devhub/templates/devhub/support.html:3
 msgid "Contact Support"
-msgstr ""
+msgstr "Contactar assistentia"
 
 #: src/olympia/devhub/templates/devhub/search.html:6
 msgid "Search Developer Docs"
@@ -2478,7 +2478,7 @@ msgstr "Recercar"
 
 #: src/olympia/devhub/templates/devhub/support.html:17
 msgid "Submit"
-msgstr ""
+msgstr "Inviar"
 
 #: src/olympia/devhub/templates/devhub/suppressed_email.html:4
 #, python-format
