@@ -1297,7 +1297,7 @@ msgstr ""
 
 #: src/olympia/constants/activity.py:1282
 msgid "Rejected listing approved"
-msgstr ""
+msgstr "Listagem rejeitada aprovada"
 
 #: src/olympia/constants/activity.py:1294
 #, python-brace-format
