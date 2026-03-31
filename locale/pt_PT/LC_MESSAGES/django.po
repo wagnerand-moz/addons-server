@@ -1288,7 +1288,7 @@ msgstr ""
 #: src/olympia/constants/activity.py:1263
 #, python-brace-format
 msgid "Account {user} property {0} updated."
-msgstr ""
+msgstr "A propriedade {0} da conta {user} foi atualizada."
 
 #: src/olympia/constants/activity.py:1280
 #, python-brace-format
