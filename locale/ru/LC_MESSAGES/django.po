@@ -2079,7 +2079,7 @@ msgstr ""
 
 #: src/olympia/devhub/forms.py:1762
 msgid "Account"
-msgstr ""
+msgstr "Учётная запись"
 
 #: src/olympia/devhub/forms.py:1763
 msgid "Technical Issue"
