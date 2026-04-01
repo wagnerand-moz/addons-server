@@ -2071,19 +2071,19 @@ msgstr "Musíte vybrať kanál a verziu, na ktorú sa chcete vrátiť."
 
 #: src/olympia/devhub/forms.py:1761
 msgid "Select a category"
-msgstr ""
+msgstr "Vyberte kategóriu"
 
 #: src/olympia/devhub/forms.py:1762
 msgid "Account"
-msgstr ""
+msgstr "Účet"
 
 #: src/olympia/devhub/forms.py:1763
 msgid "Technical Issue"
-msgstr ""
+msgstr "Technický problém"
 
 #: src/olympia/devhub/forms.py:1764
 msgid "Policies"
-msgstr ""
+msgstr "Pravidlá"
 
 #: src/olympia/devhub/forms.py:1770 src/olympia/devhub/templates/devhub/addons/edit/describe.html:43 src/olympia/devhub/templates/devhub/addons/edit/describe.html:105
 #: src/olympia/devhub/templates/devhub/addons/submit/describe.html:30
@@ -2092,7 +2092,7 @@ msgstr "Súhrn"
 
 #: src/olympia/devhub/forms.py:1774
 msgid "Category"
-msgstr ""
+msgstr "Kategória"
 
 #: src/olympia/devhub/forms.py:1778 src/olympia/devhub/templates/devhub/addons/edit/describe.html:128
 msgid "Description"
@@ -2353,7 +2353,7 @@ msgstr "Vaše staré prihlasovacie údaje boli odvolané a už nie sú platné."
 
 #: src/olympia/devhub/views.py:2139
 msgid "New API credentials have been generated and are displayed below. Make sure to copy the JWT secret, it will never be displayed again."
-msgstr ""
+msgstr "Boli vygenerované nové prihlasovacie údaje API a sú zobrazené nižšie. Nezabudnite skopírovať tajný kód JWT, už sa nikdy nezobrazí."
 
 #: src/olympia/devhub/views.py:2163
 msgid "New API key created"
@@ -2377,11 +2377,11 @@ msgstr "Váš e‑mail bol overený"
 
 #: src/olympia/devhub/views.py:2333
 msgid "Could not submit your support request. Please try again."
-msgstr ""
+msgstr "Žiadosť o podporu sa nepodarilo odoslať. Skúste to znova."
 
 #: src/olympia/devhub/views.py:2340
 msgid "Your support request has been submitted. We will be in touch soon."
-msgstr ""
+msgstr "Vaša žiadosť o podporu bola odoslaná. Čoskoro sa s vami spojíme."
 
 #: src/olympia/devhub/widgets.py:81
 msgid "My add-on doesn't fit into any of the categories"
@@ -2461,7 +2461,7 @@ msgstr "Ďalšie zdroje"
 
 #: src/olympia/devhub/templates/devhub/nav.html:67 src/olympia/devhub/templates/devhub/support.html:3
 msgid "Contact Support"
-msgstr ""
+msgstr "Kontaktovať podporu"
 
 #: src/olympia/devhub/templates/devhub/search.html:6
 msgid "Search Developer Docs"
@@ -2473,7 +2473,7 @@ msgstr "Hľadať"
 
 #: src/olympia/devhub/templates/devhub/support.html:17
 msgid "Submit"
-msgstr ""
+msgstr "Odoslať"
 
 #: src/olympia/devhub/templates/devhub/suppressed_email.html:4
 #, python-format
@@ -3381,7 +3381,7 @@ msgstr "Je niečo, čo by naši kontrolóri mali mať na pamäti pri kontrole to
 
 #: src/olympia/devhub/templates/devhub/addons/submit/describe.html:213 src/olympia/devhub/templates/devhub/addons/submit/describe_minimal.html:26
 msgid "Important"
-msgstr ""
+msgstr "Dôležité"
 
 #: src/olympia/devhub/templates/devhub/addons/submit/describe.html:214 src/olympia/devhub/templates/devhub/addons/submit/describe_minimal.html:27
 #, python-format
@@ -3389,6 +3389,8 @@ msgid ""
 "Read our %(policy_requirements_open)spolicy requirements%(policy_requirements_close)s regarding build processes and source code submission. If your submission requires source code, you must provide "
 "step-by-step build instructions, either inside the source code package or here, that will create an exact copy of the code."
 msgstr ""
+"Prečítajte si naše %(policy_requirements_open)spožiadavky a zásady%(policy_requirements_close)s týkajúce sa procesov zostavovania a odosielania zdrojového kódu. Ak váš príspevok vyžaduje zdrojový "
+"kód, musíte poskytnúť podrobné pokyny na zostavenie, buď v balíku so zdrojovým kódom, alebo tu, ktoré vytvoria presnú kópiu kódu."
 
 #: src/olympia/devhub/templates/devhub/addons/submit/describe.html:224 src/olympia/devhub/templates/devhub/addons/submit/describe_minimal.html:37
 msgid "These notes will only be visible to you and our reviewers."
@@ -3687,10 +3689,12 @@ msgid ""
 "To execute authenticated calls against the <a %(a_attrs)s href=\"%(docs_url)s\">API</a> as an external consumer, you need to include a <a %(a_attrs)s href=\"%(jwt_url)s\">JSON Web Token (JWT)</a> in"
 " the <code>Authorization</code> header for every request."
 msgstr ""
+"Ak chcete ako externý spotrebiteľ vykonávať overené volania proti rozhraniu <a %(a_attrs)s href=\"%(docs_url)s\">API</a>, musíte do hlavičky <code>Authorization</code> pre každú požiadavku zahrnúť "
+"<a %(a_attrs)s href=\"%(jwt_url)s\">JSON Web Token (JWT)</a>."
 
 #: src/olympia/devhub/templates/devhub/api/key.html:25
 msgid "Keep your API keys secret and never share them with anyone, including Mozilla staff or contributors."
-msgstr ""
+msgstr "Uchovávajte svoje API kľúče v tajnosti a nikdy ich nezdieľajte s nikým, vrátane zamestnancov alebo prispievateľov Mozilly."
 
 #: src/olympia/devhub/templates/devhub/api/key.html:33
 msgid "JWT issuer"
@@ -6033,12 +6037,12 @@ msgstr "Zobraziť všetky rozšírenia"
 #. editorial content for the secondary hero shelves.
 #: src/olympia/discovery/strings.jinja2:1107
 msgid "Extension Starter Pack"
-msgstr ""
+msgstr "Štartovací balíček rozšírení"
 
 #. editorial content for the secondary hero shelves.
 #: src/olympia/discovery/strings.jinja2:1109
 msgid "Productivity extensions"
-msgstr ""
+msgstr "Rozšírenia pre produktivitu"
 
 #. editorial content for the secondary hero shelves.
 #: src/olympia/discovery/strings.jinja2:1113 src/olympia/discovery/strings.jinja2:1115 src/olympia/discovery/strings.jinja2:1117
@@ -6524,11 +6528,11 @@ msgstr "Ohodnotené %(rating)s z 5 hviezdičiek"
 
 #: src/olympia/scanners/templates/admin/scanners/scannerresult/pagination.html:11
 msgid "Show all"
-msgstr ""
+msgstr "Zobraziť všetko"
 
 #: src/olympia/scanners/templates/admin/scanners/scannerresult/pagination.html:12
 msgid "Save"
-msgstr ""
+msgstr "Uložiť"
 
 #: src/olympia/search/filters.py:49 src/olympia/search/filters.py:62 src/olympia/search/filters.py:95 src/olympia/search/filters.py:170 src/olympia/search/filters.py:210
 #: src/olympia/search/filters.py:356 src/olympia/search/filters.py:467
