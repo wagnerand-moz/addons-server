@@ -2102,19 +2102,19 @@ msgstr "È necessario selezionare un canale e una versione verso cui eseguire il
 
 #: src/olympia/devhub/forms.py:1761
 msgid "Select a category"
-msgstr ""
+msgstr "Seleziona una categoria"
 
 #: src/olympia/devhub/forms.py:1762
 msgid "Account"
-msgstr ""
+msgstr "Account"
 
 #: src/olympia/devhub/forms.py:1763
 msgid "Technical Issue"
-msgstr ""
+msgstr "Problema tecnico"
 
 #: src/olympia/devhub/forms.py:1764
 msgid "Policies"
-msgstr ""
+msgstr "Criteri"
 
 #: src/olympia/devhub/forms.py:1770 src/olympia/devhub/templates/devhub/addons/edit/describe.html:43 src/olympia/devhub/templates/devhub/addons/edit/describe.html:105
 #: src/olympia/devhub/templates/devhub/addons/submit/describe.html:30
@@ -2123,7 +2123,7 @@ msgstr "Sommario"
 
 #: src/olympia/devhub/forms.py:1774
 msgid "Category"
-msgstr ""
+msgstr "Categoria"
 
 #: src/olympia/devhub/forms.py:1778 src/olympia/devhub/templates/devhub/addons/edit/describe.html:128
 msgid "Description"
@@ -2413,11 +2413,11 @@ msgstr "L’indirizzo email è stato verificato"
 
 #: src/olympia/devhub/views.py:2333
 msgid "Could not submit your support request. Please try again."
-msgstr ""
+msgstr "Impossibile inviare la richiesta di assistenza. Riprova."
 
 #: src/olympia/devhub/views.py:2340
 msgid "Your support request has been submitted. We will be in touch soon."
-msgstr ""
+msgstr "La richiesta di assistenza è stata inoltrata. Ti contatteremo presto."
 
 #: src/olympia/devhub/widgets.py:81
 msgid "My add-on doesn't fit into any of the categories"
@@ -2497,7 +2497,7 @@ msgstr "Ulteriori risorse"
 
 #: src/olympia/devhub/templates/devhub/nav.html:67 src/olympia/devhub/templates/devhub/support.html:3
 msgid "Contact Support"
-msgstr ""
+msgstr "Contatta l’assistenza"
 
 #: src/olympia/devhub/templates/devhub/search.html:6
 msgid "Search Developer Docs"
@@ -2509,7 +2509,7 @@ msgstr "Cerca"
 
 #: src/olympia/devhub/templates/devhub/support.html:17
 msgid "Submit"
-msgstr ""
+msgstr "Invia"
 
 #: src/olympia/devhub/templates/devhub/suppressed_email.html:4
 #, python-format
