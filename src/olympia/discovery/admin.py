@@ -8,6 +8,7 @@ from django.utils.safestring import mark_safe
 from django.utils.translation import gettext
 
 from olympia import amo, promoted
+from olympia.addons.admin import AddonAdminByGuidOrSlugMixin
 from olympia.addons.models import Addon
 from olympia.amo.admin import AMOModelAdmin
 from olympia.amo.reverse import reverse
@@ -235,7 +236,7 @@ class AddonPromotionApplicationFilter(admin.SimpleListFilter):
 DISCOVERY_ADDON_FIELDS = ['__str__', 'guid', 'addon', 'is_promoted']
 
 
-class DiscoveryAddonAdmin(AMOModelAdmin):
+class DiscoveryAddonAdmin(AddonAdminByGuidOrSlugMixin, AMOModelAdmin):
     model = DiscoveryAddon
     inlines = [
         PromotedAddonAdminInline,
@@ -261,8 +262,11 @@ class DiscoveryAddonAdmin(AMOModelAdmin):
     )
 
     def get_queryset(self, request):
-        qset = Addon.unfiltered.all().only_translations()
-        return qset
+        # DiscoveryAddon is a proxy model, that doesn't play nice with
+        # translations (._meta.translated_fields is not set) but ultimately we
+        # don't need to return the proxy model here, so use `Addon` instead,
+        # removing other transforms while we're at it.
+        return Addon.unfiltered.all().only_translations()
 
     def addon(self, obj):
         if obj.pk:
