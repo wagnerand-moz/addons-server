@@ -2418,11 +2418,11 @@ msgstr "Το email σας έχει επαληθευτεί"
 
 #: src/olympia/devhub/views.py:2333
 msgid "Could not submit your support request. Please try again."
-msgstr ""
+msgstr "Δεν ήταν δυνατή η υποβολή του αιτήματος υποστήριξης. Δοκιμάστε ξανά."
 
 #: src/olympia/devhub/views.py:2340
 msgid "Your support request has been submitted. We will be in touch soon."
-msgstr ""
+msgstr "Το αίτημα υποστήριξης έχει υποβληθεί. Θα επικοινωνήσουμε σύντομα μαζί σας."
 
 #: src/olympia/devhub/widgets.py:81
 msgid "My add-on doesn't fit into any of the categories"
