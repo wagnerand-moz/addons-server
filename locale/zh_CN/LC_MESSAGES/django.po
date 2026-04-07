@@ -2047,15 +2047,15 @@ msgstr "请选择回滚的目标通道和版本。"
 
 #: src/olympia/devhub/forms.py:1761
 msgid "Select a category"
-msgstr ""
+msgstr "选择分类"
 
 #: src/olympia/devhub/forms.py:1762
 msgid "Account"
-msgstr ""
+msgstr "账户"
 
 #: src/olympia/devhub/forms.py:1763
 msgid "Technical Issue"
-msgstr ""
+msgstr "技术问题"
 
 #: src/olympia/devhub/forms.py:1764
 msgid "Policies"
@@ -2068,7 +2068,7 @@ msgstr "概述"
 
 #: src/olympia/devhub/forms.py:1774
 msgid "Category"
-msgstr ""
+msgstr "分类"
 
 #: src/olympia/devhub/forms.py:1778 src/olympia/devhub/templates/devhub/addons/edit/describe.html:128
 msgid "Description"
@@ -2328,7 +2328,7 @@ msgstr "您的旧凭据已被吊销并且不再有效。"
 
 #: src/olympia/devhub/views.py:2139
 msgid "New API credentials have been generated and are displayed below. Make sure to copy the JWT secret, it will never be displayed again."
-msgstr ""
+msgstr "新的 API 凭证已生成并显示在下方。请务必复制 JWT 密钥，该密钥将不再显示。"
 
 #: src/olympia/devhub/views.py:2163
 msgid "New API key created"
