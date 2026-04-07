@@ -2448,7 +2448,7 @@ msgstr "搜索"
 
 #: src/olympia/devhub/templates/devhub/support.html:17
 msgid "Submit"
-msgstr ""
+msgstr "提交"
 
 #: src/olympia/devhub/templates/devhub/suppressed_email.html:4
 #, python-format
@@ -3325,7 +3325,7 @@ msgstr "对我们审核此附加组件，有什么备注说明吗？"
 
 #: src/olympia/devhub/templates/devhub/addons/submit/describe.html:213 src/olympia/devhub/templates/devhub/addons/submit/describe_minimal.html:26
 msgid "Important"
-msgstr ""
+msgstr "重要"
 
 #: src/olympia/devhub/templates/devhub/addons/submit/describe.html:214 src/olympia/devhub/templates/devhub/addons/submit/describe_minimal.html:27
 #, python-format
@@ -3630,7 +3630,7 @@ msgstr ""
 
 #: src/olympia/devhub/templates/devhub/api/key.html:25
 msgid "Keep your API keys secret and never share them with anyone, including Mozilla staff or contributors."
-msgstr ""
+msgstr "请保密您的 API 密钥，绝对不要分享给其他人，包括 Mozilla 员工和贡献者。"
 
 #: src/olympia/devhub/templates/devhub/api/key.html:33
 msgid "JWT issuer"
