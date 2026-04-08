@@ -2059,7 +2059,7 @@ msgstr "技术问题"
 
 #: src/olympia/devhub/forms.py:1764
 msgid "Policies"
-msgstr ""
+msgstr "政策"
 
 #: src/olympia/devhub/forms.py:1770 src/olympia/devhub/templates/devhub/addons/edit/describe.html:43 src/olympia/devhub/templates/devhub/addons/edit/describe.html:105
 #: src/olympia/devhub/templates/devhub/addons/submit/describe.html:30
@@ -2167,7 +2167,7 @@ msgstr "URL 名称不正确。附加组件未被删除。"
 
 #: src/olympia/devhub/views.py:440
 msgid "Request for a new review of listing content acknowledged."
-msgstr ""
+msgstr "重新审核上架内容的请求已收悉。"
 
 #: src/olympia/devhub/views.py:484
 msgid "Invitation accepted."
@@ -2352,11 +2352,11 @@ msgstr "您的邮箱地址已验证"
 
 #: src/olympia/devhub/views.py:2333
 msgid "Could not submit your support request. Please try again."
-msgstr ""
+msgstr "无法提交您的支持请求，请重试。"
 
 #: src/olympia/devhub/views.py:2340
 msgid "Your support request has been submitted. We will be in touch soon."
-msgstr ""
+msgstr "您的支持请求已提交，我们将尽快与您联系。"
 
 #: src/olympia/devhub/widgets.py:81
 msgid "My add-on doesn't fit into any of the categories"
@@ -2436,7 +2436,7 @@ msgstr "更多资源"
 
 #: src/olympia/devhub/templates/devhub/nav.html:67 src/olympia/devhub/templates/devhub/support.html:3
 msgid "Contact Support"
-msgstr ""
+msgstr "联系支持"
 
 #: src/olympia/devhub/templates/devhub/search.html:6
 msgid "Search Developer Docs"
@@ -3049,7 +3049,7 @@ msgstr "您的附加组件当前设为“不可见”。"
 
 #: src/olympia/devhub/templates/devhub/addons/includes/cant_submit_new_listed_versions_warning.html:5
 msgid "Your add-on listing was rejected."
-msgstr ""
+msgstr "您的附加组件上架申请被驳回。"
 
 #: src/olympia/devhub/templates/devhub/addons/includes/cant_submit_new_listed_versions_warning.html:7
 msgid "While in this state, \"On your own\" is the only distribution method available."
