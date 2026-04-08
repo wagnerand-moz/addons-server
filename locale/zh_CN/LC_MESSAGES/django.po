@@ -1287,7 +1287,7 @@ msgstr ""
 #: src/olympia/constants/activity.py:1294
 #, python-brace-format
 msgid "{addon} listing content rejected."
-msgstr ""
+msgstr "“{addon}”上架内容被驳回。"
 
 #: src/olympia/constants/activity.py:1295
 msgid "Listing rejected"
@@ -3790,7 +3790,7 @@ msgstr "您的附加组件已被网站管理员禁用，不再在我们的应用
 
 #: src/olympia/devhub/templates/devhub/includes/addon_details.html:32
 msgid "Your add-on listing was rejected. It is not listed in our gallery. Please address the reasons and reapply for review."
-msgstr ""
+msgstr "您的附加组件上架申请被驳回，未在我们的展示库中列出。请解决问题并重新申请审核。"
 
 #: src/olympia/devhub/templates/devhub/includes/addon_details.html:35
 msgid "Your add-on won't be included in search results, and its listing page will indicate you disabled it. New version submissions for listing won't be accepted in this state."
