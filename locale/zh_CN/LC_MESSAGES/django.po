@@ -3926,7 +3926,7 @@ msgstr ""
 
 #: src/olympia/devhub/templates/devhub/includes/content_rejected.html:14
 msgid "To address these issues, please update your listing and request another review of the content."
-msgstr ""
+msgstr "为解决这些问题，请更新您的上架内容并请求对内容进行再次审核。"
 
 #: src/olympia/devhub/templates/devhub/includes/content_rejected.html:17
 msgid "Review requested already, awaiting review"
