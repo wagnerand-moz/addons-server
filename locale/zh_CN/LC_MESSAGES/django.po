@@ -3922,7 +3922,7 @@ msgstr "查看博客 &#9658;"
 
 #: src/olympia/devhub/templates/devhub/includes/content_rejected.html:2
 msgid "Our review found that your listing content violates the following Mozilla policy or policies:"
-msgstr ""
+msgstr "我们审核时发现，您的上架内容违反了以下 Mozilla 政策："
 
 #: src/olympia/devhub/templates/devhub/includes/content_rejected.html:14
 msgid "To address these issues, please update your listing and request another review of the content."
@@ -5948,12 +5948,12 @@ msgstr "浏览所有扩展"
 #. editorial content for the secondary hero shelves.
 #: src/olympia/discovery/strings.jinja2:1107
 msgid "Extension Starter Pack"
-msgstr ""
+msgstr "新手必备扩展"
 
 #. editorial content for the secondary hero shelves.
 #: src/olympia/discovery/strings.jinja2:1109
 msgid "Productivity extensions"
-msgstr ""
+msgstr "生产力扩展"
 
 #. editorial content for the secondary hero shelves.
 #: src/olympia/discovery/strings.jinja2:1113 src/olympia/discovery/strings.jinja2:1115 src/olympia/discovery/strings.jinja2:1117
@@ -6435,11 +6435,11 @@ msgstr "给 %(rating)s 以5星评价"
 
 #: src/olympia/scanners/templates/admin/scanners/scannerresult/pagination.html:11
 msgid "Show all"
-msgstr ""
+msgstr "显示全部"
 
 #: src/olympia/scanners/templates/admin/scanners/scannerresult/pagination.html:12
 msgid "Save"
-msgstr ""
+msgstr "保存"
 
 #: src/olympia/search/filters.py:49 src/olympia/search/filters.py:62 src/olympia/search/filters.py:95 src/olympia/search/filters.py:170 src/olympia/search/filters.py:210
 #: src/olympia/search/filters.py:356 src/olympia/search/filters.py:467
